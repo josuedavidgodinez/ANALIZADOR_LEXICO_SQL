@@ -1,0 +1,128 @@
+
+SELECT *
+FROM Portal.dbo.TBL_USUARIO
+WHERE /*carnet = '158' AND*/ user_type = '2'
+                             AND Status_Correo = '0'
+                             AND login_correo IS NULL
+                             AND EXISTS ( SELECT *
+                                          FROM Registro.dbo.v_nombramiento
+                                          WHERE No_Catedratico = carnet
+                                                AND No_Ciclo = '1903');
+
+
+
+/*=================================================================================================  
+Universidad Rafael Landívar  
+Autor: Samuel Anleu (25074) - SAAR  
+Fecha de creación: 20170105  
+Descripción: Valida si un curo se encuentra sincronizado a Moodle LAMP (año 2014 en adelante), sólo  
+  si éste es del año actual o del anterior.  Para años anteriores siempre devuelve acceso libre.  
+  Devuelve:     0 NO ESTA SINCRONIZADO,  1 ACCESO LIBRE  
+-- =================================================================================================  
+SAAR 20181206 1526 REQ.114351 SCC.5205 se verifica la fecha de inicio del curso, si la fecha de   
+  inicio es mayor a la fecha actual se muestra la fecha de inicio, si la fecha de inicio  
+  es menor a la actual se indica que el curso no está disponible.  
+SAAR 20181207 1259 REQ.114351 SCC.5205   Arreglo para que funcione en el año 2018 cuando ya se puso  
+  el moodle 2019 como vigente  
+CSRM 20190711 10:11 REQ.120133 SCC.5438 Se cambia validación de estar fuera del ciclo de la sección  
+  para devolver acceso libre, para que sea solo si el año es el antepasado, esto fue necesario debido  
+  a que los cursos del 2o. ciclo de plan fin de semana empiezan antes de que oficialmente inicie  
+  el ciclo. Se obtiene la fecha de sincronización de cursos más antigua, debido a que cuando se  
+  sincroniza la sección del curso, lo hace por la primera fecha que aparece, indistintamente de  
+  la carrera.  
+================================================================================================= */  
+CREATE PROCEDURE dbo.USP_GET_ESTATUS_SINCRONIZACION_MOODLE  
+(@ID_SECCION AS INT = NULL)  
+AS  
+  BEGIN  
+    DECLARE @L_ID_SECCION AS INT        = @ID_SECCION,  
+            @Query        NVARCHAR(1024),  
+            @FECHA_INICIO AS DATETIME   = NULL,  
+            @NO_CICLO     AS CHAR(4)    = NULL; /* SAAR 20181206 1526 REQ.114351 SCC.5205*/  
+  
+    DECLARE @tabla_existe_curso TABLE  
+    (  
+      existe INT NULL  
+    );  
+  
+    SET @Query = N'SELECT count(1) as existe FROM OPENQUERY(moodle_mysql,''select 1 from mdl_course where idnumber = ' + CAST(@L_ID_SECCION AS VARCHAR(50))  
+                 + N';'') AS o';  
+  
+    INSERT INTO @tabla_existe_curso  
+    EXEC sys.sp_executesql @Query;  
+  
+    IF ( SELECT existe  
+         FROM @tabla_existe_curso) > 0  
+      BEGIN  
+        SELECT '1' AS RESPUESTA;  
+  
+        RETURN;  
+      END;  
+  
+    /* Inicio SAAR 20181207 1259 REQ.114351 SCC.5205*/  
+    SET @Query = N'SELECT count(1) as existe FROM OPENQUERY(moodle_mysql2018,''select 1 from mdl_course where idnumber = ' + CAST(@L_ID_SECCION AS VARCHAR(50))  
+                 + N';'') AS o';  
+  
+    DELETE FROM @tabla_existe_curso;  
+  
+    INSERT INTO @tabla_existe_curso  
+    EXEC sys.sp_executesql @Query;  
+  
+    IF ( SELECT existe  
+         FROM @tabla_existe_curso) > 0  
+      BEGIN  
+        SELECT '1' AS RESPUESTA;  
+  
+        RETURN;  
+      END;  
+  
+    /* Fin SAAR 20181207 1259 REQ.114351 SCC.5205*/  
+    SELECT @FECHA_INICIO = CSM.Fecha_Inicio,  
+           @NO_CICLO = S.No_Ciclo /* SAAR 20181206 1526 REQ.114351 SCC.5205*/  
+    FROM Registro.dbo.v_nombramiento_seccion AS S  
+         INNER JOIN Registro.dbo.calendario_sincronizacion_moodle AS CSM ON S.No_Ciclo = CSM.No_Ciclo  
+                                                                            AND S.No_Sede = CSM.No_Sede  
+                                                                            AND S.No_Jornada = CSM.No_Jornada  
+         INNER JOIN SAF.dbo.UNIDAD_ACADEMICO AS CP ON S.no_unidad_op = CP.NO_UNIDAD  
+                                                      AND CP.NO_SEDE = CSM.No_Sede  
+                                                      AND CP.NO_FACULTAD = CSM.No_Facultad  
+                                                      AND CP.NO_CARRERA = CSM.No_Carrera  
+    WHERE S.Status = '01'  
+          AND S.id_seccion = @L_ID_SECCION  
+    ORDER BY CSM.Fecha_Inicio DESC; /*CSRM 20190711 10:11 REQ.120133 SCC.5438*/  
+  
+    IF (@NO_CICLO IS NOT NULL)  
+       AND (( SELECT CI.anio  
+              FROM Registro.dbo.CICLO AS CI  
+              WHERE CI.No_Ciclo = @NO_CICLO) <= YEAR(GETDATE()) - 2) /*CSRM 20190711 10:11 REQ.120133 SCC.5438*/  
+      BEGIN  
+        SELECT '1' AS RESPUESTA;  
+  
+        RETURN;  
+      END;  
+  
+    IF (@FECHA_INICIO IS NULL)  
+      BEGIN  
+        SELECT '0' AS RESPUESTA,  
+               'Su curso no se encuentra disponible, por favor comuníquese al Departamento de Educación Virtual (dev@url.edu.gt).' AS MENSAJE;  
+      END;  
+    ELSE IF (CAST(@FECHA_INICIO AS DATE) = CAST(GETDATE() AS DATE))  
+           BEGIN  
+             SELECT '0' AS RESPUESTA,  
+                    'El curso se encontrará disponible en el transcurso de las próximas 24 horas.  Agradecemos su comprensión.' AS MENSAJE;  
+           END;  
+    /*INICIO SAAR 20181206 1526 REQ.114351 SCC.5205*/  
+    ELSE IF (@FECHA_INICIO > GETDATE())  
+           BEGIN  
+             SELECT '0' AS RESPUESTA,  
+                    'El curso se encontrará disponible a partir de ' + CONVERT(VARCHAR(10), @FECHA_INICIO, 103) + '. Agradecemos su comprensión.' AS MENSAJE;  
+           END;  
+    ELSE  
+           BEGIN  
+             SELECT '0' AS RESPUESTA,  
+                    'Su curso no se encuentra disponible, por favor comuníquese al Departamento de Educación Virtual (dev@url.edu.gt).' AS MENSAJE;  
+           END;  
+  
+    /*FIN SAAR 20181206 1526 REQ.114351 SCC.5205*/  
+    RETURN;  
+  END;  

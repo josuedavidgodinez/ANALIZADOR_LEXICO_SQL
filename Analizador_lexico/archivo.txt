@@ -1,0 +1,32 @@
+est0es_un_iden
+esto_sera_un_idetificador_malodjhsakdsakjdhsakjdhasdkjsahdkjashdksjahdsakjdhsakjdhaskjdhsakjdhsakjdhsakjdhsakjdhsakjdahskjdsahdkjsa
+/* luego sjadsaj akds
+ == +  &&
+RAISERROR
+ANY   
+ANY
+ANY
+ANY
+ANY
+*/
++ + = +  =  &*%^&^^&$GR&^&
+*
+identificador(tabla)campo
+NULL
+
+'este es un string '   ' este es un string mal hecho
+
+4545
+  12  56
+RAISERROR
+AND
+FILLFACTOR
+READ
+ANY
+FOR
+READTEXT
+-- que huevos este comentt
+&&
+ANY
+&&
+ANY                   &&
