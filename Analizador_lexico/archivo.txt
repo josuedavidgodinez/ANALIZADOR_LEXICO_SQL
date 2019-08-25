@@ -14,7 +14,28 @@ ANY
 identificador(tabla)campo
 NULL
 
-'este es un string '   ' este es un string mal hecho
+22.45457
+-- RAISERROR NULL .45457  && ANY == + 8890012.E+909082
+.45457
+
+
+1332211.243534E+458498
+
+
+8890012.E+909082
+
+
+.545454E+909082
+
+54124.
+'este es un
+
+
+
+
+
+
+ string '   ' este es un string mal hecho
 
 4545
   12  56

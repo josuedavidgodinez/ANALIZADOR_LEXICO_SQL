@@ -1,0 +1,122 @@
+linea :0 , primera columna: 0 ultima columna: 14 , est0es_un_iden: Es un@Identificador
+
+Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: 1 primera columna: 0 ultima columna: 131, token malo esto_sera_un_idetificador_malodjhsakdsakjdhsakjdhasdkjsahdkjashdksjahdsakjdhsakjdhaskjdhsakjdhsakjdhsakjdhsakjdhsakjdahskjdsahdkjsa
+el Identificador correcto seria asi: esto_sera_un_idetificador_malod
+
+linea :11 , primera columna: 0 ultima columna: 1 , +: Es un@suma
+
+linea :11 , primera columna: 2 ultima columna: 3 , +: Es un@suma
+
+linea :11 , primera columna: 4 ultima columna: 5 , =: Es un@igual
+
+linea :11 , primera columna: 6 ultima columna: 7 , +: Es un@suma
+
+linea :11 , primera columna: 9 ultima columna: 10 , =: Es un@igual
+
+Simbolo no definido en linea: 11 primera columna: 12 ultima columna: 13 para el token: &
+
+linea :11 , primera columna: 13 ultima columna: 14 , *: Es un@multiplicacion
+
+linea :11 , primera columna: 14 ultima columna: 15 , %: Es un@modular
+
+Simbolo no definido en linea: 11 primera columna: 15 ultima columna: 16 para el token: ^
+
+Simbolo no definido en linea: 11 primera columna: 16 ultima columna: 17 para el token: &
+
+Simbolo no definido en linea: 11 primera columna: 17 ultima columna: 18 para el token: ^
+
+Simbolo no definido en linea: 11 primera columna: 18 ultima columna: 19 para el token: ^
+
+Simbolo no definido en linea: 11 primera columna: 19 ultima columna: 20 para el token: &
+
+Simbolo no definido en linea: 11 primera columna: 20 ultima columna: 21 para el token: $
+
+linea :11 , primera columna: 21 ultima columna: 23 , GR: Es un@Identificador
+
+Simbolo no definido en linea: 11 primera columna: 23 ultima columna: 24 para el token: &
+
+Simbolo no definido en linea: 11 primera columna: 24 ultima columna: 25 para el token: ^
+
+Simbolo no definido en linea: 11 primera columna: 25 ultima columna: 26 para el token: &
+
+linea :12 , primera columna: 0 ultima columna: 1 , *: Es un@multiplicacion
+
+linea :13 , primera columna: 0 ultima columna: 13 , identificador: Es un@Identificador
+
+linea :13 , primera columna: 13 ultima columna: 14 , (: Es un@parentesis_izquierdo
+
+linea :13 , primera columna: 14 ultima columna: 19 , tabla: Es un@Identificador
+
+linea :13 , primera columna: 19 ultima columna: 20 , ): Es un@parentesis_derecho
+
+linea :13 , primera columna: 20 ultima columna: 25 , campo: Es un@Identificador
+
+linea :14 , primera columna: 0 ultima columna: 4 , NULL: Es un@Reservadas
+
+linea :16 , primera columna: 0 ultima columna: 8 , 22.45457: Es un@Float
+
+Float mal escrito ,error en linea: 18 primera columna: 0 ultima columna: 6, token malo .45457
+
+linea :21 , primera columna: 0 ultima columna: 22 , 1332211.243534E+458498: Es un@Float
+
+linea :24 , primera columna: 0 ultima columna: 16 , 8890012.E+909082: Es un@Float
+
+Float mal escrito ,error en linea: 27 primera columna: 0 ultima columna: 15, token malo .545454E+909082
+
+linea :29 , primera columna: 0 ultima columna: 6 , 54124.: Es un@Float
+
+Simbolo no definido en linea: 30 primera columna: 0 ultima columna: 1 para el token: '
+
+linea :30 , primera columna: 1 ultima columna: 5 , este: Es un@Identificador
+
+linea :30 , primera columna: 6 ultima columna: 8 , es: Es un@Identificador
+
+linea :30 , primera columna: 9 ultima columna: 11 , un: Es un@Identificador
+
+linea :37 , primera columna: 1 ultima columna: 7 , string: Es un@Identificador
+
+linea :37 , primera columna: 8 ultima columna: 13 , '   ': Es un@String
+
+linea :37 , primera columna: 14 ultima columna: 18 , este: Es un@Identificador
+
+linea :37 , primera columna: 19 ultima columna: 21 , es: Es un@Identificador
+
+linea :37 , primera columna: 22 ultima columna: 24 , un: Es un@Identificador
+
+linea :37 , primera columna: 25 ultima columna: 31 , string: Es un@Identificador
+
+linea :37 , primera columna: 32 ultima columna: 35 , mal: Es un@Identificador
+
+linea :37 , primera columna: 36 ultima columna: 41 , hecho: Es un@Identificador
+
+linea :39 , primera columna: 0 ultima columna: 4 , 4545: Es un@Int
+
+linea :40 , primera columna: 2 ultima columna: 4 , 12: Es un@Int
+
+linea :40 , primera columna: 6 ultima columna: 8 , 56: Es un@Int
+
+linea :41 , primera columna: 0 ultima columna: 9 , RAISERROR: Es un@Reservadas
+
+linea :42 , primera columna: 0 ultima columna: 3 , AND: Es un@Reservadas
+
+linea :43 , primera columna: 0 ultima columna: 10 , FILLFACTOR: Es un@Reservadas
+
+linea :44 , primera columna: 0 ultima columna: 4 , READ: Es un@Reservadas
+
+linea :45 , primera columna: 0 ultima columna: 3 , ANY: Es un@Reservadas
+
+linea :46 , primera columna: 0 ultima columna: 3 , FOR: Es un@Reservadas
+
+linea :47 , primera columna: 0 ultima columna: 8 , READTEXT: Es un@Reservadas
+
+linea :49 , primera columna: 0 ultima columna: 2 , &&: Es un@and
+
+linea :50 , primera columna: 0 ultima columna: 3 , ANY: Es un@Reservadas
+
+linea :51 , primera columna: 0 ultima columna: 2 , &&: Es un@and
+
+linea :52 , primera columna: 0 ultima columna: 3 , ANY: Es un@Reservadas
+
+linea :52 , primera columna: 22 ultima columna: 24 , &&: Es un@and
+
+FIN

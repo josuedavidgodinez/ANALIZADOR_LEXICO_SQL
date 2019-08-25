@@ -3,10 +3,13 @@ import static code.Tokens.*;
 %%
 %class Lexer
 %type Tokens
+%line
+%column
+
 L=[a-zA-Z]
 guion="_"
 D=[0-9]
-blank =[ ,\t,\r,\n]
+blank =[ \t\r\n]
 
 
 
@@ -22,6 +25,8 @@ Comment = {TraditionalComment} | {EndOfLineComment} | {DocumentationComment}
 
 %{
     public String lexeme;
+     public int columna;
+    public int linea;
 %}
 %%
 ADD
@@ -443,54 +448,58 @@ ADD
 |EXCEPT
 |OUTPUT
 |ZONE
-|EXCEPTION {lexeme=yytext(); return Reservadas;}
+|EXCEPTION {lexeme=yytext(); columna=yycolumn; linea=yyline; return Reservadas;}
+
 {blank} {/*Ignore*/}
+
 {Comment}         {/*Ignore*/}
 
+{L}({L}|{D}|{guion}){1,30} {lexeme=yytext();columna=yycolumn; linea=yyline; return Identificador;}
 
-{L}({L}|{D}|{guion}){1,30} {lexeme=yytext(); return Identificador;}
-({L}({L}|{D}|{guion}){30}) ({L}({L}|{D}|{guion}))+ {lexeme=yytext(); return Error_de_Identificador;}
-("(-"{D}+")")|{D}+ {lexeme=yytext(); return Int;}
+({L}({L}|{D}|{guion}){30}) ({L}({L}|{D}|{guion}))+ {lexeme=yytext(); columna=yycolumn; linea=yyline; return Error_de_Identificador;}
 
-"0"|"1"|"NULL" {lexeme=yytext(); return Bool;}
+("(-"{D}+")")|{D}+ {lexeme=yytext(); columna=yycolumn; linea=yyline;  return Int;}
 
-("'")~("'") {lexeme=yytext(); return String;}
+"0"|"1"|"NULL" {lexeme=yytext(); columna=yycolumn; linea=yyline; return Bool;}
+
+(({D})+ (".") ({D})*)|(({D})+ (".") ({D})*("E+")({D})+ ) {lexeme=yytext(); columna=yycolumn; linea=yyline;  return Float;}
+
+((".")({D})+)|((".")({D})*("E+")({D})+) {lexeme=yytext();columna=yycolumn;  linea=yyline; return Float_malo;}
+
+("'")[^(LineTerminator)]~("'") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return String;}
+("+") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return suma;}
+("-") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return resta;}
+("*") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return multiplicacion;}
+("/") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return division;}
+("%") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return modular;}
+("<") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return menor;}
+("<=") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return menor_igual;}
+(">") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return mayor;}
+(">=") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return mayor_igual;}
+("=") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return igual;}
+("==") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return comparar;}
+("!=") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return diferente;}
+("&&") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return and;}
+("||") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return or;}
+("!") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return exclamacion;}
+(";") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return punto_coma;}
+(",") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return coma;}
+(".") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return punto;}
+("[") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return corchete_derecho;}
+("]") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return corchete_izquierdo;}
+("(") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return parentesis_izquierdo;}
+(")") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return parentesis_derecho;}
+("{") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return llave_izquierda;}
+("}") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return llave_derecha;}
+("[]") {lexeme=yytext(); columna=yycolumn;  linea=yyline;  return doble_corchete;}
+("()") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return doble_parentesis;}
+("{}") {lexeme=yytext(); columna=yycolumn; linea=yyline;  return doble_llave;}
+("@") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return arroba;}
+("#") {lexeme=yytext(); columna=yycolumn;  linea=yyline; return numeral;}
+("##") {lexeme=yytext(); columna=yycolumn;  linea=yyline;  return doble_numeral;}
 
 
 
-("+") {lexeme=yytext(); return suma;}
-("-") {lexeme=yytext(); return resta;}
-("*") {lexeme=yytext(); return multiplicacion;}
-("/") {lexeme=yytext(); return division;}
-("%") {lexeme=yytext(); return modular;}
-("<") {lexeme=yytext(); return menor;}
-("<=") {lexeme=yytext(); return menor_igual;}
-(">") {lexeme=yytext(); return mayor;}
-(">=") {lexeme=yytext(); return mayor_igual;}
-("=") {lexeme=yytext(); return igual;}
-("==") {lexeme=yytext(); return comparar;}
-("!=") {lexeme=yytext(); return diferente;}
-("&&") {lexeme=yytext(); return and;}
-("||") {lexeme=yytext(); return or;}
-("!") {lexeme=yytext(); return exclamacion;}
-(";") {lexeme=yytext(); return punto_coma;}
-(",") {lexeme=yytext(); return coma;}
-(".") {lexeme=yytext(); return punto;}
-("[") {lexeme=yytext(); return corchete_derecho;}
-("]") {lexeme=yytext(); return corchete_izquierdo;}
-("(") {lexeme=yytext(); return parentesis_izquierdo;}
-(")") {lexeme=yytext(); return parentesis_derecho;}
-("{") {lexeme=yytext(); return llave_izquierda;}
-("}") {lexeme=yytext(); return llave_derecha;}
-("[]") {lexeme=yytext(); return doble_corchete;}
-("()") {lexeme=yytext(); return doble_parentesis;}
-("{}") {lexeme=yytext(); return doble_llave;}
-("@") {lexeme=yytext(); return arroba;}
-("#") {lexeme=yytext(); return numeral;}
-("##") {lexeme=yytext(); return doble_numeral;}
-{LineTerminator} {lexeme=yytext(); return salto_linea;}
-(({D})+ (".") ({D})*)|(({D})+ (".") ({D})*("E+")({D})+ ) {lexeme=yytext(); return Float;}
-
- . {lexeme=yytext(); return ERROR;}
+ . {lexeme=yytext(); columna=yycolumn;  linea=yyline;  return ERROR;}
 
 

@@ -6,12 +6,18 @@
 package code;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Reader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
@@ -39,18 +45,15 @@ public class FrmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtEntrada = new javax.swing.JTextField();
         btnAnalizar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtResultado = new javax.swing.JTextArea();
-        btnAnalizar1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        txtEntrada.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-
         btnAnalizar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnAnalizar.setText("Analizar");
+        btnAnalizar.setText("Buscar archivo para analizar...");
         btnAnalizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAnalizarActionPerformed(evt);
@@ -61,13 +64,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
         txtResultado.setRows(5);
         jScrollPane1.setViewportView(txtResultado);
 
-        btnAnalizar1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btnAnalizar1.setText("cargar");
-        btnAnalizar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAnalizar1ActionPerformed(evt);
-            }
-        });
+        jLabel1.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 48)); // NOI18N
+        jLabel1.setText("Analizador Lexico");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,80 +73,138 @@ public class FrmPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1)
-                    .addComponent(txtEntrada, javax.swing.GroupLayout.DEFAULT_SIZE, 342, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAnalizar, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
-                    .addComponent(btnAnalizar1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1)
+                    .addComponent(btnAnalizar, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAnalizar)
-                    .addComponent(txtEntrada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnAnalizar1)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap(71, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(btnAnalizar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+     public void guardararchivo(String texto_archivo,String nombre) throws IOException{
+     
+       String content = texto_archivo;
+     Path path = Paths.get(nombre);
 
+    
+         BufferedWriter writer = Files.newBufferedWriter(path,StandardCharsets.UTF_8, StandardOpenOption.CREATE);
+    {
+        writer.write(content);
+        writer.flush();
+    }
+     
+     }
     private void btnAnalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnalizarActionPerformed
-        
-        int linea=1;
+
+       
         JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory(new java.io.File("."));
         chooser.showOpenDialog(null);
         File archivo = chooser.getSelectedFile();
-       
-      
-        
+        String resultado_externo=""; 
         try {
             Reader lector = new BufferedReader(new FileReader(archivo));
             Lexer lexer = new Lexer(lector);
             String resultado = "";
             while (true) {
                 Tokens tokens = lexer.yylex();
+                int ultima_columna=lexer.columna+lexer.yylength();
                 if (tokens == null) {
                     resultado += "FIN";
                     txtResultado.setText(resultado);
+                      guardararchivo(resultado, archivo.getAbsolutePath().split("\\.")[0]+".out");
                     return;
                 }
                 switch (tokens) {
                     case ERROR:
-                        resultado += "Simbolo no definido en linea: "+linea+" "+lexer.lexeme+"\n";
+                        resultado += "Simbolo no definido en linea: " + lexer.linea + " primera columna: "+lexer.columna +" ultima columna: "+ultima_columna+" para el token: " + lexer.lexeme + "\n\n";
                         break;
-                    case Identificador: case Reservadas: case String:  case Error_de_Identificador: case Bool: case  error_String_no_completado:
-                        resultado += lexer.lexeme + ": Es un " + tokens + "\n";
-                        break;                  
-                    case salto_linea:
-                        linea++;
+
+                    case Error_de_Identificador:
+                        resultado += "Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: " + lexer.linea +" primera columna: "+lexer.columna + " ultima columna: "+ultima_columna+", token malo " + lexer.lexeme + "\n";
+                        resultado += "el Identificador correcto seria asi: " + lexer.lexeme.substring(0, 31) + "\n\n";
                         break;
+
+                    case error_String_no_completado:
+                        resultado += "String mal escrito ,falta una comilla simple al final del String ,error en linea: " + lexer.linea +" primera columna: "+lexer.columna +" ultima columna: "+ultima_columna+ ", token malo " + lexer.lexeme + "\n\n";
+                      
+                        break;
+
+                    case Float_malo:
+                        resultado += "Float mal escrito ,error en linea: " + lexer.linea +" primera columna: "+lexer.columna + " ultima columna: "+ultima_columna+", token malo " + lexer.lexeme + "\n\n";
+                        break;
+
+                    case Identificador:
+                    case Reservadas:
+                    case String:
+                    case Bool:
+                    case Float:
+                    case suma:
+                    case resta:
+                    case multiplicacion:
+                    case division:
+                    case modular:
+                    case menor:
+                    case menor_igual:
+                    case mayor:
+                    case mayor_igual:
+                    case igual:
+                    case comparar:
+                    case diferente:
+                    case and:
+                    case or:
+                    case exclamacion:
+                    case punto_coma:
+                    case coma:
+                    case punto:
+                    case corchete_derecho:
+                    case corchete_izquierdo:
+                    case parentesis_izquierdo:
+                    case parentesis_derecho:
+                    case llave_izquierda:
+                    case llave_derecha:
+                    case doble_corchete:
+                    case doble_parentesis:
+                    case doble_llave:
+                    case arroba:
+                    case numeral:
+                    case doble_numeral:
+                    case Int:
+                        resultado += "linea :"+lexer.linea+" , primera columna: "+lexer.columna +" ultima columna: "+ultima_columna+" , " +lexer.lexeme + ": Es un@" + tokens + "\n\n";
+                        break;
+                    
                     default:
-                        resultado += "Token: " + tokens +" "+lexer.lexeme + "\n";
+                        resultado += "Token: " + tokens + " " + lexer.lexeme + "\n\n";
                         break;
                 }
+                
+                   
             }
+         
+            
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FrmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(FrmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+      
     }//GEN-LAST:event_btnAnalizarActionPerformed
-
-    private void btnAnalizar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnalizar1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAnalizar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,9 +243,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAnalizar;
-    private javax.swing.JButton btnAnalizar1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField txtEntrada;
     private javax.swing.JTextArea txtResultado;
     // End of variables declaration//GEN-END:variables
 }

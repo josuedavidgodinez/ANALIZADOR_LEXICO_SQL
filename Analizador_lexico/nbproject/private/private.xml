@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/godin/Documents/NetBeansProjects/Analizador_lexico/src/code/Principal.java</file>
-            <file>file:/C:/Users/godin/Documents/NetBeansProjects/Analizador_lexico/src/code/Lexer.flex</file>
-            <file>file:/C:/Users/godin/Documents/NetBeansProjects/Analizador_lexico/src/code/FrmPrincipal.java</file>
             <file>file:/C:/Users/godin/Documents/NetBeansProjects/Analizador_lexico/src/code/Tokens.java</file>
+            <file>file:/C:/Users/godin/Documents/NetBeansProjects/Analizador_lexico/src/code/FrmPrincipal.java</file>
+            <file>file:/C:/Users/godin/Documents/NetBeansProjects/Analizador_lexico/src/code/Principal.java</file>
             <file>file:/C:/Users/godin/Documents/NetBeansProjects/Analizador_lexico/src/code/Lexer.java</file>
+            <file>file:/C:/Users/godin/Documents/NetBeansProjects/Analizador_lexico/src/code/Lexer.flex</file>
         </group>
     </open-files>
 </project-private>
