@@ -11,7 +11,7 @@ import java.io.File;
  *
  * @author Charly Ponce
  */
-public class Principal {
+public class CrearAnalizador {
     public static void main(String[] args) {
         String ruta = "src/code/Lexer.flex";
         generarLexer(ruta);
