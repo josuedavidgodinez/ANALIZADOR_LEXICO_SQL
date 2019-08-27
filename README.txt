@@ -27,6 +27,11 @@ para un token determinador, el simbolo '*' para indicar una sucesion
 del simbolo que le precede de 0 a n veces en  y si es un '+' para indicar
 una sucesiondel simbolo que le precede de 1 a n veces en el token, el simbolo 
 '~' para definir una expresion en el token hasta que encuentre un simbolo
-que le sigue al simbolo '~'  
+que le sigue al simbolo '~'.
+-Para hacer robusto el analizador se indago sobre los posibles casos de errores  
+identificando las expresiones regulares y gramaticas que identificaban los errores
+, y para los tokens restantes no definidos se hizo uso de la expresion {.} la cual
+identifico los tokens que no pertenecen al lenguaje minisql.
+
 
 
