@@ -1,0 +1,194 @@
+-------------------------------------------------------------
+--Listar todos los clientes que no tienen dirección
+
+select c.CustomerID,c.PersonID,p.FirstName,p.LastName
+ from Sales.Customer c
+
+inner join Person.Person p on c.PersonID=p.BusinessEntityID
+left outer join Person.BusinessEntityAddress bea on bea.BusinessEntityID=p.BusinessEntityID
+
+where bea.AddressID is null--siempre validar sobre llave primaria que no sean nulos
+------------------------------------------------------------------------------------------------------
+
+
+--Listar todos los productos finales que nunca han sido vendidos.
+/*
+peor pra el rendimiento de la consultas*/
+select * from Production.Product p left join Sales.SalesOrderDetail sod on p.ProductID=sod.ProductID
+where sod.ProductID is null
+
+/*
+mejor pra el rendimiento de la consultas*/
+select * from Production.Product p
+where not exists
+(select * from  sales.SalesOrderDetail s
+where p.ProductID=s.ProductID
+)   
+ 
+ -------------------------------------------------------------------------------------------
+ /*
+ Listar por cada proveedor, la cantidad de compras que se le han realizado, el monto total, la compra mínima y máxima, así como también la primer y última fecha cuando se le compró.
+ */
+ select v.BusinessEntityID,v.Name, COUNT(v.BusinessEntityID) as no_compras,round(max(a.TotalDue),2,0) as compra_max, round(min(a.TotalDue),2,0) as minimo_compra,round(SUM(a.TotalDue),2,0) as suma_compras,max(a.OrderDate) as fecha_mas_actual_compra, min(a.OrderDate) as fecha_minima_compra  from  purchasing.PurchaseOrderHeader a
+ inner join Purchasing.Vendor v on a.VendorID = v.BusinessEntityID
+ group by v.BusinessEntityID,v.Name
+ order by v.BusinessEntityID
+
+ ------------------------------------------
+ --el mismo de arriba pero tambien agrupado por anio y con promedio de compra por anio 
+  select v.Name,DATEPART(YEAR,OrderDate),round(avg(a.TotalDue),2,0) as compra_promedio,COUNT(v.BusinessEntityID) as no_compras  from  purchasing.PurchaseOrderHeader a
+ inner join Purchasing.Vendor v on a.VendorID = v.BusinessEntityID
+ group by v.Name, DATEPART(YEAR,OrderDate)
+ order by v.Name, DATEPART(YEAR,OrderDate)
+ ------------------------------------------------
+ /*
+
+ Mostrar la cantidad de ordenes ( por $) que cumpla con el formato:
+• RANGO
+• CANTIDAD DE ORDENES
+• VALOR TOTAL
+• 0 – 99
+•
+•
+• 100 – 999
+•
+•
+• 1000 – 9999
+•
+•
+• 10000 -
+•
+•
+•
+ */
+
+select t.range as 'rango', count(*) as 'cantidad',round(sum(t.TotalDue),2,0) as 'total'
+from (
+  select case 
+    when poh.TotalDue between  0 and  99 then ' 0-99 '
+    when poh.TotalDue between 100 and 999 then '100-999'
+    when  poh.TotalDue between 1000 and 9999 then '1000-9999'
+    else '>10000' end as range, (poh.TotalDue) as TotalDue
+  from  Purchasing.PurchaseOrderHeader poh) t
+group by t.range
+
+-----------------------------------
+select * from HumanResources.EmployeePayHistory
+
+select BusinessEntityID,  COUNT(BusinessEntityID) from HumanResources.EmployeePayHistory
+group by BusinessEntityID
+
+
+
+-------------------------------------------------------------------------
+--Cuanto a recibido cada empleado (salario ) al día de hoy.
+
+
+select table2.BusinessEntityID,SUM(pay) from (select eph.BusinessEntityID as BusinessEntityID,
+(case  when LEAD(RateChangeDate) over (order by RateChangeDate) is not null then 
+
+  dbo.UFN_HORAS_TRABAJADAs(   RateChangeDate,lead(RateChangeDate) over (order by RateChangeDate) ) 
+  
+  else
+
+ -- case when t.EndDate is not null then
+  dbo.UFN_HORAS_TRABAJADAs(   RateChangeDate,GETDATE() ) 
+ -- else
+  
+ --   dbo.UFN_HORAS_TRABAJADAs(   RateChangeDate,t.EndDate ) 
+ --end
+
+  end)*eph.Rate as pay
+  from HumanResources.EmployeePayHistory eph 
+   
+   /*inner join
+   (
+   select  edh.BusinessEntityID as id,EndDate as enddate,StartDate as startdate from HumanResources.EmployeeDepartmentHistory edh 
+  
+    ) as t on eph.BusinessEntityID=t.id*/
+
+ 
+ 
+) as table2
+group by table2.BusinessEntityID
+order by table2.BusinessEntityID
+
+------------------------------------------------------------------
+
+--Mostrar todos los componentes que se necesitan para fabricar un producto en específico.
+
+select p.ProductID,um.Name,bm.ComponentID ,p2.Name  from Production.BillOfMaterials bm 
+inner join Production.UnitMeasure um on 
+bm.UnitMeasureCode=um.UnitMeasureCode
+inner join Production.Product p on bm.ProductAssemblyID=p.ProductID 
+inner join Production.Product p2 on bm.ComponentID=p2.ProductID
+where p.ProductID=893 --cambiar de id para verificar otros productos
+
+
+--------------------------------------------------------------------------------------------------------------------
+--Parte B
+--Crear los triggers que cumplan con las siguientes restricciones:
+--No permita ingresar una tarjeta de crédito con diferencia de fecha de expiración menor a 30 días.
+create TRIGGER Iu_creditcard
+ON Sales.CreditCard
+INSTEAD OF INSERT
+AS
+BEGIN
+    DECLARE @id int,@type nvarchar(50),@number nvarchar(25),@month tinyint,@year smallint,@modifieddate datetime
+    SELECT @type=CardType,@number=CardNumber,@month=ExpMonth,@year=ExpYear,@modifieddate=ModifiedDate from inserted
+ 
+
+ if(cast(  (cast(@year as varchar(6))+RIGHT('00'+isnull(cast(@month as varchar(2)),'') , 2)   +'01') as date)>=getdate())
+ begin
+ IF (DATEDIFF(DAY,GETDATE(), cast(  (cast(@year as varchar(6))+
+	
+	RIGHT('00'+isnull(cast(@month as varchar(2)),'') , 2)   +'01') as date))between 0 and 30)
+    BEGIN
+        RAISERROR ('You are not allowed to Add These Data.', 10, 11)
+    END
+
+    ELSE
+        INSERT INTO Sales.CreditCard(CardType,CardNumber,ExpMonth,ExpYear,ModifiedDate) values (@type,@number,@month,@year,@modifieddate)
+END
+ 
+ else
+ begin
+  RAISERROR ('You are not allowed to Add These Data.', 10, 11)
+  end
+  end
+     
+	drop trigger Sales.Iu_creditcard
+
+	---------------------------------------------------
+--	No permita ingresar y/o actualizar un correo electrónico asociado a otra persona.
+create TRIGGER II_personalmail
+ON Person.EmailAddress
+INSTEAD OF INSERT
+AS
+BEGIN
+    DECLARE @id int,@address nvarchar(50),@rowguid uniqueidentifier ,@modifieddate datetime
+    SELECT @id=BusinessEntityID,@address=EmailAddress,@rowguid=rowguid,@modifieddate=ModifiedDate from inserted
+ 
+
+ if(exists(select EmailAddress from Person.EmailAddress where EmailAddress=@address))
+ begin
+ RAISERROR ('You are not allowed to Add These Data.', 10, 11);
+ end
+ else
+ begin
+       INSERT INTO Person.EmailAddress(BusinessEntityID,EmailAddress,rowguid,ModifiedDate) values (@id,@address,@rowguid,@modifieddate)
+  end
+  end 
+  
+  create TRIGGER Iu_personalmail
+ON Person.EmailAddress
+instead of  UPDATE
+AS
+BEGIN
+   UPDATE A 
+    SET A.EmailAddress      = ISNULL(A.EmailAddress,B.EmailAddress)      
+    FROM Person.EmailAddress A
+    INNER JOIN INSERTED B
+        ON( A.EmailAddressID = B.EmailAddressID and a.EmailAddressID=b.EmailAddressID)
+    WHERE a.EmailAddress IS NULL  
+  END     

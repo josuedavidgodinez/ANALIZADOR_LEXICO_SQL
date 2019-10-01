@@ -18,9 +18,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,7 +38,8 @@ public class Interfaz extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-
+  analizador_sintactico sintax=new analizador_sintactico();
+    List<String> errores=new ArrayList<>();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -49,6 +53,7 @@ public class Interfaz extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txtResultado = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
+        btnAnalizar1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,29 +72,40 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 48)); // NOI18N
         jLabel1.setText("Analizador Lexico");
 
+        btnAnalizar1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btnAnalizar1.setText("Analisis sintactico");
+        btnAnalizar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAnalizar1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(153, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
-                    .addComponent(btnAnalizar, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE))
+                    .addComponent(btnAnalizar, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
+                    .addComponent(btnAnalizar1, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(150, 150, 150)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(71, Short.MAX_VALUE)
+                .addContainerGap(20, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(btnAnalizar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnAnalizar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnAnalizar1)
+                .addGap(34, 34, 34)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -111,6 +127,7 @@ public class Interfaz extends javax.swing.JFrame {
      }
     private void btnAnalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnalizarActionPerformed
 
+     
        
         JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory(new java.io.File("."));
@@ -122,8 +139,16 @@ public class Interfaz extends javax.swing.JFrame {
             Lexer lexer = new Lexer(lector);
             String resultado = "";
             while (true) {
+                token_object to=new token_object();
+               
                 Tokens tokens = lexer.yylex();
                 int ultima_columna=lexer.columna+lexer.yylength();
+               
+                 to.setToken(tokens);
+                 to.setLine(lexer.linea);
+                 to.setFirst_columnn(lexer.columna);
+                 to.setLast_columnn(ultima_columna);
+                 sintax.lista_tokens.add(to);
                 if (tokens == null) {
                     resultado += "FIN";
                     txtResultado.setText(resultado);
@@ -145,6 +170,11 @@ public class Interfaz extends javax.swing.JFrame {
                       
                         break;
 
+                         case comentario_con_error:
+                        resultado += "comentario mal escrito ,terminarlo: " + lexer.linea +" primera columna: "+lexer.columna +" ultima columna: "+ultima_columna+ ", token malo " + lexer.lexeme + "\n\n";
+                      
+                        break;
+                        
                     case Float_malo:
                         resultado += "Float mal escrito ,error en linea: " + lexer.linea +" primera columna: "+lexer.columna + " ultima columna: "+ultima_columna+", token malo " + lexer.lexeme + "\n\n";
                         break;
@@ -192,19 +222,29 @@ public class Interfaz extends javax.swing.JFrame {
                         resultado += "Token: " + tokens + " " + lexer.lexeme + "\n\n";
                         break;
                 }
-                
+               
                    
-            }
+            } 
+              
          
-            
+           
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        
       
     }//GEN-LAST:event_btnAnalizarActionPerformed
+
+    private void btnAnalizar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnalizar1ActionPerformed
+        token_object t = new token_object();
+        t.setToken(Tokens.final_texto);
+        sintax.lista_tokens.add(t);
+        sintax.analizar();
+        JOptionPane.showMessageDialog(null,sintax.lista_errores);
+    }//GEN-LAST:event_btnAnalizar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -244,6 +284,7 @@ public class Interfaz extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAnalizar;
+    private javax.swing.JButton btnAnalizar1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea txtResultado;

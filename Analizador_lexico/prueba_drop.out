@@ -1,0 +1,105 @@
+Token: DROP DROP
+
+Token: TABLE TABLE
+
+Token: IF IF
+
+Token: EXISTS EXISTS
+
+linea :0 , primera columna: 21 ultima columna: 24 , dbo: Es un@Identificador
+
+linea :0 , primera columna: 24 ultima columna: 25 , .: Es un@punto
+
+linea :0 , primera columna: 25 ultima columna: 32 , Product: Es un@Identificador
+
+linea :0 , primera columna: 32 ultima columna: 33 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: INDEX INDEX
+
+linea :3 , primera columna: 11 ultima columna: 21 , index_name: Es un@Identificador
+
+Token: ON ON
+
+linea :3 , primera columna: 25 ultima columna: 35 , table_name: Es un@Identificador
+
+linea :3 , primera columna: 35 ultima columna: 36 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: INDEX INDEX
+
+linea :6 , primera columna: 11 ultima columna: 23 , [table_name]: Es un@Identificador
+
+linea :6 , primera columna: 23 ultima columna: 24 , .: Es un@punto
+
+linea :6 , primera columna: 24 ultima columna: 34 , index_name: Es un@Identificador
+
+linea :6 , primera columna: 34 ultima columna: 35 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: INDEX INDEX
+
+Token: IF IF
+
+Token: EXISTS EXISTS
+
+linea :10 , primera columna: 21 ultima columna: 36 , [ix_cust_email]: Es un@Identificador
+
+Token: ON ON
+
+linea :11 , primera columna: 3 ultima columna: 8 , sales: Es un@Identificador
+
+linea :11 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+
+linea :11 , primera columna: 9 ultima columna: 18 , customers: Es un@Identificador
+
+linea :11 , primera columna: 18 ultima columna: 19 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: DATABASE DATABASE
+
+linea :15 , primera columna: 14 ultima columna: 19 , Sales: Es un@Identificador
+
+linea :15 , primera columna: 19 ultima columna: 20 , ,: Es un@coma
+
+linea :15 , primera columna: 21 ultima columna: 29 , NewSales: Es un@Identificador
+
+linea :15 , primera columna: 29 ultima columna: 30 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: DATABASE DATABASE
+
+linea :18 , primera columna: 14 ultima columna: 32 , sales_snapshot0600: Es un@Identificador
+
+linea :18 , primera columna: 32 ultima columna: 33 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FIN: 32 , sales_snapshot0600: Es un@Identificador
+
+linea :23 , primera columna: 32 ultima columna: 33 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FINma columna: 32 , sales_snapshot0600: Es un@Identificador
+
+linea :18 , primera columna: 32 ultima columna: 33 , ;: Es un@punto_coma
+
+linea :19 , primera columna: 0 ultima columna: 2 , GO: Es un@Reservadas
+
+FIN

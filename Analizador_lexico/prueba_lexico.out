@@ -1,0 +1,201 @@
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :0 , primera columna: 12 ultima columna: 15 , dbo: Es un@Identificador
+
+linea :0 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :0 , primera columna: 16 ultima columna: 19 , dsa: Es un@Identificador
+
+Token: ADD ADD
+
+linea :1 , primera columna: 4 ultima columna: 8 , dasd: Es un@Identificador
+
+Token: NUMERIC NUMERIC
+
+linea :1 , primera columna: 16 ultima columna: 17 , (: Es un@parentesis_izquierdo
+
+linea :1 , primera columna: 17 ultima columna: 19 , 15: Es un@Int
+
+linea :1 , primera columna: 19 ultima columna: 20 , ,: Es un@coma
+
+linea :1 , primera columna: 20 ultima columna: 22 , 15: Es un@Int
+
+linea :1 , primera columna: 22 ultima columna: 23 , ): Es un@parentesis_derecho
+
+linea :1 , primera columna: 23 ultima columna: 24 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: DATABASE DATABASE
+
+linea :3 , primera columna: 15 ultima columna: 18 , dbo: Es un@Identificador
+
+Token: MODIFY MODIFY
+
+Token: NAME NAME
+
+linea :4 , primera columna: 12 ultima columna: 13 , =: Es un@igual
+
+linea :4 , primera columna: 14 ultima columna: 19 , nuevo: Es un@Identificador
+
+linea :4 , primera columna: 19 ultima columna: 20 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :6 , primera columna: 12 ultima columna: 19 , Persons: Es un@Identificador
+
+Token: ADD ADD
+
+Token: CHECK CHECK
+
+linea :7 , primera columna: 11 ultima columna: 12 , (: Es un@parentesis_izquierdo
+
+linea :7 , primera columna: 12 ultima columna: 15 , Age: Es un@Identificador
+
+linea :7 , primera columna: 15 ultima columna: 17 , >=: Es un@mayor_igual
+
+linea :7 , primera columna: 17 ultima columna: 19 , 18: Es un@Int
+
+Token: AND AND
+
+linea :7 , primera columna: 24 ultima columna: 30 , nombre: Es un@Identificador
+
+Token: LIKE LIKE
+
+linea :7 , primera columna: 36 ultima columna: 41 , 'ASD': Es un@String
+
+linea :7 , primera columna: 41 ultima columna: 42 , ): Es un@parentesis_derecho
+
+linea :7 , primera columna: 42 ultima columna: 43 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :9 , primera columna: 12 ultima columna: 18 , Person: Es un@Identificador
+
+linea :9 , primera columna: 18 ultima columna: 19 , .: Es un@punto
+
+linea :9 , primera columna: 19 ultima columna: 23 , pepe: Es un@Identificador
+
+Token: ADD ADD
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :10 , primera columna: 15 ultima columna: 26 , AK_Password: Es un@Identificador
+
+Token: UNIQUE UNIQUE
+
+linea :10 , primera columna: 34 ultima columna: 35 , (: Es un@parentesis_izquierdo
+
+linea :10 , primera columna: 35 ultima columna: 47 , PasswordHash: Es un@Identificador
+
+linea :10 , primera columna: 47 ultima columna: 48 , ,: Es un@coma
+
+linea :10 , primera columna: 49 ultima columna: 61 , PasswordSalt: Es un@Identificador
+
+linea :10 , primera columna: 61 ultima columna: 62 , ): Es un@parentesis_derecho
+
+linea :10 , primera columna: 62 ultima columna: 63 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: INDEX INDEX
+
+linea :12 , primera columna: 12 ultima columna: 29 , idxcci_cci_target: Es un@Identificador
+
+Token: ON ON
+
+linea :12 , primera columna: 33 ultima columna: 43 , cci_target: Es un@Identificador
+
+Token: REBUILD REBUILD
+
+linea :12 , primera columna: 51 ultima columna: 52 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :15 , primera columna: 12 ultima columna: 17 , sales: Es un@Identificador
+
+linea :15 , primera columna: 17 ultima columna: 18 , .: Es un@punto
+
+linea :15 , primera columna: 18 ultima columna: 28 , quotations: Es un@Identificador
+
+Token: ADD ADD
+
+linea :17 , primera columna: 8 ultima columna: 14 , amount: Es un@Identificador
+
+Token: DECIMAL DECIMAL
+
+linea :17 , primera columna: 23 ultima columna: 24 , (: Es un@parentesis_izquierdo
+
+linea :17 , primera columna: 24 ultima columna: 26 , 10: Es un@Int
+
+linea :17 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+linea :17 , primera columna: 28 ultima columna: 29 , 2: Es un@Int
+
+linea :17 , primera columna: 29 ultima columna: 30 , ): Es un@parentesis_derecho
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :17 , primera columna: 39 ultima columna: 40 , ,: Es un@coma
+
+linea :18 , primera columna: 8 ultima columna: 21 , customer_name: Es un@Identificador
+
+Token: VARCHAR VARCHAR
+
+linea :18 , primera columna: 30 ultima columna: 31 , (: Es un@parentesis_izquierdo
+
+linea :18 , primera columna: 31 ultima columna: 33 , 50: Es un@Int
+
+linea :18 , primera columna: 33 ultima columna: 34 , ): Es un@parentesis_derecho
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :18 , primera columna: 43 ultima columna: 44 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FINultima columna: 44 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FINtima columna: 44 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FINtesis_izquierdo
+
+linea :18 , primera columna: 31 ultima columna: 33 , 50: Es un@Int
+
+linea :18 , primera columna: 33 ultima columna: 34 , ): Es un@parentesis_derecho
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :18 , primera columna: 43 ultima columna: 44 , ;: Es un@punto_coma
+
+linea :19 , primera columna: 8 ultima columna: 10 , GO: Es un@Reservadas
+
+FIN

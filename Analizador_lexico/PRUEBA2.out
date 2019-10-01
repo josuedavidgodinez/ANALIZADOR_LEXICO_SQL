@@ -1,0 +1,966 @@
+Token: SELECT SELECT
+
+linea :1 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
+
+Token: FROM FROM
+
+linea :2 , primera columna: 5 ultima columna: 11 , Portal: Es un@Identificador
+
+linea :2 , primera columna: 11 ultima columna: 12 , .: Es un@punto
+
+linea :2 , primera columna: 12 ultima columna: 15 , dbo: Es un@Identificador
+
+linea :2 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :2 , primera columna: 16 ultima columna: 27 , TBL_USUARIO: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :3 , primera columna: 29 ultima columna: 38 , user_type: Es un@Identificador
+
+linea :3 , primera columna: 39 ultima columna: 40 , =: Es un@igual
+
+linea :3 , primera columna: 41 ultima columna: 44 , '2': Es un@String
+
+Token: AND AND
+
+linea :4 , primera columna: 33 ultima columna: 46 , Status_Correo: Es un@Identificador
+
+linea :4 , primera columna: 47 ultima columna: 48 , =: Es un@igual
+
+linea :4 , primera columna: 49 ultima columna: 52 , '0': Es un@String
+
+Token: AND AND
+
+linea :5 , primera columna: 33 ultima columna: 45 , login_correo: Es un@Identificador
+
+Token: IS IS
+
+Token: NULL NULL
+
+Token: AND AND
+
+Token: EXISTS EXISTS
+
+linea :6 , primera columna: 40 ultima columna: 41 , (: Es un@parentesis_izquierdo
+
+Token: SELECT SELECT
+
+linea :6 , primera columna: 49 ultima columna: 50 , *: Es un@multiplicacion
+
+Token: FROM FROM
+
+linea :7 , primera columna: 47 ultima columna: 55 , Registro: Es un@Identificador
+
+linea :7 , primera columna: 55 ultima columna: 56 , .: Es un@punto
+
+linea :7 , primera columna: 56 ultima columna: 59 , dbo: Es un@Identificador
+
+linea :7 , primera columna: 59 ultima columna: 60 , .: Es un@punto
+
+linea :7 , primera columna: 60 ultima columna: 74 , v_nombramiento: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :8 , primera columna: 48 ultima columna: 62 , No_Catedratico: Es un@Identificador
+
+linea :8 , primera columna: 63 ultima columna: 64 , =: Es un@igual
+
+linea :8 , primera columna: 65 ultima columna: 71 , carnet: Es un@Identificador
+
+Token: AND AND
+
+linea :9 , primera columna: 52 ultima columna: 60 , No_Ciclo: Es un@Identificador
+
+linea :9 , primera columna: 61 ultima columna: 62 , =: Es un@igual
+
+linea :9 , primera columna: 63 ultima columna: 69 , '1903': Es un@String
+
+linea :9 , primera columna: 69 ultima columna: 70 , ): Es un@parentesis_derecho
+
+linea :9 , primera columna: 70 ultima columna: 71 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: PROCEDURE PROCEDURE
+
+linea :33 , primera columna: 17 ultima columna: 20 , dbo: Es un@Identificador
+
+linea :33 , primera columna: 20 ultima columna: 21 , .: Es un@punto
+
+Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: 33 primera columna: 21 ultima columna: 58, token malo USP_GET_ESTATUS_SINCRONIZACION_MOODLE
+el Identificador correcto seria asi: USP_GET_ESTATUS_SINCRONIZACION_
+
+linea :34 , primera columna: 0 ultima columna: 1 , (: Es un@parentesis_izquierdo
+
+linea :34 , primera columna: 1 ultima columna: 2 , @: Es un@arroba
+
+linea :34 , primera columna: 2 ultima columna: 12 , ID_SECCION: Es un@Identificador
+
+linea :34 , primera columna: 13 ultima columna: 15 , AS: Es un@Reservadas
+
+Token: INT INT
+
+linea :34 , primera columna: 20 ultima columna: 21 , =: Es un@igual
+
+Token: NULL NULL
+
+linea :34 , primera columna: 26 ultima columna: 27 , ): Es un@parentesis_derecho
+
+linea :35 , primera columna: 0 ultima columna: 2 , AS: Es un@Reservadas
+
+linea :36 , primera columna: 2 ultima columna: 7 , BEGIN: Es un@Reservadas
+
+Token: DECLARE DECLARE
+
+linea :37 , primera columna: 12 ultima columna: 13 , @: Es un@arroba
+
+linea :37 , primera columna: 13 ultima columna: 25 , L_ID_SECCION: Es un@Identificador
+
+linea :37 , primera columna: 26 ultima columna: 28 , AS: Es un@Reservadas
+
+Token: INT INT
+
+linea :37 , primera columna: 40 ultima columna: 41 , =: Es un@igual
+
+linea :37 , primera columna: 42 ultima columna: 43 , @: Es un@arroba
+
+linea :37 , primera columna: 43 ultima columna: 53 , ID_SECCION: Es un@Identificador
+
+linea :37 , primera columna: 53 ultima columna: 54 , ,: Es un@coma
+
+linea :38 , primera columna: 12 ultima columna: 13 , @: Es un@arroba
+
+linea :38 , primera columna: 13 ultima columna: 18 , Query: Es un@Identificador
+
+linea :38 , primera columna: 26 ultima columna: 34 , NVARCHAR: Es un@Identificador
+
+linea :38 , primera columna: 34 ultima columna: 35 , (: Es un@parentesis_izquierdo
+
+linea :38 , primera columna: 35 ultima columna: 39 , 1024: Es un@Int
+
+linea :38 , primera columna: 39 ultima columna: 40 , ): Es un@parentesis_derecho
+
+linea :38 , primera columna: 40 ultima columna: 41 , ,: Es un@coma
+
+linea :39 , primera columna: 12 ultima columna: 13 , @: Es un@arroba
+
+linea :39 , primera columna: 13 ultima columna: 25 , FECHA_INICIO: Es un@Identificador
+
+linea :39 , primera columna: 26 ultima columna: 28 , AS: Es un@Reservadas
+
+linea :39 , primera columna: 29 ultima columna: 37 , DATETIME: Es un@Identificador
+
+linea :39 , primera columna: 40 ultima columna: 41 , =: Es un@igual
+
+Token: NULL NULL
+
+linea :39 , primera columna: 46 ultima columna: 47 , ,: Es un@coma
+
+linea :40 , primera columna: 12 ultima columna: 13 , @: Es un@arroba
+
+linea :40 , primera columna: 13 ultima columna: 21 , NO_CICLO: Es un@Identificador
+
+linea :40 , primera columna: 26 ultima columna: 28 , AS: Es un@Reservadas
+
+linea :40 , primera columna: 29 ultima columna: 33 , CHAR: Es un@Reservadas
+
+linea :40 , primera columna: 33 ultima columna: 34 , (: Es un@parentesis_izquierdo
+
+linea :40 , primera columna: 34 ultima columna: 35 , 4: Es un@Int
+
+linea :40 , primera columna: 35 ultima columna: 36 , ): Es un@parentesis_derecho
+
+linea :40 , primera columna: 40 ultima columna: 41 , =: Es un@igual
+
+Token: NULL NULL
+
+linea :40 , primera columna: 46 ultima columna: 47 , ;: Es un@punto_coma
+
+Token: DECLARE DECLARE
+
+linea :42 , primera columna: 12 ultima columna: 13 , @: Es un@arroba
+
+linea :42 , primera columna: 13 ultima columna: 31 , tabla_existe_curso: Es un@Identificador
+
+Token: TABLE TABLE
+
+linea :43 , primera columna: 4 ultima columna: 5 , (: Es un@parentesis_izquierdo
+
+linea :44 , primera columna: 6 ultima columna: 12 , existe: Es un@Identificador
+
+Token: INT INT
+
+Token: NULL NULL
+
+linea :45 , primera columna: 4 ultima columna: 5 , ): Es un@parentesis_derecho
+
+linea :45 , primera columna: 5 ultima columna: 6 , ;: Es un@punto_coma
+
+Token: SET SET
+
+linea :47 , primera columna: 8 ultima columna: 9 , @: Es un@arroba
+
+linea :47 , primera columna: 9 ultima columna: 14 , Query: Es un@Identificador
+
+linea :47 , primera columna: 15 ultima columna: 16 , =: Es un@igual
+
+Simbolo no definido en linea: 47 primera columna: 17 ultima columna: 18 para el token: N
+
+linea :47 , primera columna: 18 ultima columna: 74 , 'SELECT count(1) as existe FROM OPENQUERY(moodle_mysql,': Es un@String
+
+linea :47 , primera columna: 74 ultima columna: 118 , 'select 1 from mdl_course where idnumber = ': Es un@String
+
+linea :47 , primera columna: 119 ultima columna: 120 , +: Es un@suma
+
+linea :47 , primera columna: 121 ultima columna: 125 , CAST: Es un@Reservadas
+
+linea :47 , primera columna: 125 ultima columna: 126 , (: Es un@parentesis_izquierdo
+
+linea :47 , primera columna: 126 ultima columna: 127 , @: Es un@arroba
+
+linea :47 , primera columna: 127 ultima columna: 139 , L_ID_SECCION: Es un@Identificador
+
+linea :47 , primera columna: 140 ultima columna: 142 , AS: Es un@Reservadas
+
+linea :47 , primera columna: 143 ultima columna: 150 , VARCHAR: Es un@Reservadas
+
+linea :47 , primera columna: 150 ultima columna: 151 , (: Es un@parentesis_izquierdo
+
+linea :47 , primera columna: 151 ultima columna: 153 , 50: Es un@Int
+
+linea :47 , primera columna: 153 ultima columna: 154 , ): Es un@parentesis_derecho
+
+linea :47 , primera columna: 154 ultima columna: 155 , ): Es un@parentesis_derecho
+
+linea :48 , primera columna: 17 ultima columna: 18 , +: Es un@suma
+
+Simbolo no definido en linea: 48 primera columna: 19 ultima columna: 20 para el token: N
+
+linea :48 , primera columna: 20 ultima columna: 23 , ';': Es un@String
+
+linea :48 , primera columna: 23 ultima columna: 31 , ') AS o': Es un@String
+
+linea :48 , primera columna: 31 ultima columna: 32 , ;: Es un@punto_coma
+
+Token: INSERT INSERT
+
+Token: INTO INTO
+
+linea :50 , primera columna: 16 ultima columna: 17 , @: Es un@arroba
+
+linea :50 , primera columna: 17 ultima columna: 35 , tabla_existe_curso: Es un@Identificador
+
+Token: EXEC EXEC
+
+linea :51 , primera columna: 9 ultima columna: 12 , sys: Es un@Identificador
+
+linea :51 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+
+linea :51 , primera columna: 13 ultima columna: 26 , sp_executesql: Es un@Identificador
+
+linea :51 , primera columna: 27 ultima columna: 28 , @: Es un@arroba
+
+linea :51 , primera columna: 28 ultima columna: 33 , Query: Es un@Identificador
+
+linea :51 , primera columna: 33 ultima columna: 34 , ;: Es un@punto_coma
+
+linea :53 , primera columna: 4 ultima columna: 6 , IF: Es un@Reservadas
+
+linea :53 , primera columna: 7 ultima columna: 8 , (: Es un@parentesis_izquierdo
+
+Token: SELECT SELECT
+
+linea :53 , primera columna: 16 ultima columna: 22 , existe: Es un@Identificador
+
+Token: FROM FROM
+
+linea :54 , primera columna: 14 ultima columna: 15 , @: Es un@arroba
+
+linea :54 , primera columna: 15 ultima columna: 33 , tabla_existe_curso: Es un@Identificador
+
+linea :54 , primera columna: 33 ultima columna: 34 , ): Es un@parentesis_derecho
+
+linea :54 , primera columna: 35 ultima columna: 36 , >: Es un@mayor
+
+linea :54 , primera columna: 37 ultima columna: 38 , 0: Es un@Int
+
+linea :55 , primera columna: 6 ultima columna: 11 , BEGIN: Es un@Reservadas
+
+Token: SELECT SELECT
+
+linea :56 , primera columna: 15 ultima columna: 18 , '1': Es un@String
+
+linea :56 , primera columna: 19 ultima columna: 21 , AS: Es un@Reservadas
+
+linea :56 , primera columna: 22 ultima columna: 31 , RESPUESTA: Es un@Identificador
+
+linea :56 , primera columna: 31 ultima columna: 32 , ;: Es un@punto_coma
+
+linea :58 , primera columna: 8 ultima columna: 14 , RETURN: Es un@Reservadas
+
+linea :58 , primera columna: 14 ultima columna: 15 , ;: Es un@punto_coma
+
+Token: END END
+
+linea :59 , primera columna: 9 ultima columna: 10 , ;: Es un@punto_coma
+
+Token: SET SET
+
+linea :62 , primera columna: 8 ultima columna: 9 , @: Es un@arroba
+
+linea :62 , primera columna: 9 ultima columna: 14 , Query: Es un@Identificador
+
+linea :62 , primera columna: 15 ultima columna: 16 , =: Es un@igual
+
+Simbolo no definido en linea: 62 primera columna: 17 ultima columna: 18 para el token: N
+
+linea :62 , primera columna: 18 ultima columna: 78 , 'SELECT count(1) as existe FROM OPENQUERY(moodle_mysql2018,': Es un@String
+
+linea :62 , primera columna: 78 ultima columna: 122 , 'select 1 from mdl_course where idnumber = ': Es un@String
+
+linea :62 , primera columna: 123 ultima columna: 124 , +: Es un@suma
+
+linea :62 , primera columna: 125 ultima columna: 129 , CAST: Es un@Reservadas
+
+linea :62 , primera columna: 129 ultima columna: 130 , (: Es un@parentesis_izquierdo
+
+linea :62 , primera columna: 130 ultima columna: 131 , @: Es un@arroba
+
+linea :62 , primera columna: 131 ultima columna: 143 , L_ID_SECCION: Es un@Identificador
+
+linea :62 , primera columna: 144 ultima columna: 146 , AS: Es un@Reservadas
+
+linea :62 , primera columna: 147 ultima columna: 154 , VARCHAR: Es un@Reservadas
+
+linea :62 , primera columna: 154 ultima columna: 155 , (: Es un@parentesis_izquierdo
+
+linea :62 , primera columna: 155 ultima columna: 157 , 50: Es un@Int
+
+linea :62 , primera columna: 157 ultima columna: 158 , ): Es un@parentesis_derecho
+
+linea :62 , primera columna: 158 ultima columna: 159 , ): Es un@parentesis_derecho
+
+linea :63 , primera columna: 17 ultima columna: 18 , +: Es un@suma
+
+Simbolo no definido en linea: 63 primera columna: 19 ultima columna: 20 para el token: N
+
+linea :63 , primera columna: 20 ultima columna: 23 , ';': Es un@String
+
+linea :63 , primera columna: 23 ultima columna: 31 , ') AS o': Es un@String
+
+linea :63 , primera columna: 31 ultima columna: 32 , ;: Es un@punto_coma
+
+Token: DELETE DELETE
+
+Token: FROM FROM
+
+linea :65 , primera columna: 16 ultima columna: 17 , @: Es un@arroba
+
+linea :65 , primera columna: 17 ultima columna: 35 , tabla_existe_curso: Es un@Identificador
+
+linea :65 , primera columna: 35 ultima columna: 36 , ;: Es un@punto_coma
+
+Token: INSERT INSERT
+
+Token: INTO INTO
+
+linea :67 , primera columna: 16 ultima columna: 17 , @: Es un@arroba
+
+linea :67 , primera columna: 17 ultima columna: 35 , tabla_existe_curso: Es un@Identificador
+
+Token: EXEC EXEC
+
+linea :68 , primera columna: 9 ultima columna: 12 , sys: Es un@Identificador
+
+linea :68 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+
+linea :68 , primera columna: 13 ultima columna: 26 , sp_executesql: Es un@Identificador
+
+linea :68 , primera columna: 27 ultima columna: 28 , @: Es un@arroba
+
+linea :68 , primera columna: 28 ultima columna: 33 , Query: Es un@Identificador
+
+linea :68 , primera columna: 33 ultima columna: 34 , ;: Es un@punto_coma
+
+linea :70 , primera columna: 4 ultima columna: 6 , IF: Es un@Reservadas
+
+linea :70 , primera columna: 7 ultima columna: 8 , (: Es un@parentesis_izquierdo
+
+Token: SELECT SELECT
+
+linea :70 , primera columna: 16 ultima columna: 22 , existe: Es un@Identificador
+
+Token: FROM FROM
+
+linea :71 , primera columna: 14 ultima columna: 15 , @: Es un@arroba
+
+linea :71 , primera columna: 15 ultima columna: 33 , tabla_existe_curso: Es un@Identificador
+
+linea :71 , primera columna: 33 ultima columna: 34 , ): Es un@parentesis_derecho
+
+linea :71 , primera columna: 35 ultima columna: 36 , >: Es un@mayor
+
+linea :71 , primera columna: 37 ultima columna: 38 , 0: Es un@Int
+
+linea :72 , primera columna: 6 ultima columna: 11 , BEGIN: Es un@Reservadas
+
+Token: SELECT SELECT
+
+linea :73 , primera columna: 15 ultima columna: 18 , '1': Es un@String
+
+linea :73 , primera columna: 19 ultima columna: 21 , AS: Es un@Reservadas
+
+linea :73 , primera columna: 22 ultima columna: 31 , RESPUESTA: Es un@Identificador
+
+linea :73 , primera columna: 31 ultima columna: 32 , ;: Es un@punto_coma
+
+linea :75 , primera columna: 8 ultima columna: 14 , RETURN: Es un@Reservadas
+
+linea :75 , primera columna: 14 ultima columna: 15 , ;: Es un@punto_coma
+
+Token: END END
+
+linea :76 , primera columna: 9 ultima columna: 10 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :79 , primera columna: 11 ultima columna: 12 , @: Es un@arroba
+
+linea :79 , primera columna: 12 ultima columna: 24 , FECHA_INICIO: Es un@Identificador
+
+linea :79 , primera columna: 25 ultima columna: 26 , =: Es un@igual
+
+linea :79 , primera columna: 27 ultima columna: 30 , CSM: Es un@Identificador
+
+linea :79 , primera columna: 30 ultima columna: 31 , .: Es un@punto
+
+linea :79 , primera columna: 31 ultima columna: 43 , Fecha_Inicio: Es un@Identificador
+
+linea :79 , primera columna: 43 ultima columna: 44 , ,: Es un@coma
+
+linea :80 , primera columna: 11 ultima columna: 12 , @: Es un@arroba
+
+linea :80 , primera columna: 12 ultima columna: 20 , NO_CICLO: Es un@Identificador
+
+linea :80 , primera columna: 21 ultima columna: 22 , =: Es un@igual
+
+Simbolo no definido en linea: 80 primera columna: 23 ultima columna: 24 para el token: S
+
+linea :80 , primera columna: 24 ultima columna: 25 , .: Es un@punto
+
+linea :80 , primera columna: 25 ultima columna: 33 , No_Ciclo: Es un@Identificador
+
+Token: FROM FROM
+
+linea :81 , primera columna: 9 ultima columna: 17 , Registro: Es un@Identificador
+
+linea :81 , primera columna: 17 ultima columna: 18 , .: Es un@punto
+
+linea :81 , primera columna: 18 ultima columna: 21 , dbo: Es un@Identificador
+
+linea :81 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+
+linea :81 , primera columna: 22 ultima columna: 44 , v_nombramiento_seccion: Es un@Identificador
+
+linea :81 , primera columna: 45 ultima columna: 47 , AS: Es un@Reservadas
+
+Simbolo no definido en linea: 81 primera columna: 48 ultima columna: 49 para el token: S
+
+Token: INNER INNER
+
+Token: JOIN JOIN
+
+linea :82 , primera columna: 20 ultima columna: 28 , Registro: Es un@Identificador
+
+linea :82 , primera columna: 28 ultima columna: 29 , .: Es un@punto
+
+linea :82 , primera columna: 29 ultima columna: 32 , dbo: Es un@Identificador
+
+linea :82 , primera columna: 32 ultima columna: 33 , .: Es un@punto
+
+linea :82 , primera columna: 33 ultima columna: 64 , calendario_sincronizacion_moodl: Es un@Identificador
+
+Simbolo no definido en linea: 82 primera columna: 64 ultima columna: 65 para el token: e
+
+linea :82 , primera columna: 66 ultima columna: 68 , AS: Es un@Reservadas
+
+linea :82 , primera columna: 69 ultima columna: 72 , CSM: Es un@Identificador
+
+Token: ON ON
+
+Simbolo no definido en linea: 82 primera columna: 76 ultima columna: 77 para el token: S
+
+linea :82 , primera columna: 77 ultima columna: 78 , .: Es un@punto
+
+linea :82 , primera columna: 78 ultima columna: 86 , No_Ciclo: Es un@Identificador
+
+linea :82 , primera columna: 87 ultima columna: 88 , =: Es un@igual
+
+linea :82 , primera columna: 89 ultima columna: 92 , CSM: Es un@Identificador
+
+linea :82 , primera columna: 92 ultima columna: 93 , .: Es un@punto
+
+linea :82 , primera columna: 93 ultima columna: 101 , No_Ciclo: Es un@Identificador
+
+Token: AND AND
+
+Simbolo no definido en linea: 83 primera columna: 80 ultima columna: 81 para el token: S
+
+linea :83 , primera columna: 81 ultima columna: 82 , .: Es un@punto
+
+linea :83 , primera columna: 82 ultima columna: 89 , No_Sede: Es un@Identificador
+
+linea :83 , primera columna: 90 ultima columna: 91 , =: Es un@igual
+
+linea :83 , primera columna: 92 ultima columna: 95 , CSM: Es un@Identificador
+
+linea :83 , primera columna: 95 ultima columna: 96 , .: Es un@punto
+
+linea :83 , primera columna: 96 ultima columna: 103 , No_Sede: Es un@Identificador
+
+Token: AND AND
+
+Simbolo no definido en linea: 84 primera columna: 80 ultima columna: 81 para el token: S
+
+linea :84 , primera columna: 81 ultima columna: 82 , .: Es un@punto
+
+linea :84 , primera columna: 82 ultima columna: 92 , No_Jornada: Es un@Identificador
+
+linea :84 , primera columna: 93 ultima columna: 94 , =: Es un@igual
+
+linea :84 , primera columna: 95 ultima columna: 98 , CSM: Es un@Identificador
+
+linea :84 , primera columna: 98 ultima columna: 99 , .: Es un@punto
+
+linea :84 , primera columna: 99 ultima columna: 109 , No_Jornada: Es un@Identificador
+
+Token: INNER INNER
+
+Token: JOIN JOIN
+
+linea :85 , primera columna: 20 ultima columna: 23 , SAF: Es un@Identificador
+
+linea :85 , primera columna: 23 ultima columna: 24 , .: Es un@punto
+
+linea :85 , primera columna: 24 ultima columna: 27 , dbo: Es un@Identificador
+
+linea :85 , primera columna: 27 ultima columna: 28 , .: Es un@punto
+
+linea :85 , primera columna: 28 ultima columna: 44 , UNIDAD_ACADEMICO: Es un@Identificador
+
+linea :85 , primera columna: 45 ultima columna: 47 , AS: Es un@Reservadas
+
+linea :85 , primera columna: 48 ultima columna: 50 , CP: Es un@Identificador
+
+Token: ON ON
+
+Simbolo no definido en linea: 85 primera columna: 54 ultima columna: 55 para el token: S
+
+linea :85 , primera columna: 55 ultima columna: 56 , .: Es un@punto
+
+linea :85 , primera columna: 56 ultima columna: 68 , no_unidad_op: Es un@Identificador
+
+linea :85 , primera columna: 69 ultima columna: 70 , =: Es un@igual
+
+linea :85 , primera columna: 71 ultima columna: 73 , CP: Es un@Identificador
+
+linea :85 , primera columna: 73 ultima columna: 74 , .: Es un@punto
+
+linea :85 , primera columna: 74 ultima columna: 83 , NO_UNIDAD: Es un@Identificador
+
+Token: AND AND
+
+linea :86 , primera columna: 58 ultima columna: 60 , CP: Es un@Identificador
+
+linea :86 , primera columna: 60 ultima columna: 61 , .: Es un@punto
+
+linea :86 , primera columna: 61 ultima columna: 68 , NO_SEDE: Es un@Identificador
+
+linea :86 , primera columna: 69 ultima columna: 70 , =: Es un@igual
+
+linea :86 , primera columna: 71 ultima columna: 74 , CSM: Es un@Identificador
+
+linea :86 , primera columna: 74 ultima columna: 75 , .: Es un@punto
+
+linea :86 , primera columna: 75 ultima columna: 82 , No_Sede: Es un@Identificador
+
+Token: AND AND
+
+linea :87 , primera columna: 58 ultima columna: 60 , CP: Es un@Identificador
+
+linea :87 , primera columna: 60 ultima columna: 61 , .: Es un@punto
+
+linea :87 , primera columna: 61 ultima columna: 72 , NO_FACULTAD: Es un@Identificador
+
+linea :87 , primera columna: 73 ultima columna: 74 , =: Es un@igual
+
+linea :87 , primera columna: 75 ultima columna: 78 , CSM: Es un@Identificador
+
+linea :87 , primera columna: 78 ultima columna: 79 , .: Es un@punto
+
+linea :87 , primera columna: 79 ultima columna: 90 , No_Facultad: Es un@Identificador
+
+Token: AND AND
+
+linea :88 , primera columna: 58 ultima columna: 60 , CP: Es un@Identificador
+
+linea :88 , primera columna: 60 ultima columna: 61 , .: Es un@punto
+
+linea :88 , primera columna: 61 ultima columna: 71 , NO_CARRERA: Es un@Identificador
+
+linea :88 , primera columna: 72 ultima columna: 73 , =: Es un@igual
+
+linea :88 , primera columna: 74 ultima columna: 77 , CSM: Es un@Identificador
+
+linea :88 , primera columna: 77 ultima columna: 78 , .: Es un@punto
+
+linea :88 , primera columna: 78 ultima columna: 88 , No_Carrera: Es un@Identificador
+
+Token: WHERE WHERE
+
+Simbolo no definido en linea: 89 primera columna: 10 ultima columna: 11 para el token: S
+
+linea :89 , primera columna: 11 ultima columna: 12 , .: Es un@punto
+
+linea :89 , primera columna: 12 ultima columna: 18 , Status: Es un@Identificador
+
+linea :89 , primera columna: 19 ultima columna: 20 , =: Es un@igual
+
+linea :89 , primera columna: 21 ultima columna: 25 , '01': Es un@String
+
+Token: AND AND
+
+Simbolo no definido en linea: 90 primera columna: 14 ultima columna: 15 para el token: S
+
+linea :90 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :90 , primera columna: 16 ultima columna: 26 , id_seccion: Es un@Identificador
+
+linea :90 , primera columna: 27 ultima columna: 28 , =: Es un@igual
+
+linea :90 , primera columna: 29 ultima columna: 30 , @: Es un@arroba
+
+linea :90 , primera columna: 30 ultima columna: 42 , L_ID_SECCION: Es un@Identificador
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :91 , primera columna: 13 ultima columna: 16 , CSM: Es un@Identificador
+
+linea :91 , primera columna: 16 ultima columna: 17 , .: Es un@punto
+
+linea :91 , primera columna: 17 ultima columna: 29 , Fecha_Inicio: Es un@Identificador
+
+Token: DESC DESC
+
+linea :91 , primera columna: 34 ultima columna: 35 , ;: Es un@punto_coma
+
+linea :93 , primera columna: 4 ultima columna: 6 , IF: Es un@Reservadas
+
+linea :93 , primera columna: 7 ultima columna: 8 , (: Es un@parentesis_izquierdo
+
+linea :93 , primera columna: 8 ultima columna: 9 , @: Es un@arroba
+
+linea :93 , primera columna: 9 ultima columna: 17 , NO_CICLO: Es un@Identificador
+
+Token: IS IS
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :93 , primera columna: 29 ultima columna: 30 , ): Es un@parentesis_derecho
+
+Token: AND AND
+
+linea :94 , primera columna: 11 ultima columna: 12 , (: Es un@parentesis_izquierdo
+
+linea :94 , primera columna: 12 ultima columna: 13 , (: Es un@parentesis_izquierdo
+
+Token: SELECT SELECT
+
+linea :94 , primera columna: 21 ultima columna: 23 , CI: Es un@Identificador
+
+linea :94 , primera columna: 23 ultima columna: 24 , .: Es un@punto
+
+linea :94 , primera columna: 24 ultima columna: 28 , anio: Es un@Identificador
+
+Token: FROM FROM
+
+linea :95 , primera columna: 19 ultima columna: 27 , Registro: Es un@Identificador
+
+linea :95 , primera columna: 27 ultima columna: 28 , .: Es un@punto
+
+linea :95 , primera columna: 28 ultima columna: 31 , dbo: Es un@Identificador
+
+linea :95 , primera columna: 31 ultima columna: 32 , .: Es un@punto
+
+linea :95 , primera columna: 32 ultima columna: 37 , CICLO: Es un@Identificador
+
+linea :95 , primera columna: 38 ultima columna: 40 , AS: Es un@Reservadas
+
+linea :95 , primera columna: 41 ultima columna: 43 , CI: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :96 , primera columna: 20 ultima columna: 22 , CI: Es un@Identificador
+
+linea :96 , primera columna: 22 ultima columna: 23 , .: Es un@punto
+
+linea :96 , primera columna: 23 ultima columna: 31 , No_Ciclo: Es un@Identificador
+
+linea :96 , primera columna: 32 ultima columna: 33 , =: Es un@igual
+
+linea :96 , primera columna: 34 ultima columna: 35 , @: Es un@arroba
+
+linea :96 , primera columna: 35 ultima columna: 43 , NO_CICLO: Es un@Identificador
+
+linea :96 , primera columna: 43 ultima columna: 44 , ): Es un@parentesis_derecho
+
+linea :96 , primera columna: 45 ultima columna: 47 , <=: Es un@menor_igual
+
+linea :96 , primera columna: 48 ultima columna: 52 , YEAR: Es un@Reservadas
+
+linea :96 , primera columna: 52 ultima columna: 53 , (: Es un@parentesis_izquierdo
+
+linea :96 , primera columna: 53 ultima columna: 60 , GETDATE: Es un@Identificador
+
+linea :96 , primera columna: 60 ultima columna: 62 , (): Es un@doble_parentesis
+
+linea :96 , primera columna: 62 ultima columna: 63 , ): Es un@parentesis_derecho
+
+linea :96 , primera columna: 64 ultima columna: 65 , -: Es un@resta
+
+linea :96 , primera columna: 66 ultima columna: 67 , 2: Es un@Int
+
+linea :96 , primera columna: 67 ultima columna: 68 , ): Es un@parentesis_derecho
+
+linea :97 , primera columna: 6 ultima columna: 11 , BEGIN: Es un@Reservadas
+
+Token: SELECT SELECT
+
+linea :98 , primera columna: 15 ultima columna: 18 , '1': Es un@String
+
+linea :98 , primera columna: 19 ultima columna: 21 , AS: Es un@Reservadas
+
+linea :98 , primera columna: 22 ultima columna: 31 , RESPUESTA: Es un@Identificador
+
+linea :98 , primera columna: 31 ultima columna: 32 , ;: Es un@punto_coma
+
+linea :100 , primera columna: 8 ultima columna: 14 , RETURN: Es un@Reservadas
+
+linea :100 , primera columna: 14 ultima columna: 15 , ;: Es un@punto_coma
+
+Token: END END
+
+linea :101 , primera columna: 9 ultima columna: 10 , ;: Es un@punto_coma
+
+linea :103 , primera columna: 4 ultima columna: 6 , IF: Es un@Reservadas
+
+linea :103 , primera columna: 7 ultima columna: 8 , (: Es un@parentesis_izquierdo
+
+linea :103 , primera columna: 8 ultima columna: 9 , @: Es un@arroba
+
+linea :103 , primera columna: 9 ultima columna: 21 , FECHA_INICIO: Es un@Identificador
+
+Token: IS IS
+
+Token: NULL NULL
+
+linea :103 , primera columna: 29 ultima columna: 30 , ): Es un@parentesis_derecho
+
+linea :104 , primera columna: 6 ultima columna: 11 , BEGIN: Es un@Reservadas
+
+Token: SELECT SELECT
+
+linea :105 , primera columna: 15 ultima columna: 18 , '0': Es un@String
+
+linea :105 , primera columna: 19 ultima columna: 21 , AS: Es un@Reservadas
+
+linea :105 , primera columna: 22 ultima columna: 31 , RESPUESTA: Es un@Identificador
+
+linea :105 , primera columna: 31 ultima columna: 32 , ,: Es un@coma
+
+linea :106 , primera columna: 15 ultima columna: 130 , 'Su curso no se encuentra disponible, por favor comun�quese al Departamento de Educaci�n Virtual (dev@url.edu.gt).': Es un@String
+
+linea :106 , primera columna: 131 ultima columna: 133 , AS: Es un@Reservadas
+
+linea :106 , primera columna: 134 ultima columna: 141 , MENSAJE: Es un@Identificador
+
+linea :106 , primera columna: 141 ultima columna: 142 , ;: Es un@punto_coma
+
+Token: END END
+
+linea :107 , primera columna: 9 ultima columna: 10 , ;: Es un@punto_coma
+
+Token: ELSE ELSE
+
+linea :108 , primera columna: 9 ultima columna: 11 , IF: Es un@Reservadas
+
+linea :108 , primera columna: 12 ultima columna: 13 , (: Es un@parentesis_izquierdo
+
+linea :108 , primera columna: 13 ultima columna: 17 , CAST: Es un@Reservadas
+
+linea :108 , primera columna: 17 ultima columna: 18 , (: Es un@parentesis_izquierdo
+
+linea :108 , primera columna: 18 ultima columna: 19 , @: Es un@arroba
+
+linea :108 , primera columna: 19 ultima columna: 31 , FECHA_INICIO: Es un@Identificador
+
+linea :108 , primera columna: 32 ultima columna: 34 , AS: Es un@Reservadas
+
+linea :108 , primera columna: 35 ultima columna: 39 , DATE: Es un@Reservadas
+
+linea :108 , primera columna: 39 ultima columna: 40 , ): Es un@parentesis_derecho
+
+linea :108 , primera columna: 41 ultima columna: 42 , =: Es un@igual
+
+linea :108 , primera columna: 43 ultima columna: 47 , CAST: Es un@Reservadas
+
+linea :108 , primera columna: 47 ultima columna: 48 , (: Es un@parentesis_izquierdo
+
+linea :108 , primera columna: 48 ultima columna: 55 , GETDATE: Es un@Identificador
+
+linea :108 , primera columna: 55 ultima columna: 57 , (): Es un@doble_parentesis
+
+linea :108 , primera columna: 58 ultima columna: 60 , AS: Es un@Reservadas
+
+linea :108 , primera columna: 61 ultima columna: 65 , DATE: Es un@Reservadas
+
+linea :108 , primera columna: 65 ultima columna: 66 , ): Es un@parentesis_derecho
+
+linea :108 , primera columna: 66 ultima columna: 67 , ): Es un@parentesis_derecho
+
+linea :109 , primera columna: 11 ultima columna: 16 , BEGIN: Es un@Reservadas
+
+Token: SELECT SELECT
+
+linea :110 , primera columna: 20 ultima columna: 23 , '0': Es un@String
+
+linea :110 , primera columna: 24 ultima columna: 26 , AS: Es un@Reservadas
+
+linea :110 , primera columna: 27 ultima columna: 36 , RESPUESTA: Es un@Identificador
+
+linea :110 , primera columna: 36 ultima columna: 37 , ,: Es un@coma
+
+linea :111 , primera columna: 20 ultima columna: 127 , 'El curso se encontrar� disponible en el transcurso de las pr�ximas 24 horas.  Agradecemos su comprensi�n.': Es un@String
+
+linea :111 , primera columna: 128 ultima columna: 130 , AS: Es un@Reservadas
+
+linea :111 , primera columna: 131 ultima columna: 138 , MENSAJE: Es un@Identificador
+
+linea :111 , primera columna: 138 ultima columna: 139 , ;: Es un@punto_coma
+
+Token: END END
+
+linea :112 , primera columna: 14 ultima columna: 15 , ;: Es un@punto_coma
+
+Token: ELSE ELSE
+
+linea :114 , primera columna: 9 ultima columna: 11 , IF: Es un@Reservadas
+
+linea :114 , primera columna: 12 ultima columna: 13 , (: Es un@parentesis_izquierdo
+
+linea :114 , primera columna: 13 ultima columna: 14 , @: Es un@arroba
+
+linea :114 , primera columna: 14 ultima columna: 26 , FECHA_INICIO: Es un@Identificador
+
+linea :114 , primera columna: 27 ultima columna: 28 , >: Es un@mayor
+
+linea :114 , primera columna: 29 ultima columna: 36 , GETDATE: Es un@Identificador
+
+linea :114 , primera columna: 36 ultima columna: 38 , (): Es un@doble_parentesis
+
+linea :114 , primera columna: 38 ultima columna: 39 , ): Es un@parentesis_derecho
+
+linea :115 , primera columna: 11 ultima columna: 16 , BEGIN: Es un@Reservadas
+
+Token: SELECT SELECT
+
+linea :116 , primera columna: 20 ultima columna: 23 , '0': Es un@String
+
+linea :116 , primera columna: 24 ultima columna: 26 , AS: Es un@Reservadas
+
+linea :116 , primera columna: 27 ultima columna: 36 , RESPUESTA: Es un@Identificador
+
+linea :116 , primera columna: 36 ultima columna: 37 , ,: Es un@coma
+
+linea :117 , primera columna: 20 ultima columna: 68 , 'El curso se encontrar� disponible a partir de ': Es un@String
+
+linea :117 , primera columna: 69 ultima columna: 70 , +: Es un@suma
+
+linea :117 , primera columna: 71 ultima columna: 78 , CONVERT: Es un@Reservadas
+
+linea :117 , primera columna: 78 ultima columna: 79 , (: Es un@parentesis_izquierdo
+
+linea :117 , primera columna: 79 ultima columna: 86 , VARCHAR: Es un@Reservadas
+
+linea :117 , primera columna: 86 ultima columna: 87 , (: Es un@parentesis_izquierdo
+
+linea :117 , primera columna: 87 ultima columna: 89 , 10: Es un@Int
+
+linea :117 , primera columna: 89 ultima columna: 90 , ): Es un@parentesis_derecho
+
+linea :117 , primera columna: 90 ultima columna: 91 , ,: Es un@coma
+
+linea :117 , primera columna: 92 ultima columna: 93 , @: Es un@arroba
+
+linea :117 , primera columna: 93 ultima columna: 105 , FECHA_INICIO: Es un@Identificador
+
+linea :117 , primera columna: 105 ultima columna: 106 , ,: Es un@coma
+
+linea :117 , primera columna: 107 ultima columna: 110 , 103: Es un@Int
+
+linea :117 , primera columna: 110 ultima columna: 111 , ): Es un@parentesis_derecho
+
+linea :117 , primera columna: 112 ultima columna: 113 , +: Es un@suma
+
+linea :117 , primera columna: 114 ultima columna: 145 , '. Agradecemos su comprensi�n.': Es un@String
+
+linea :117 , primera columna: 146 ultima columna: 148 , AS: Es un@Reservadas
+
+linea :117 , primera columna: 149 ultima columna: 156 , MENSAJE: Es un@Identificador
+
+linea :117 , primera columna: 156 ultima columna: 157 , ;: Es un@punto_coma
+
+Token: END END
+
+linea :118 , primera columna: 14 ultima columna: 15 , ;: Es un@punto_coma
+
+Token: ELSE ELSE
+
+linea :120 , primera columna: 11 ultima columna: 16 , BEGIN: Es un@Reservadas
+
+Token: SELECT SELECT
+
+linea :121 , primera columna: 20 ultima columna: 23 , '0': Es un@String
+
+linea :121 , primera columna: 24 ultima columna: 26 , AS: Es un@Reservadas
+
+linea :121 , primera columna: 27 ultima columna: 36 , RESPUESTA: Es un@Identificador
+
+linea :121 , primera columna: 36 ultima columna: 37 , ,: Es un@coma
+
+linea :122 , primera columna: 20 ultima columna: 135 , 'Su curso no se encuentra disponible, por favor comun�quese al Departamento de Educaci�n Virtual (dev@url.edu.gt).': Es un@String
+
+linea :122 , primera columna: 136 ultima columna: 138 , AS: Es un@Reservadas
+
+linea :122 , primera columna: 139 ultima columna: 146 , MENSAJE: Es un@Identificador
+
+linea :122 , primera columna: 146 ultima columna: 147 , ;: Es un@punto_coma
+
+Token: END END
+
+linea :123 , primera columna: 14 ultima columna: 15 , ;: Es un@punto_coma
+
+linea :126 , primera columna: 4 ultima columna: 10 , RETURN: Es un@Reservadas
+
+linea :126 , primera columna: 10 ultima columna: 11 , ;: Es un@punto_coma
+
+Token: END END
+
+linea :127 , primera columna: 5 ultima columna: 6 , ;: Es un@punto_coma
+
+FIN

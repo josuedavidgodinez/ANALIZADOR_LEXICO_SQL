@@ -1,0 +1,71 @@
+linea :0 , primera columna: 0 ultima columna: 4 , droP: Es un@Identificador
+
+Token: INDEX INDEX
+
+linea :0 , primera columna: 11 ultima columna: 16 , ayuda: Es un@Identificador
+
+linea :0 , primera columna: 17 ultima columna: 19 , on: Es un@Identificador
+
+linea :0 , primera columna: 20 ultima columna: 26 , person: Es un@Identificador
+
+linea :0 , primera columna: 26 ultima columna: 27 , .: Es un@punto
+
+linea :0 , primera columna: 27 ultima columna: 33 , addres: Es un@Identificador
+
+linea :0 , primera columna: 33 ultima columna: 34 , .: Es un@punto
+
+linea :0 , primera columna: 34 ultima columna: 38 , mano: Es un@Identificador
+
+linea :0 , primera columna: 39 ultima columna: 40 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+Token: DATABASE DATABASE
+
+Token: IF IF
+
+Token: EXISTS EXISTS
+
+linea :0 , primera columna: 66 ultima columna: 72 , identi: Es un@Identificador
+
+linea :0 , primera columna: 72 ultima columna: 73 , ,: Es un@coma
+
+linea :0 , primera columna: 73 ultima columna: 78 , ident: Es un@Identificador
+
+linea :0 , primera columna: 78 ultima columna: 79 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+linea :1 , primera columna: 8 ultima columna: 13 , table: Es un@Identificador
+
+linea :1 , primera columna: 14 ultima columna: 36 , IX_PurchaseOrderHeader: Es un@Identificador
+
+linea :1 , primera columna: 36 ultima columna: 37 , .: Es un@punto
+
+linea :1 , primera columna: 37 ultima columna: 44 , djhsajd: Es un@Identificador
+
+linea :1 , primera columna: 44 ultima columna: 45 , .: Es un@punto
+
+linea :1 , primera columna: 45 ultima columna: 53 , dsjhdjsa: Es un@Identificador
+
+linea :1 , primera columna: 54 ultima columna: 55 , ,: Es un@coma
+
+linea :1 , primera columna: 56 ultima columna: 64 , sajdhsaj: Es un@Identificador
+
+linea :1 , primera columna: 64 ultima columna: 65 , ,: Es un@coma
+
+linea :1 , primera columna: 66 ultima columna: 74 , sahdgsah: Es un@Identificador
+
+linea :1 , primera columna: 74 ultima columna: 75 , .: Es un@punto
+
+linea :1 , primera columna: 75 ultima columna: 81 , shdsaj: Es un@Identificador
+
+linea :1 , primera columna: 83 ultima columna: 84 , ;: Es un@punto_coma
+
+FIN1 , .: Es un@punto
+
+linea :2 , primera columna: 41 ultima columna: 48 , Address: Es un@Identificador
+
+linea :2 , primera columna: 48 ultima columna: 49 , ;: Es un@punto_coma
+
+FIN

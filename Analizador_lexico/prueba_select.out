@@ -1,0 +1,237 @@
+Token: SELECT SELECT
+
+linea :0 , primera columna: 7 ultima columna: 25 , AdventureWorks2017: Es un@Identificador
+
+linea :0 , primera columna: 25 ultima columna: 26 , .: Es un@punto
+
+linea :0 , primera columna: 26 ultima columna: 40 , HumanResources: Es un@Identificador
+
+linea :0 , primera columna: 40 ultima columna: 41 , .: Es un@punto
+
+linea :0 , primera columna: 41 ultima columna: 59 , EmployeePayHistory: Es un@Identificador
+
+Token: FROM FROM
+
+linea :0 , primera columna: 65 ultima columna: 79 , HumanResources: Es un@Identificador
+
+linea :0 , primera columna: 79 ultima columna: 80 , .: Es un@punto
+
+linea :0 , primera columna: 80 ultima columna: 98 , EmployeePayHistory: Es un@Identificador
+
+linea :0 , primera columna: 98 ultima columna: 99 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+Token: DISTINCT DISTINCT
+
+linea :3 , primera columna: 4 ultima columna: 9 , phone: Es un@Identificador
+
+Token: FROM FROM
+
+linea :5 , primera columna: 4 ultima columna: 9 , sales: Es un@Identificador
+
+linea :5 , primera columna: 9 ultima columna: 10 , .: Es un@punto
+
+linea :5 , primera columna: 10 ultima columna: 19 , customers: Es un@Identificador
+
+linea :5 , primera columna: 19 ultima columna: 20 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :9 , primera columna: 4 ultima columna: 5 , *: Es un@multiplicacion
+
+Token: FROM FROM
+
+linea :11 , primera columna: 4 ultima columna: 9 , sales: Es un@Identificador
+
+linea :11 , primera columna: 9 ultima columna: 10 , .: Es un@punto
+
+linea :11 , primera columna: 10 ultima columna: 19 , customers: Es un@Identificador
+
+linea :11 , primera columna: 19 ultima columna: 20 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :15 , primera columna: 4 ultima columna: 8 , city: Es un@Identificador
+
+linea :15 , primera columna: 8 ultima columna: 9 , ,: Es un@coma
+
+Token: COUNT COUNT
+
+linea :16 , primera columna: 10 ultima columna: 11 , (: Es un@parentesis_izquierdo
+
+linea :16 , primera columna: 11 ultima columna: 12 , *: Es un@multiplicacion
+
+linea :16 , primera columna: 12 ultima columna: 13 , ): Es un@parentesis_derecho
+
+Token: FROM FROM
+
+linea :18 , primera columna: 4 ultima columna: 9 , sales: Es un@Identificador
+
+linea :18 , primera columna: 9 ultima columna: 10 , .: Es un@punto
+
+linea :18 , primera columna: 10 ultima columna: 19 , customers: Es un@Identificador
+
+linea :18 , primera columna: 19 ultima columna: 20 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :21 , primera columna: 11 ultima columna: 14 , shi: Es un@Identificador
+
+linea :21 , primera columna: 14 ultima columna: 15 , ,: Es un@coma
+
+linea :21 , primera columna: 16 ultima columna: 29 , ProductNumber: Es un@Identificador
+
+linea :21 , primera columna: 29 ultima columna: 30 , ,: Es un@coma
+
+linea :21 , primera columna: 31 ultima columna: 40 , ListPrice: Es un@Identificador
+
+Token: AS AS
+
+linea :21 , primera columna: 44 ultima columna: 49 , Price: Es un@Identificador
+
+Token: FROM FROM
+
+linea :22 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :22 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :22 , primera columna: 16 ultima columna: 23 , Product: Es un@Identificador
+
+linea :22 , primera columna: 23 ultima columna: 24 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :26 , primera columna: 1 ultima columna: 5 , city: Es un@Identificador
+
+linea :26 , primera columna: 5 ultima columna: 6 , ,: Es un@coma
+
+linea :27 , primera columna: 1 ultima columna: 6 , state: Es un@Identificador
+
+linea :27 , primera columna: 6 ultima columna: 7 , ,: Es un@coma
+
+linea :28 , primera columna: 1 ultima columna: 9 , zip_code: Es un@Identificador
+
+Token: FROM FROM
+
+linea :30 , primera columna: 1 ultima columna: 6 , sales: Es un@Identificador
+
+linea :30 , primera columna: 6 ultima columna: 7 , .: Es un@punto
+
+linea :30 , primera columna: 7 ultima columna: 16 , customers: Es un@Identificador
+
+linea :30 , primera columna: 16 ultima columna: 17 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+Token: DISTINCT DISTINCT
+
+linea :35 , primera columna: 7 ultima columna: 11 , city: Es un@Identificador
+
+linea :35 , primera columna: 11 ultima columna: 12 , ,: Es un@coma
+
+linea :36 , primera columna: 7 ultima columna: 12 , state: Es un@Identificador
+
+linea :36 , primera columna: 12 ultima columna: 13 , ,: Es un@coma
+
+linea :37 , primera columna: 7 ultima columna: 15 , zip_code: Es un@Identificador
+
+Token: FROM FROM
+
+linea :39 , primera columna: 1 ultima columna: 6 , sales: Es un@Identificador
+
+linea :39 , primera columna: 6 ultima columna: 7 , .: Es un@punto
+
+linea :39 , primera columna: 7 ultima columna: 16 , customers: Es un@Identificador
+
+linea :39 , primera columna: 16 ultima columna: 17 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :42 , primera columna: 8 ultima columna: 9 , p: Es un@Identificador
+
+linea :42 , primera columna: 9 ultima columna: 10 , .: Es un@punto
+
+linea :42 , primera columna: 10 ultima columna: 13 , shi: Es un@Identificador
+
+Token: AS AS
+
+linea :42 , primera columna: 17 ultima columna: 28 , ProductName: Es un@Identificador
+
+linea :42 , primera columna: 28 ultima columna: 29 , ,: Es un@coma
+
+linea :43 , primera columna: 0 ultima columna: 16 , NonDiscountSales: Es un@Identificador
+
+linea :43 , primera columna: 17 ultima columna: 18 , =: Es un@igual
+
+linea :43 , primera columna: 19 ultima columna: 20 , (: Es un@parentesis_izquierdo
+
+linea :43 , primera columna: 20 ultima columna: 28 , OrderQty: Es un@Identificador
+
+linea :43 , primera columna: 29 ultima columna: 30 , *: Es un@multiplicacion
+
+linea :43 , primera columna: 31 ultima columna: 40 , UnitPrice: Es un@Identificador
+
+linea :43 , primera columna: 40 ultima columna: 41 , ): Es un@parentesis_derecho
+
+linea :43 , primera columna: 41 ultima columna: 42 , ,: Es un@coma
+
+linea :44 , primera columna: 0 ultima columna: 9 , Discounts: Es un@Identificador
+
+linea :44 , primera columna: 10 ultima columna: 11 , =: Es un@igual
+
+linea :44 , primera columna: 12 ultima columna: 13 , (: Es un@parentesis_izquierdo
+
+linea :44 , primera columna: 13 ultima columna: 14 , (: Es un@parentesis_izquierdo
+
+linea :44 , primera columna: 14 ultima columna: 22 , OrderQty: Es un@Identificador
+
+linea :44 , primera columna: 23 ultima columna: 24 , *: Es un@multiplicacion
+
+linea :44 , primera columna: 25 ultima columna: 34 , UnitPrice: Es un@Identificador
+
+linea :44 , primera columna: 34 ultima columna: 35 , ): Es un@parentesis_derecho
+
+linea :44 , primera columna: 36 ultima columna: 37 , *: Es un@multiplicacion
+
+linea :44 , primera columna: 38 ultima columna: 55 , UnitPriceDiscount: Es un@Identificador
+
+linea :44 , primera columna: 55 ultima columna: 56 , ): Es un@parentesis_derecho
+
+Token: FROM FROM
+
+linea :45 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :45 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :45 , primera columna: 16 ultima columna: 23 , Product: Es un@Identificador
+
+Token: AS AS
+
+linea :45 , primera columna: 27 ultima columna: 28 , p: Es un@Identificador
+
+linea :45 , primera columna: 28 ultima columna: 29 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FINa columna: 27 ultima columna: 28 , p: Es un@Identificador
+
+linea :45 , primera columna: 28 ultima columna: 29 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FIN

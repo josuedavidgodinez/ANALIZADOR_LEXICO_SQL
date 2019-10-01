@@ -1,0 +1,25 @@
+Token: TRUNCATE TRUNCATE
+
+Token: TABLE TABLE
+
+linea :0 , primera columna: 15 ultima columna: 29 , HumanResources: Es un@Identificador
+
+linea :0 , primera columna: 29 ultima columna: 30 , .: Es un@punto
+
+linea :0 , primera columna: 30 ultima columna: 42 , JobCandidate: Es un@Identificador
+
+linea :0 , primera columna: 42 ultima columna: 43 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: TRUNCATE TRUNCATE
+
+Token: TABLE TABLE
+
+linea :3 , primera columna: 15 ultima columna: 30 , PartitionTable1: Es un@Identificador
+
+linea :3 , primera columna: 30 ultima columna: 31 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FIN

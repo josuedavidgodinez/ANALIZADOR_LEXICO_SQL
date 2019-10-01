@@ -1,0 +1,2 @@
+droP INDEX ayuda on person.addres.mano ;  DROP DATABASE IF EXISTS identi,ident;
+   DROP table IX_PurchaseOrderHeader.djhsajd.dsjhdjsa , sajdhsaj, sahdgsah.shdsaj  ;  
