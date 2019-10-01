@@ -470,7 +470,7 @@ public class analizador_sintactico {
         } else if (lookahed.getToken() == Tokens.punto_coma || lookahed.getToken() == Tokens.GO) {
             finalizar();
         } else {
-            error(Tokens.punto);
+            error(Tokens.punto, Tokens.punto_coma, Tokens.GO);
         }
     }
 
@@ -480,7 +480,7 @@ public class analizador_sintactico {
             match(Tokens.ALTER);
             opciones();
         } else {
-            error(Tokens.punto);
+            error(Tokens.ALTER);
         }
 
     }
@@ -1003,7 +1003,7 @@ public class analizador_sintactico {
         } else if (lookahed.getToken() == Tokens.Identificador) {
             match(Tokens.Identificador);
         } else {
-            error(Tokens.String, Tokens.Bool, Tokens.Int, Tokens.Float);
+            error(Tokens.String, Tokens.Bool, Tokens.Int, Tokens.Float,Tokens.Identificador );
         }
     }
 
@@ -1677,17 +1677,9 @@ public class analizador_sintactico {
     }
 
     private void columna1() {
-        if (lookahed.getToken() == Tokens.parentesis_izquierdo) {
+         if (lookahed.getToken() == Tokens.String || lookahed.getToken() == Tokens.Bool || lookahed.getToken() == Tokens.Int || lookahed.getToken() == Tokens.Float || lookahed.getToken() == Tokens.Identificador) {
 
-            match(Tokens.parentesis_izquierdo);
-            datatipo_select();
-            columnafact();
-            match(Tokens.parentesis_derecho);
-
-        } else if (lookahed.getToken() == Tokens.String || lookahed.getToken() == Tokens.Bool || lookahed.getToken() == Tokens.Int || lookahed.getToken() == Tokens.Float || lookahed.getToken() == Tokens.Identificador) {
-
-            datatipo_select();
-            columna1prima();
+           expresion_selectprima();
 
         } else if (lookahed.getToken() == Tokens.SUM || lookahed.getToken() == Tokens.AVG || lookahed.getToken() == Tokens.COUNT || lookahed.getToken() == Tokens.MAX || lookahed.getToken() == Tokens.MIN) {
 
@@ -1698,42 +1690,11 @@ public class analizador_sintactico {
             error(Tokens.String, Tokens.SUM, Tokens.AVG, Tokens.COUNT, Tokens.Int);
         }
     }
+    
+     
 
-    private void columna1prima() {
-        if (lookahed.getToken() == Tokens.multiplicacion || lookahed.getToken() == Tokens.division || lookahed.getToken() == Tokens.resta || lookahed.getToken() == Tokens.suma || lookahed.getToken() == Tokens.mayor || lookahed.getToken() == Tokens.mayor_igual || lookahed.getToken() == Tokens.menor || lookahed.getToken() == Tokens.menor_igual || lookahed.getToken() == Tokens.diferente || lookahed.getToken() == Tokens.comparar || lookahed.getToken() == Tokens.LIKE) {
-            columnafact();
-
-        } else if (lookahed.getToken() == Tokens.igual) {
-
-            match(Tokens.igual);
-
-            if (lookahed.getToken() == Tokens.parentesis_izquierdo) {
-                match(Tokens.parentesis_izquierdo);
-                datatipo_select();
-                columnafact();
-                match(Tokens.parentesis_derecho);
-            } else {
-                datatipo_select();
-                columnafact();
-            }
-
-        } else if (lookahed.getToken() == Tokens.coma || lookahed.getToken() == Tokens.FROM || lookahed.getToken() == Tokens.AS) {
-            return;
-        } else {
-            error(Tokens.String, Tokens.SUM, Tokens.AVG, Tokens.COUNT, Tokens.Int);
-        }
-    }
-
-    private void columnafact() {
-        if (lookahed.getToken() == Tokens.multiplicacion || lookahed.getToken() == Tokens.division || lookahed.getToken() == Tokens.resta || lookahed.getToken() == Tokens.suma || lookahed.getToken() == Tokens.mayor || lookahed.getToken() == Tokens.mayor_igual || lookahed.getToken() == Tokens.menor || lookahed.getToken() == Tokens.menor_igual || lookahed.getToken() == Tokens.diferente || lookahed.getToken() == Tokens.comparar || lookahed.getToken() == Tokens.LIKE) {
-            operaciones();
-
-        } else if (lookahed.getToken() == Tokens.AS || lookahed.getToken() == Tokens.coma || lookahed.getToken() == Tokens.FROM) {
-            return;
-        } else {
-            error(Tokens.multiplicacion, Tokens.division, Tokens.resta, Tokens.AND, Tokens.OR);
-        }
-    }
+  
+   
 
     private void datatipo_select() {
         if (lookahed.getToken() == Tokens.String) {
@@ -2593,6 +2554,260 @@ public class analizador_sintactico {
         }
 
     }
+    
+    //expresion del select-------------------------------------------------------------------------------------------------------------------------------------------
+     private void selectobjeto_nombre() {
+        if (lookahed.getToken() == Tokens.Identificador) {
+
+            match(Tokens.Identificador);
+            selectobjeto_nombreprima();
+
+        } else {
+            error(Tokens.Identificador);
+            
+        }
+
+    }
+
+    private void selectobjeto_nombreprima() {
+        if (lookahed.getToken() == Tokens.punto) {
+
+            match(Tokens.punto);
+            match(Tokens.Identificador);
+            selectobjeto_nombre1prima();
+        } else if (lookahed.getToken() == Tokens.AS||lookahed.getToken() == Tokens.FROM ||lookahed.getToken() == Tokens.coma  || lookahed.getToken() == Tokens.multiplicacion || lookahed.getToken() == Tokens.division || lookahed.getToken() == Tokens.suma || lookahed.getToken() == Tokens.resta || lookahed.getToken() == Tokens.parentesis_izquierdo || lookahed.getToken() == Tokens.parentesis_derecho) {
+            return;
+        } else {
+            error(Tokens.punto, Tokens.coma, Tokens.FROM,Tokens.multiplicacion,Tokens.division);
+        }
+
+    }
+
+    private void selectobjeto_nombre1prima() {
+        if (lookahed.getToken() == Tokens.punto) {
+
+            match(Tokens.punto);
+            match(Tokens.Identificador);
+
+        } else if (lookahed.getToken() == Tokens.AS||lookahed.getToken() == Tokens.FROM ||lookahed.getToken() == Tokens.coma  || lookahed.getToken() == Tokens.multiplicacion || lookahed.getToken() == Tokens.division || lookahed.getToken() == Tokens.suma || lookahed.getToken() == Tokens.resta || lookahed.getToken() == Tokens.parentesis_izquierdo || lookahed.getToken() == Tokens.parentesis_derecho) {
+
+            return;
+
+        } else {
+            error(Tokens.punto, Tokens.coma, Tokens.FROM,Tokens.multiplicacion,Tokens.division);
+        }
+    }
+    
+    
+   
+
+    private void selectobjeto_nombreprima2() {
+        if (lookahed.getToken() == Tokens.punto) {
+
+            match(Tokens.punto);
+            match(Tokens.Identificador);
+            selectobjeto_nombre1prima2();
+        } else if (lookahed.getToken() == Tokens.AS||lookahed.getToken() == Tokens.FROM ||lookahed.getToken() == Tokens.coma  || lookahed.getToken() == Tokens.multiplicacion || lookahed.getToken() == Tokens.division || lookahed.getToken() == Tokens.suma || lookahed.getToken() == Tokens.resta || lookahed.getToken() == Tokens.parentesis_izquierdo || lookahed.getToken() == Tokens.parentesis_derecho) {
+            return;
+        } else {
+            error(Tokens.punto, Tokens.coma, Tokens.FROM,Tokens.multiplicacion,Tokens.division);
+        }
+
+    }
+
+    private void selectobjeto_nombre1prima2() {
+        if (lookahed.getToken() == Tokens.punto) {
+
+            match(Tokens.punto);
+            match(Tokens.Identificador);
+
+        } else if (lookahed.getToken() == Tokens.AS||lookahed.getToken() == Tokens.FROM ||lookahed.getToken() == Tokens.coma  || lookahed.getToken() == Tokens.multiplicacion || lookahed.getToken() == Tokens.division || lookahed.getToken() == Tokens.suma || lookahed.getToken() == Tokens.resta || lookahed.getToken() == Tokens.parentesis_izquierdo || lookahed.getToken() == Tokens.parentesis_derecho) {
+
+            return;
+
+        } else {
+            error(Tokens.punto, Tokens.coma, Tokens.FROM,Tokens.multiplicacion,Tokens.division);
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    private void datatiposelect() {
+        if (lookahed.getToken() == Tokens.String) {
+
+            match(Tokens.String);
+
+        } else if (lookahed.getToken() == Tokens.Bool) {
+
+            match(Tokens.Bool);
+
+        } else if (lookahed.getToken() == Tokens.Int) {
+
+            match(Tokens.Int);
+
+        } else if (lookahed.getToken() == Tokens.Float) {
+
+            match(Tokens.Float);
+
+        } else if (lookahed.getToken() == Tokens.Identificador) {
+            selectobjeto_nombre();
+        } else {
+            error(Tokens.String, Tokens.Bool, Tokens.Int, Tokens.Float);
+        }
+
+    }
+    
+    
+    
+     private void expresion_selectprima() {
+        if (lookahed.getToken() == Tokens.String || lookahed.getToken() == Tokens.Int || lookahed.getToken() == Tokens.Bool ||lookahed.getToken() == Tokens.Float) {
+           expresion_select();
+        }else if(lookahed.getToken() == Tokens.Identificador ){
+            match(Tokens.Identificador);
+            if (lookahed.getToken()==Tokens.igual) {
+                match(Tokens.igual);
+                datatiposelect();
+                vselect();
+            } else {
+                selectobjeto_nombreprima2();
+                vselect();
+            }
+        } else if (lookahed.getToken() == Tokens.parentesis_izquierdo) {
+
+            match(Tokens.parentesis_izquierdo);
+            expresion_select();
+            cselect();
+            vselect();
+
+        } else {
+            error(Tokens.String, Tokens.Bool, Tokens.Int, Tokens.Float, Tokens.parentesis_izquierdo);
+        }
+
+    }
+    
+    
+    private void expresion_select() {
+        if (lookahed.getToken() == Tokens.Identificador ||lookahed.getToken() == Tokens.String || lookahed.getToken() == Tokens.Int || lookahed.getToken() == Tokens.Bool ||lookahed.getToken() == Tokens.Float) {
+            datatiposelect();
+            vselect();
+
+        } else if (lookahed.getToken() == Tokens.parentesis_izquierdo) {
+
+            match(Tokens.parentesis_izquierdo);
+            expresion_select();
+            cselect();
+            vselect();
+
+        } else {
+            error(Tokens.String, Tokens.Bool, Tokens.Int, Tokens.Float, Tokens.parentesis_izquierdo);
+        }
+
+    }
+    
+    
+
+    private void vselect() {
+
+        if (lookahed.getToken() == Tokens.multiplicacion) {
+            match(Tokens.multiplicacion);
+            tselect();
+            xselect();
+
+        } else if (lookahed.getToken() == Tokens.division) {
+
+            match(Tokens.division);
+            tselect();
+            xselect();
+        } else if (lookahed.getToken() == Tokens.suma) {
+            match(Tokens.suma);
+            expresion_select();
+        } else if (lookahed.getToken() == Tokens.resta) {
+            match(Tokens.resta);
+            expresion_select();
+        } else if (lookahed.getToken() == Tokens.AS ||lookahed.getToken() == Tokens.FROM || lookahed.getToken() == Tokens.coma || lookahed.getToken() == Tokens.parentesis_derecho || lookahed.getToken() == Tokens.parentesis_izquierdo) {
+            return;
+        } else {
+            error(Tokens.suma, Tokens.resta, Tokens.WHERE, Tokens.Float, Tokens.GO);
+        }
+    }
+
+    private void xselect() {
+        if (lookahed.getToken() == Tokens.suma) {
+            match(Tokens.suma);
+            expresion_select();
+        } else if (lookahed.getToken() == Tokens.resta) {
+            match(Tokens.resta);
+            expresion_select();
+        } else if (lookahed.getToken() == Tokens.AS ||lookahed.getToken() == Tokens.FROM || lookahed.getToken() == Tokens.coma || lookahed.getToken() == Tokens.parentesis_derecho || lookahed.getToken() == Tokens.parentesis_izquierdo) {
+            return;
+        } else {
+            error(Tokens.suma, Tokens.resta, Tokens.WHERE, Tokens.Float, Tokens.GO);
+        }
+    }
+
+    private void tselect() {
+        if (lookahed.getToken() == Tokens.String || lookahed.getToken() == Tokens.Int || lookahed.getToken() == Tokens.Bool || lookahed.getToken() == Tokens.Identificador || lookahed.getToken() == Tokens.Float) {
+            datatiposelect();
+            uselect();
+
+        } else if (lookahed.getToken() == Tokens.parentesis_izquierdo) {
+
+            match(Tokens.parentesis_izquierdo);
+            expresion_select();
+            cselect();
+            uselect();
+
+        } else {
+            error(Tokens.String, Tokens.Bool, Tokens.Int, Tokens.Float, Tokens.parentesis_izquierdo);
+        }
+    }
+
+    private void uselect() {
+        if (lookahed.getToken() == Tokens.multiplicacion) {
+            match(Tokens.multiplicacion);
+            tselect();
+            xselect();
+
+        } else if (lookahed.getToken() == Tokens.division) {
+
+            match(Tokens.division);
+            tselect();
+            xselect();
+        } else if (lookahed.getToken() == Tokens.AS ||lookahed.getToken() == Tokens.FROM || lookahed.getToken() == Tokens.coma || lookahed.getToken() == Tokens.parentesis_derecho || lookahed.getToken() == Tokens.parentesis_izquierdo) {
+            return;
+        } else {
+            error(Tokens.multiplicacion, Tokens.division, Tokens.WHERE, Tokens.Float, Tokens.GO);
+        }
+    }
+
+    private void f() {
+        if (lookahed.getToken() == Tokens.String || lookahed.getToken() == Tokens.Int || lookahed.getToken() == Tokens.Bool || lookahed.getToken() == Tokens.Identificador || lookahed.getToken() == Tokens.Float) {
+            datatiposelect();
+
+        } else if (lookahed.getToken() == Tokens.parentesis_izquierdo) {
+
+            match(Tokens.parentesis_izquierdo);
+            expresion_select();
+            cselect();
+
+        } else {
+            error(Tokens.String, Tokens.Bool, Tokens.Int, Tokens.Float, Tokens.parentesis_izquierdo);
+        }
+    }
+
+    private void cselect() {
+        if (lookahed.getToken() == Tokens.parentesis_derecho) {
+            match(Tokens.parentesis_derecho);
+
+        } else {
+            error(Tokens.parentesis_derecho);
+        }
+    }
 
     //--------------------------------------------------------------------------------
     private void update() {
@@ -2866,20 +3081,7 @@ public class analizador_sintactico {
         }
     }
 
-    private void f() {
-        if (lookahed.getToken() == Tokens.String || lookahed.getToken() == Tokens.Int || lookahed.getToken() == Tokens.Bool || lookahed.getToken() == Tokens.Identificador || lookahed.getToken() == Tokens.Float) {
-            datatipoupdate();
-
-        } else if (lookahed.getToken() == Tokens.parentesis_izquierdo) {
-
-            match(Tokens.parentesis_izquierdo);
-            ee();
-            c();
-
-        } else {
-            error(Tokens.String, Tokens.Bool, Tokens.Int, Tokens.Float, Tokens.parentesis_izquierdo);
-        }
-    }
+    
 
     private void c() {
         if (lookahed.getToken() == Tokens.parentesis_derecho) {

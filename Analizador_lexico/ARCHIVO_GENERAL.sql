@@ -191,7 +191,8 @@ FROM
     sales.customers;
     GO
 
-    SELECT
+    SELECT as 
+
     city,
     COUNT (*)
 FROM
