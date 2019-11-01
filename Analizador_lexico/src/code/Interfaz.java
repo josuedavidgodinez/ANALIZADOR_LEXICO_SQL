@@ -5,6 +5,7 @@
  */
 package code;
 
+import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -13,6 +14,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Reader;
+import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -22,6 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java_cup.runtime.Symbol;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
@@ -39,7 +42,8 @@ public class Interfaz extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
   analizador_sintactico sintax=new analizador_sintactico();
-    List<String> errores=new ArrayList<>();
+   static List<String> errores=new ArrayList<>();
+    String texto="";
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -54,6 +58,8 @@ public class Interfaz extends javax.swing.JFrame {
         txtResultado = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         btnAnalizar1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        analisis_sintactico = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,6 +86,10 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
+        analisis_sintactico.setColumns(20);
+        analisis_sintactico.setRows(5);
+        jScrollPane2.setViewportView(analisis_sintactico);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -87,26 +97,32 @@ public class Interfaz extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(150, 150, 150)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 562, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(153, Short.MAX_VALUE))
+                .addContainerGap(611, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addComponent(btnAnalizar, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE)
-                    .addComponent(btnAnalizar1, javax.swing.GroupLayout.DEFAULT_SIZE, 841, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnAnalizar, javax.swing.GroupLayout.DEFAULT_SIZE, 1299, Short.MAX_VALUE)
+                    .addComponent(btnAnalizar1, javax.swing.GroupLayout.DEFAULT_SIZE, 1299, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
+                .addContainerGap(57, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnAnalizar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnAnalizar1)
                 .addGap(34, 34, 34)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -125,17 +141,37 @@ public class Interfaz extends javax.swing.JFrame {
     }
      
      }
+     
+     
+     
+     public static String readFileAsString(String fileName)throws Exception 
+  { 
+    String data = ""; 
+    data = new String(Files.readAllBytes(Paths.get(fileName))); 
+    return data; 
+  } 
+  
+  
+  
     private void btnAnalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnalizarActionPerformed
 
      
        
-        JFileChooser chooser = new JFileChooser();
+        
+            
+        
+       
+        try {
+            JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory(new java.io.File("."));
         chooser.showOpenDialog(null);
         File archivo = chooser.getSelectedFile();
-        String resultado_externo=""; 
-        try {
+        
+            FileReader fr=  new FileReader(archivo);
             Reader lector = new BufferedReader(new FileReader(archivo));
+            
+       texto= readFileAsString(archivo.getAbsolutePath());
+        
             Lexer lexer = new Lexer(lector);
             String resultado = "";
             while (true) {
@@ -151,6 +187,7 @@ public class Interfaz extends javax.swing.JFrame {
                  sintax.lista_tokens.add(to);
                 if (tokens == null) {
                     resultado += "FIN";
+                    txtResultado.setForeground(Color.green);
                     txtResultado.setText(resultado);
                       guardararchivo(resultado, archivo.getAbsolutePath().split("\\.")[0]+".out");
                     return;
@@ -232,18 +269,43 @@ public class Interfaz extends javax.swing.JFrame {
             Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            Logger.getLogger(Interfaz.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         
       
     }//GEN-LAST:event_btnAnalizarActionPerformed
 
+    public static  void guardar_salidas(String error){
+    
+    errores.add(error+"\n");
+    }
+    
     private void btnAnalizar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnalizar1ActionPerformed
-        token_object t = new token_object();
+       
+        
+        /*token_object t = new token_object();
         t.setToken(Tokens.final_texto);
         sintax.lista_tokens.add(t);
         sintax.analizar();
-        JOptionPane.showMessageDialog(null,sintax.lista_errores);
+        JOptionPane.showMessageDialog(null,sintax.lista_errores);*/
+        
+     
+        Sintax s = new Sintax(new code.Lexercup(new StringReader(texto)));
+      
+        try {
+            errores.add("Analisis iniciado \n");
+            s.parse();
+            errores.add("Analisis finalizado \n");
+            
+            Color myred = new Color(162, 35, 29);
+            analisis_sintactico.setForeground(myred);
+            analisis_sintactico.setText(errores.toString());
+             
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }//GEN-LAST:event_btnAnalizar1ActionPerformed
 
     /**
@@ -283,10 +345,12 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextArea analisis_sintactico;
     private javax.swing.JButton btnAnalizar;
     private javax.swing.JButton btnAnalizar1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea txtResultado;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,16 +1,3 @@
--------------------------------------------------------------
---Listar todos los clientes que no tienen dirección
-
-select c.CustomerID,COUNT(c.PersonID) l,SUM(p.FirstName)  'hsdhgasjh' ,MAX(p.LastName) as p
- from Sales.Customer as c  
-
-inner join Person.Person p on c.PersonID=p.BusinessEntityID
-left outer join Person.BusinessEntityAddress bea on bea.BusinessEntityID=p.BusinessEntityID
-
-where bea.AddressID is null--siempre validar sobre llave primaria que no sean nulos
-------------------------------------------------------------------------------------------------------
-;
-
 --Listar todos los productos finales que nunca han sido vendidos.
 /*
 peor pra el rendimiento de la consultas*/
@@ -33,12 +20,6 @@ go
  group by v.BusinessEntityID,v.shi
  order by v.BusinessEntityID
 ;
- ------------------------------------------
- --el mismo de arriba pero tambien agrupado por anio y con promedio de compra por anio 
-  select v.shi,DATEPART(YEAR,OrderDate),round(avg(a.TotalDue),2,0) as compra_promedio,COUNT(v.BusinessEntityID) as no_compras  from  purchasing.PurchaseOrderHeader a
- inner join Purchasing.Vendor v on a.VendorID = v.BusinessEntityID
- group by v.shi, DATEPART(YEAR,OrderDate)
- order by v.shi, DATEPART(YEAR,OrderDate);
  ------------------------------------------------
  /*
 

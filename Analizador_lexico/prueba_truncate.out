@@ -4,13 +4,69 @@ Token: TABLE TABLE
 
 linea :0 , primera columna: 15 ultima columna: 29 , HumanResources: Es un@Identificador
 
-linea :0 , primera columna: 29 ultima columna: 30 , .: Es un@punto
+linea :0 , primera columna: 29 ultima columna: 30 , ,: Es un@coma
 
-linea :0 , primera columna: 30 ultima columna: 42 , JobCandidate: Es un@Identificador
+linea :0 , primera columna: 30 ultima columna: 35 , perro: Es un@Identificador
 
-linea :0 , primera columna: 42 ultima columna: 43 , ;: Es un@punto_coma
+linea :0 , primera columna: 35 ultima columna: 36 , ,: Es un@coma
 
-Token: GO GO
+linea :0 , primera columna: 36 ultima columna: 40 , gato: Es un@Identificador
+
+linea :0 , primera columna: 40 ultima columna: 41 , ;: Es un@punto_coma
+
+Token: TRUNCATE TRUNCATE
+
+Token: TABLE TABLE
+
+linea :1 , primera columna: 15 ultima columna: 29 , HumanResources: Es un@Identificador
+
+linea :1 , primera columna: 29 ultima columna: 30 , ,: Es un@coma
+
+linea :1 , primera columna: 30 ultima columna: 35 , perro: Es un@Identificador
+
+linea :1 , primera columna: 35 ultima columna: 36 , ,: Es un@coma
+
+Token: SELECT SELECT
+
+linea :1 , primera columna: 43 ultima columna: 44 , ,: Es un@coma
+
+Token: DROP DROP
+
+linea :1 , primera columna: 48 ultima columna: 49 , ,: Es un@coma
+
+linea :1 , primera columna: 49 ultima columna: 53 , gato: Es un@Identificador
+
+linea :1 , primera columna: 53 ultima columna: 54 , ;: Es un@punto_coma
+
+Token: TRUNCATE TRUNCATE
+
+Token: TABLE TABLE
+
+linea :2 , primera columna: 16 ultima columna: 21 , t1266: Es un@Identificador
+
+linea :2 , primera columna: 22 ultima columna: 23 , ,: Es un@coma
+
+linea :2 , primera columna: 23 ultima columna: 31 , hufjsdhf: Es un@Identificador
+
+linea :2 , primera columna: 31 ultima columna: 32 , ,: Es un@coma
+
+linea :2 , primera columna: 32 ultima columna: 37 , jdshj: Es un@Identificador
+
+linea :2 , primera columna: 37 ultima columna: 38 , ,: Es un@coma
+
+linea :2 , primera columna: 39 ultima columna: 44 , 12566: Es un@Int
+
+Token: SELECT SELECT
+
+linea :2 , primera columna: 51 ultima columna: 52 , ,: Es un@coma
+
+Token: DROP DROP
+
+linea :2 , primera columna: 56 ultima columna: 57 , ,: Es un@coma
+
+linea :2 , primera columna: 57 ultima columna: 61 , gato: Es un@Identificador
+
+linea :2 , primera columna: 61 ultima columna: 62 , ;: Es un@punto_coma
 
 Token: TRUNCATE TRUNCATE
 
@@ -18,8 +74,58 @@ Token: TABLE TABLE
 
 linea :3 , primera columna: 15 ultima columna: 30 , PartitionTable1: Es un@Identificador
 
-linea :3 , primera columna: 30 ultima columna: 31 , ;: Es un@punto_coma
+linea :3 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
 
-Token: GO GO
+linea :3 , primera columna: 31 ultima columna: 37 , animal: Es un@Identificador
+
+linea :3 , primera columna: 37 ultima columna: 38 , ;: Es un@punto_coma
+
+Token: TRUNCATE TRUNCATE
+
+Token: SELECT SELECT
+
+linea :4 , primera columna: 16 ultima columna: 31 , PartitionTable1: Es un@Identificador
+
+linea :4 , primera columna: 31 ultima columna: 32 , ,: Es un@coma
+
+linea :4 , primera columna: 32 ultima columna: 38 , animal: Es un@Identificador
+
+linea :4 , primera columna: 38 ultima columna: 39 , ;: Es un@punto_coma
+
+Token: TRUNCATE TRUNCATE
+
+linea :5 , primera columna: 9 ultima columna: 24 , PartitionTable1: Es un@Identificador
+
+linea :5 , primera columna: 24 ultima columna: 25 , ,: Es un@coma
+
+linea :5 , primera columna: 25 ultima columna: 31 , animal: Es un@Identificador
+
+linea :5 , primera columna: 31 ultima columna: 32 , ;: Es un@punto_coma
+
+Token: TRUNCATE TRUNCATE
+
+Token: CREATE CREATE
+
+linea :6 , primera columna: 16 ultima columna: 31 , PartitionTable1: Es un@Identificador
+
+linea :6 , primera columna: 31 ultima columna: 32 , ,: Es un@coma
+
+linea :6 , primera columna: 32 ultima columna: 38 , animal: Es un@Identificador
+
+linea :6 , primera columna: 38 ultima columna: 39 , ;: Es un@punto_coma
+
+Token: TRUNCATE TRUNCATE
+
+Token: TABLE TABLE
+
+linea :7 , primera columna: 15 ultima columna: 30 , PartitionTable1: Es un@Identificador
+
+linea :7 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :7 , primera columna: 31 ultima columna: 37 , animal: Es un@Identificador
+
+linea :7 , primera columna: 37 ultima columna: 38 , ;: Es un@punto_coma
+
+FIN:7 , primera columna: 37 ultima columna: 38 , ;: Es un@punto_coma
 
 FIN

@@ -8,7 +8,7 @@ linea :0 , primera columna: 22 ultima columna: 23 , ;: Es un@punto_coma
 
 Token: GO GO
 
-Token: CREATE CREATE
+FINen: CREATE CREATE
 
 Token: TABLE TABLE
 

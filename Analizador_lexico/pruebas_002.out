@@ -1,0 +1,2919 @@
+Token: ALTER ALTER
+
+Token: VIEW VIEW
+
+linea :1 , primera columna: 11 ultima columna: 25 , HumanResources: Es un@Identificador
+
+linea :1 , primera columna: 25 ultima columna: 26 , .: Es un@punto
+
+linea :1 , primera columna: 26 ultima columna: 42 , EmployeeHireDate: Es un@Identificador
+
+Token: AS AS
+
+Token: SELECT SELECT
+
+linea :3 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
+
+linea :3 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+
+linea :3 , primera columna: 9 ultima columna: 18 , FirstName: Es un@Identificador
+
+linea :3 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
+
+linea :3 , primera columna: 20 ultima columna: 21 , p: Es un@Identificador
+
+linea :3 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+
+linea :3 , primera columna: 22 ultima columna: 30 , LastName: Es un@Identificador
+
+linea :3 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :3 , primera columna: 32 ultima columna: 33 , e: Es un@Identificador
+
+linea :3 , primera columna: 33 ultima columna: 34 , .: Es un@punto
+
+linea :3 , primera columna: 34 ultima columna: 42 , HireDate: Es un@Identificador
+
+Token: FROM FROM
+
+linea :4 , primera columna: 5 ultima columna: 19 , HumanResources: Es un@Identificador
+
+linea :4 , primera columna: 19 ultima columna: 20 , .: Es un@punto
+
+linea :4 , primera columna: 20 ultima columna: 28 , Employee: Es un@Identificador
+
+Token: AS AS
+
+linea :4 , primera columna: 32 ultima columna: 33 , e: Es un@Identificador
+
+Token: JOIN JOIN
+
+linea :4 , primera columna: 39 ultima columna: 45 , Person: Es un@Identificador
+
+linea :4 , primera columna: 45 ultima columna: 46 , .: Es un@punto
+
+linea :4 , primera columna: 46 ultima columna: 52 , Person: Es un@Identificador
+
+Token: AS AS
+
+linea :4 , primera columna: 56 ultima columna: 57 , p: Es un@Identificador
+
+Token: ON ON
+
+linea :5 , primera columna: 3 ultima columna: 4 , e: Es un@Identificador
+
+linea :5 , primera columna: 4 ultima columna: 5 , .: Es un@punto
+
+linea :5 , primera columna: 5 ultima columna: 21 , BusinessEntityID: Es un@Identificador
+
+linea :5 , primera columna: 22 ultima columna: 23 , =: Es un@igual
+
+linea :5 , primera columna: 24 ultima columna: 25 , p: Es un@Identificador
+
+linea :5 , primera columna: 25 ultima columna: 26 , .: Es un@punto
+
+linea :5 , primera columna: 26 ultima columna: 42 , BusinessEntityID: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :6 , primera columna: 6 ultima columna: 14 , HireDate: Es un@Identificador
+
+linea :6 , primera columna: 15 ultima columna: 16 , <: Es un@menor
+
+linea :6 , primera columna: 17 ultima columna: 18 , 2: Es un@Int
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: VIEW VIEW
+
+linea :10 , primera columna: 0 ultima columna: 14 , vista_usuarios: Es un@Identificador
+
+Token: AS AS
+
+Token: SELECT SELECT
+
+linea :11 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
+
+Token: FROM FROM
+
+linea :11 , primera columna: 14 ultima columna: 22 , usuarios: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :11 , primera columna: 29 ultima columna: 33 , edad: Es un@Identificador
+
+linea :11 , primera columna: 34 ultima columna: 35 , <: Es un@menor
+
+linea :11 , primera columna: 36 ultima columna: 38 , 30: Es un@Int
+
+linea :11 , primera columna: 38 ultima columna: 39 , ;: Es un@punto_coma
+
+Token: ALTER ALTER
+
+Token: VIEW VIEW
+
+linea :13 , primera columna: 11 ultima columna: 17 , MyView: Es un@Identificador
+
+Token: AS AS
+
+Token: SELECT SELECT
+
+linea :13 , primera columna: 28 ultima columna: 37 , TableCol1: Es un@Identificador
+
+Token: AS AS
+
+linea :13 , primera columna: 41 ultima columna: 49 , ViewCol1: Es un@Identificador
+
+linea :13 , primera columna: 49 ultima columna: 50 , ,: Es un@coma
+
+linea :14 , primera columna: 5 ultima columna: 14 , TableCol2: Es un@Identificador
+
+Token: AS AS
+
+linea :14 , primera columna: 18 ultima columna: 26 , ViewCol2: Es un@Identificador
+
+linea :14 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+linea :15 , primera columna: 5 ultima columna: 14 , TableCol3: Es un@Identificador
+
+Token: AS AS
+
+linea :15 , primera columna: 18 ultima columna: 26 , ViewCol3: Es un@Identificador
+
+Token: FROM FROM
+
+linea :16 , primera columna: 10 ultima columna: 17 , MyTable: Es un@Identificador
+
+linea :16 , primera columna: 17 ultima columna: 18 , ;: Es un@punto_coma
+
+Token: ALTER ALTER
+
+Token: DATABASE DATABASE
+
+linea :19 , primera columna: 15 ultima columna: 21 , testDB: Es un@Identificador
+
+linea :20 , primera columna: 0 ultima columna: 7 , COLLATE: Es un@Reservadas
+
+linea :20 , primera columna: 8 ultima columna: 20 , French_CI_AI: Es un@Identificador
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: USER USER
+
+linea :23 , primera columna: 11 ultima columna: 17 , Mary51: Es un@Identificador
+
+linea :23 , primera columna: 17 ultima columna: 18 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+Token: DATABASE DATABASE
+
+linea :25 , primera columna: 14 ultima columna: 29 , [LineaDiamante]: Es un@Identificador
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: TABLE TABLE
+
+linea :28 , primera columna: 11 ultima columna: 29 , AdventureWorks2012: Es un@Identificador
+
+linea :28 , primera columna: 29 ultima columna: 30 , .: Es un@punto
+
+linea :28 , primera columna: 30 ultima columna: 33 , dbo: Es un@Identificador
+
+linea :28 , primera columna: 33 ultima columna: 34 , .: Es un@punto
+
+linea :28 , primera columna: 34 ultima columna: 46 , SalesPerson2: Es un@Identificador
+
+linea :28 , primera columna: 47 ultima columna: 48 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+Token: INDEX INDEX
+
+Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: 30 primera columna: 11 ultima columna: 44, token malo IX_ProductVendor_BusinessEntityID
+el Identificador correcto seria asi: IX_ProductVendor_BusinessEntity
+
+Token: ON ON
+
+linea :31 , primera columna: 7 ultima columna: 17 , Purchasing: Es un@Identificador
+
+linea :31 , primera columna: 17 ultima columna: 18 , .: Es un@punto
+
+linea :31 , primera columna: 18 ultima columna: 31 , ProductVendor: Es un@Identificador
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: INDEX INDEX
+
+Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: 35 primera columna: 4 ultima columna: 37, token malo IX_PurchaseOrderHeader_EmployeeID
+el Identificador correcto seria asi: IX_PurchaseOrderHeader_Employee
+
+Token: ON ON
+
+linea :35 , primera columna: 41 ultima columna: 51 , Purchasing: Es un@Identificador
+
+linea :35 , primera columna: 51 ultima columna: 52 , .: Es un@punto
+
+linea :35 , primera columna: 52 ultima columna: 71 , PurchaseOrderHeader: Es un@Identificador
+
+linea :35 , primera columna: 71 ultima columna: 72 , ,: Es un@coma
+
+linea :36 , primera columna: 4 ultima columna: 30 , IX_Address_StateProvinceID: Es un@Identificador
+
+Token: ON ON
+
+linea :36 , primera columna: 34 ultima columna: 40 , Person: Es un@Identificador
+
+linea :36 , primera columna: 40 ultima columna: 41 , .: Es un@punto
+
+linea :36 , primera columna: 41 ultima columna: 48 , Address: Es un@Identificador
+
+linea :36 , primera columna: 48 ultima columna: 49 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+Token: VIEW VIEW
+
+Token: IF IF
+
+Token: EXISTS EXISTS
+
+linea :38 , primera columna: 20 ultima columna: 23 , dbo: Es un@Identificador
+
+linea :38 , primera columna: 23 ultima columna: 24 , .: Es un@punto
+
+linea :38 , primera columna: 24 ultima columna: 31 , Reorder: Es un@Identificador
+
+Token: GO GO
+
+Token: CREATE CREATE
+
+Token: VIEW VIEW
+
+linea :41 , primera columna: 12 ultima columna: 25 , hiredate_view: Es un@Identificador
+
+Token: AS AS
+
+Token: SELECT SELECT
+
+linea :43 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
+
+linea :43 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+
+linea :43 , primera columna: 9 ultima columna: 18 , FirstName: Es un@Identificador
+
+linea :43 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
+
+linea :43 , primera columna: 20 ultima columna: 21 , p: Es un@Identificador
+
+linea :43 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+
+linea :43 , primera columna: 22 ultima columna: 30 , LastName: Es un@Identificador
+
+linea :43 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :43 , primera columna: 32 ultima columna: 33 , e: Es un@Identificador
+
+linea :43 , primera columna: 33 ultima columna: 34 , .: Es un@punto
+
+linea :43 , primera columna: 34 ultima columna: 50 , BusinessEntityID: Es un@Identificador
+
+linea :43 , primera columna: 50 ultima columna: 51 , ,: Es un@coma
+
+linea :43 , primera columna: 52 ultima columna: 53 , e: Es un@Identificador
+
+linea :43 , primera columna: 53 ultima columna: 54 , .: Es un@punto
+
+linea :43 , primera columna: 54 ultima columna: 62 , HireDate: Es un@Identificador
+
+Token: FROM FROM
+
+linea :44 , primera columna: 5 ultima columna: 19 , HumanResources: Es un@Identificador
+
+linea :44 , primera columna: 19 ultima columna: 20 , .: Es un@punto
+
+linea :44 , primera columna: 20 ultima columna: 28 , Employee: Es un@Identificador
+
+linea :44 , primera columna: 29 ultima columna: 30 , e: Es un@Identificador
+
+Token: JOIN JOIN
+
+linea :45 , primera columna: 5 ultima columna: 11 , Person: Es un@Identificador
+
+linea :45 , primera columna: 11 ultima columna: 12 , .: Es un@punto
+
+linea :45 , primera columna: 12 ultima columna: 18 , Person: Es un@Identificador
+
+Token: AS AS
+
+linea :45 , primera columna: 22 ultima columna: 23 , p: Es un@Identificador
+
+Token: ON ON
+
+linea :45 , primera columna: 27 ultima columna: 28 , e: Es un@Identificador
+
+linea :45 , primera columna: 28 ultima columna: 29 , .: Es un@punto
+
+linea :45 , primera columna: 29 ultima columna: 45 , BusinessEntityID: Es un@Identificador
+
+linea :45 , primera columna: 46 ultima columna: 47 , =: Es un@igual
+
+linea :45 , primera columna: 48 ultima columna: 49 , p: Es un@Identificador
+
+linea :45 , primera columna: 49 ultima columna: 50 , .: Es un@punto
+
+linea :45 , primera columna: 50 ultima columna: 66 , BusinessEntityID: Es un@Identificador
+
+linea :45 , primera columna: 66 ultima columna: 67 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: VIEW VIEW
+
+linea :47 , primera columna: 12 ultima columna: 33 , DimEmployeeBirthDates: Es un@Identificador
+
+Token: AS AS
+
+Token: SELECT SELECT
+
+linea :48 , primera columna: 7 ultima columna: 16 , FirstName: Es un@Identificador
+
+linea :48 , primera columna: 16 ultima columna: 17 , ,: Es un@coma
+
+linea :48 , primera columna: 18 ultima columna: 26 , LastName: Es un@Identificador
+
+linea :48 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+linea :48 , primera columna: 28 ultima columna: 37 , BirthDate: Es un@Identificador
+
+Token: FROM FROM
+
+linea :49 , primera columna: 5 ultima columna: 16 , DimEmployee: Es un@Identificador
+
+linea :49 , primera columna: 16 ultima columna: 17 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: CLUSTERED CLUSTERED
+
+Token: INDEX INDEX
+
+linea :51 , primera columna: 23 ultima columna: 48 , IX_ProductVendor_VendorID: Es un@Identificador
+
+Token: ON ON
+
+linea :51 , primera columna: 52 ultima columna: 62 , Purchasing: Es un@Identificador
+
+linea :51 , primera columna: 62 ultima columna: 63 , .: Es un@punto
+
+linea :51 , primera columna: 63 ultima columna: 76 , ProductVendor: Es un@Identificador
+
+linea :51 , primera columna: 77 ultima columna: 78 , (: Es un@parentesis_izquierdo
+
+linea :51 , primera columna: 78 ultima columna: 86 , VendorID: Es un@Identificador
+
+linea :51 , primera columna: 86 ultima columna: 87 , ): Es un@parentesis_derecho
+
+linea :51 , primera columna: 87 ultima columna: 88 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: UNIQUE UNIQUE
+
+Token: INDEX INDEX
+
+linea :53 , primera columna: 20 ultima columna: 39 , AK_UnitMeasure_Name: Es un@Identificador
+
+Token: ON ON
+
+linea :54 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :54 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :54 , primera columna: 16 ultima columna: 27 , UnitMeasure: Es un@Identificador
+
+linea :54 , primera columna: 27 ultima columna: 28 , (: Es un@parentesis_izquierdo
+
+linea :54 , primera columna: 28 ultima columna: 32 , Name: Es un@Identificador
+
+linea :54 , primera columna: 32 ultima columna: 33 , ): Es un@parentesis_derecho
+
+linea :54 , primera columna: 33 ultima columna: 34 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: DATABASE DATABASE
+
+linea :56 , primera columna: 16 ultima columna: 29 , MyOptionsTest: Es un@Identificador
+
+linea :57 , primera columna: 0 ultima columna: 7 , COLLATE: Es un@Reservadas
+
+linea :57 , primera columna: 8 ultima columna: 20 , French_CI_AI: Es un@Identificador
+
+linea :57 , primera columna: 20 ultima columna: 21 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: USER USER
+
+linea :59 , primera columna: 12 ultima columna: 26 , [ContosoFritz]: Es un@Identificador
+
+Token: GO GO
+
+Token: CREATE CREATE
+
+Token: USER USER
+
+linea :62 , primera columna: 12 ultima columna: 25 , AbolrousHazem: Es un@Identificador
+
+linea :62 , primera columna: 25 ultima columna: 26 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: TABLE TABLE
+
+linea :64 , primera columna: 13 ultima columna: 16 , dbo: Es un@Identificador
+
+linea :64 , primera columna: 16 ultima columna: 17 , .: Es un@punto
+
+linea :64 , primera columna: 17 ultima columna: 19 , T1: Es un@Identificador
+
+linea :65 , primera columna: 0 ultima columna: 1 , (: Es un@parentesis_izquierdo
+
+linea :66 , primera columna: 4 ultima columna: 6 , c1: Es un@Identificador
+
+Token: INT INT
+
+linea :66 , primera columna: 10 ultima columna: 11 , ,: Es un@coma
+
+linea :67 , primera columna: 4 ultima columna: 6 , c2: Es un@Identificador
+
+Token: VARCHAR VARCHAR
+
+linea :67 , primera columna: 14 ultima columna: 15 , (: Es un@parentesis_izquierdo
+
+linea :67 , primera columna: 15 ultima columna: 18 , 200: Es un@Int
+
+linea :67 , primera columna: 18 ultima columna: 19 , ): Es un@parentesis_derecho
+
+linea :68 , primera columna: 0 ultima columna: 1 , ): Es un@parentesis_derecho
+
+linea :68 , primera columna: 1 ultima columna: 2 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :71 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
+
+Token: FROM FROM
+
+linea :72 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :72 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :72 , primera columna: 16 ultima columna: 23 , Product: Es un@Identificador
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :73 , primera columna: 9 ultima columna: 13 , Name: Es un@Identificador
+
+Token: ASC ASC
+
+linea :73 , primera columna: 17 ultima columna: 18 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :75 , primera columna: 7 ultima columna: 11 , Name: Es un@Identificador
+
+linea :75 , primera columna: 11 ultima columna: 12 , ,: Es un@coma
+
+linea :75 , primera columna: 13 ultima columna: 26 , ProductNumber: Es un@Identificador
+
+linea :75 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+linea :75 , primera columna: 28 ultima columna: 37 , ListPrice: Es un@Identificador
+
+Token: AS AS
+
+linea :75 , primera columna: 41 ultima columna: 46 , Price: Es un@Identificador
+
+Token: FROM FROM
+
+linea :76 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :76 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :76 , primera columna: 16 ultima columna: 23 , Product: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :77 , primera columna: 6 ultima columna: 17 , ProductLine: Es un@Identificador
+
+linea :77 , primera columna: 18 ultima columna: 19 , =: Es un@igual
+
+linea :77 , primera columna: 20 ultima columna: 23 , 'R': Es un@String
+
+Token: AND AND
+
+linea :78 , primera columna: 4 ultima columna: 21 , DaysToManufacture: Es un@Identificador
+
+linea :78 , primera columna: 22 ultima columna: 23 , <: Es un@menor
+
+linea :78 , primera columna: 24 ultima columna: 25 , 4: Es un@Int
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :79 , primera columna: 9 ultima columna: 13 , Name: Es un@Identificador
+
+Token: ASC ASC
+
+linea :79 , primera columna: 17 ultima columna: 18 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :81 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
+
+linea :81 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+
+linea :81 , primera columna: 9 ultima columna: 13 , Name: Es un@Identificador
+
+Token: AS AS
+
+linea :81 , primera columna: 17 ultima columna: 28 , ProductName: Es un@Identificador
+
+Token: FROM FROM
+
+linea :82 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :82 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :82 , primera columna: 16 ultima columna: 23 , Product: Es un@Identificador
+
+Token: AS AS
+
+linea :82 , primera columna: 27 ultima columna: 28 , p: Es un@Identificador
+
+Token: INNER INNER
+
+Token: JOIN JOIN
+
+linea :83 , primera columna: 11 ultima columna: 16 , Sales: Es un@Identificador
+
+linea :83 , primera columna: 16 ultima columna: 17 , .: Es un@punto
+
+linea :83 , primera columna: 17 ultima columna: 33 , SalesOrderDetail: Es un@Identificador
+
+Token: AS AS
+
+linea :83 , primera columna: 37 ultima columna: 40 , sod: Es un@Identificador
+
+Token: ON ON
+
+linea :84 , primera columna: 3 ultima columna: 4 , p: Es un@Identificador
+
+linea :84 , primera columna: 4 ultima columna: 5 , .: Es un@punto
+
+linea :84 , primera columna: 5 ultima columna: 14 , ProductID: Es un@Identificador
+
+linea :84 , primera columna: 15 ultima columna: 16 , =: Es un@igual
+
+linea :84 , primera columna: 17 ultima columna: 20 , sod: Es un@Identificador
+
+linea :84 , primera columna: 20 ultima columna: 21 , .: Es un@punto
+
+linea :84 , primera columna: 21 ultima columna: 30 , ProductID: Es un@Identificador
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :85 , primera columna: 9 ultima columna: 20 , ProductName: Es un@Identificador
+
+Token: DESC DESC
+
+linea :85 , primera columna: 25 ultima columna: 26 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :87 , primera columna: 7 ultima columna: 19 , SalesOrderID: Es un@Identificador
+
+linea :87 , primera columna: 19 ultima columna: 20 , ,: Es un@coma
+
+Token: SUM SUM
+
+linea :87 , primera columna: 24 ultima columna: 25 , (: Es un@parentesis_izquierdo
+
+linea :87 , primera columna: 25 ultima columna: 34 , LineTotal: Es un@Identificador
+
+linea :87 , primera columna: 34 ultima columna: 35 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :87 , primera columna: 39 ultima columna: 47 , SubTotal: Es un@Identificador
+
+Token: FROM FROM
+
+linea :88 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :88 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :88 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :89 , primera columna: 9 ultima columna: 21 , SalesOrderID: Es un@Identificador
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :90 , primera columna: 9 ultima columna: 21 , SalesOrderID: Es un@Identificador
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :93 , primera columna: 7 ultima columna: 21 , ProductModelID: Es un@Identificador
+
+linea :93 , primera columna: 21 ultima columna: 22 , ,: Es un@coma
+
+Token: AVG AVG
+
+linea :93 , primera columna: 26 ultima columna: 27 , (: Es un@parentesis_izquierdo
+
+linea :93 , primera columna: 27 ultima columna: 36 , ListPrice: Es un@Identificador
+
+linea :93 , primera columna: 36 ultima columna: 37 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :93 , primera columna: 41 ultima columna: 59 , [AverageListPrice]: Es un@Identificador
+
+Token: FROM FROM
+
+linea :94 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :94 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :94 , primera columna: 16 ultima columna: 23 , Product: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :95 , primera columna: 6 ultima columna: 15 , ListPrice: Es un@Identificador
+
+linea :95 , primera columna: 16 ultima columna: 17 , >: Es un@mayor
+
+linea :95 , primera columna: 18 ultima columna: 22 , 1000: Es un@Int
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :96 , primera columna: 9 ultima columna: 23 , ProductModelID: Es un@Identificador
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :97 , primera columna: 9 ultima columna: 23 , ProductModelID: Es un@Identificador
+
+linea :97 , primera columna: 23 ultima columna: 24 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :100 , primera columna: 7 ultima columna: 16 , ProductID: Es un@Identificador
+
+linea :100 , primera columna: 16 ultima columna: 17 , ,: Es un@coma
+
+Token: AVG AVG
+
+linea :100 , primera columna: 21 ultima columna: 22 , (: Es un@parentesis_izquierdo
+
+linea :100 , primera columna: 22 ultima columna: 31 , UnitPrice: Es un@Identificador
+
+linea :100 , primera columna: 31 ultima columna: 32 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :100 , primera columna: 36 ultima columna: 50 , [AveragePrice]: Es un@Identificador
+
+Token: FROM FROM
+
+linea :101 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :101 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :101 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :102 , primera columna: 6 ultima columna: 14 , OrderQty: Es un@Identificador
+
+linea :102 , primera columna: 15 ultima columna: 16 , >: Es un@mayor
+
+linea :102 , primera columna: 17 ultima columna: 19 , 10: Es un@Int
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :103 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+Token: AVG AVG
+
+linea :104 , primera columna: 12 ultima columna: 13 , (: Es un@parentesis_izquierdo
+
+linea :104 , primera columna: 13 ultima columna: 22 , UnitPrice: Es un@Identificador
+
+linea :104 , primera columna: 22 ultima columna: 23 , ): Es un@parentesis_derecho
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :107 , primera columna: 7 ultima columna: 16 , ProductID: Es un@Identificador
+
+Token: FROM FROM
+
+linea :108 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :108 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :108 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :109 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+Token: HAVING HAVING
+
+Token: AVG AVG
+
+linea :110 , primera columna: 10 ultima columna: 11 , (: Es un@parentesis_izquierdo
+
+linea :110 , primera columna: 11 ultima columna: 19 , OrderQty: Es un@Identificador
+
+linea :110 , primera columna: 19 ultima columna: 20 , ): Es un@parentesis_derecho
+
+linea :110 , primera columna: 21 ultima columna: 22 , >: Es un@mayor
+
+linea :110 , primera columna: 23 ultima columna: 24 , 5: Es un@Int
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :111 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :114 , primera columna: 7 ultima columna: 19 , SalesOrderID: Es un@Identificador
+
+linea :114 , primera columna: 19 ultima columna: 20 , ,: Es un@coma
+
+linea :114 , primera columna: 21 ultima columna: 42 , CarrierTrackingNumber: Es un@Identificador
+
+Token: FROM FROM
+
+linea :115 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :115 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :115 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :116 , primera columna: 9 ultima columna: 21 , SalesOrderID: Es un@Identificador
+
+linea :116 , primera columna: 21 ultima columna: 22 , ,: Es un@coma
+
+linea :116 , primera columna: 23 ultima columna: 44 , CarrierTrackingNumber: Es un@Identificador
+
+Token: HAVING HAVING
+
+linea :117 , primera columna: 7 ultima columna: 28 , CarrierTrackingNumber: Es un@Identificador
+
+Token: LIKE LIKE
+
+linea :117 , primera columna: 34 ultima columna: 40 , '4BD%': Es un@String
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :118 , primera columna: 9 ultima columna: 21 , SalesOrderID: Es un@Identificador
+
+linea :118 , primera columna: 22 ultima columna: 23 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :120 , primera columna: 7 ultima columna: 16 , ProductID: Es un@Identificador
+
+Token: FROM FROM
+
+linea :121 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :121 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :121 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :122 , primera columna: 6 ultima columna: 15 , UnitPrice: Es un@Identificador
+
+linea :122 , primera columna: 16 ultima columna: 17 , <: Es un@menor
+
+linea :122 , primera columna: 18 ultima columna: 23 , 25.00: Es un@Float
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :123 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+Token: HAVING HAVING
+
+Token: AVG AVG
+
+linea :124 , primera columna: 10 ultima columna: 11 , (: Es un@parentesis_izquierdo
+
+linea :124 , primera columna: 11 ultima columna: 19 , OrderQty: Es un@Identificador
+
+linea :124 , primera columna: 19 ultima columna: 20 , ): Es un@parentesis_derecho
+
+linea :124 , primera columna: 21 ultima columna: 22 , >: Es un@mayor
+
+linea :124 , primera columna: 23 ultima columna: 24 , 5: Es un@Int
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :125 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :128 , primera columna: 7 ultima columna: 16 , ProductID: Es un@Identificador
+
+linea :128 , primera columna: 16 ultima columna: 17 , ,: Es un@coma
+
+Token: AVG AVG
+
+linea :128 , primera columna: 21 ultima columna: 22 , (: Es un@parentesis_izquierdo
+
+linea :128 , primera columna: 22 ultima columna: 30 , OrderQty: Es un@Identificador
+
+linea :128 , primera columna: 30 ultima columna: 31 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :128 , primera columna: 35 ultima columna: 50 , AverageQuantity: Es un@Identificador
+
+linea :128 , primera columna: 50 ultima columna: 51 , ,: Es un@coma
+
+Token: SUM SUM
+
+linea :128 , primera columna: 55 ultima columna: 56 , (: Es un@parentesis_izquierdo
+
+linea :128 , primera columna: 56 ultima columna: 65 , LineTotal: Es un@Identificador
+
+linea :128 , primera columna: 65 ultima columna: 66 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :128 , primera columna: 70 ultima columna: 75 , Total: Es un@Identificador
+
+Token: FROM FROM
+
+linea :129 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :129 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :129 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :130 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+Token: HAVING HAVING
+
+Token: SUM SUM
+
+linea :131 , primera columna: 10 ultima columna: 11 , (: Es un@parentesis_izquierdo
+
+linea :131 , primera columna: 11 ultima columna: 20 , LineTotal: Es un@Identificador
+
+linea :131 , primera columna: 20 ultima columna: 21 , ): Es un@parentesis_derecho
+
+linea :131 , primera columna: 22 ultima columna: 23 , >: Es un@mayor
+
+linea :131 , primera columna: 24 ultima columna: 34 , 1000000.00: Es un@Float
+
+Token: AND AND
+
+Token: AVG AVG
+
+linea :132 , primera columna: 7 ultima columna: 8 , (: Es un@parentesis_izquierdo
+
+linea :132 , primera columna: 8 ultima columna: 16 , OrderQty: Es un@Identificador
+
+linea :132 , primera columna: 16 ultima columna: 17 , ): Es un@parentesis_derecho
+
+linea :132 , primera columna: 18 ultima columna: 19 , <: Es un@menor
+
+linea :132 , primera columna: 20 ultima columna: 21 , 3: Es un@Int
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+linea :135 , primera columna: 7 ultima columna: 16 , ProductID: Es un@Identificador
+
+linea :135 , primera columna: 16 ultima columna: 17 , ,: Es un@coma
+
+Token: SUM SUM
+
+linea :135 , primera columna: 21 ultima columna: 22 , (: Es un@parentesis_izquierdo
+
+linea :135 , primera columna: 22 ultima columna: 31 , LineTotal: Es un@Identificador
+
+linea :135 , primera columna: 31 ultima columna: 32 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :135 , primera columna: 36 ultima columna: 41 , Total: Es un@Identificador
+
+Token: FROM FROM
+
+linea :136 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :136 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :136 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :137 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+Token: HAVING HAVING
+
+Token: COUNT COUNT
+
+linea :138 , primera columna: 12 ultima columna: 13 , (: Es un@parentesis_izquierdo
+
+linea :138 , primera columna: 13 ultima columna: 14 , *: Es un@multiplicacion
+
+linea :138 , primera columna: 14 ultima columna: 15 , ): Es un@parentesis_derecho
+
+linea :138 , primera columna: 16 ultima columna: 17 , >: Es un@mayor
+
+linea :138 , primera columna: 18 ultima columna: 22 , 1500: Es un@Int
+
+Token: GO GO
+
+Token: UPDATE UPDATE
+
+linea :141 , primera columna: 7 ultima columna: 12 , Sales: Es un@Identificador
+
+linea :141 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+
+linea :141 , primera columna: 13 ultima columna: 24 , SalesPerson: Es un@Identificador
+
+Token: SET SET
+
+linea :142 , primera columna: 4 ultima columna: 9 , Bonus: Es un@Identificador
+
+linea :142 , primera columna: 10 ultima columna: 11 , =: Es un@igual
+
+linea :142 , primera columna: 12 ultima columna: 13 , 6: Es un@Int
+
+linea :142 , primera columna: 13 ultima columna: 14 , ,: Es un@coma
+
+linea :142 , primera columna: 15 ultima columna: 28 , CommissionPct: Es un@Identificador
+
+linea :142 , primera columna: 29 ultima columna: 30 , =: Es un@igual
+
+linea :142 , primera columna: 31 ultima columna: 35 , 0.10: Es un@Float
+
+Token: WHERE WHERE
+
+linea :143 , primera columna: 6 ultima columna: 16 , SalesQuota: Es un@Identificador
+
+linea :143 , primera columna: 17 ultima columna: 18 , =: Es un@igual
+
+Token: NULL NULL
+
+linea :143 , primera columna: 23 ultima columna: 24 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+Token: DATABASE DATABASE
+
+linea :147 , primera columna: 14 ultima columna: 29 , [LineaDiamante]: Es un@Identificador
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :150 , primera columna: 13 ultima columna: 18 , [dbo]: Es un@Identificador
+
+linea :150 , primera columna: 18 ultima columna: 19 , .: Es un@punto
+
+linea :150 , primera columna: 19 ultima columna: 34 , [InformeViajes]: Es un@Identificador
+
+Token: DROP DROP
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :150 , primera columna: 51 ultima columna: 83 , [CK__InformeVi__Pasaj__6D0D32F4]: Es un@Identificador
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: USER USER
+
+Token: IF IF
+
+Token: EXISTS EXISTS
+
+linea :154 , primera columna: 20 ultima columna: 29 , user_name: Es un@Identificador
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: DATABASE DATABASE
+
+linea :157 , primera columna: 15 ultima columna: 21 , testDB: Es un@Identificador
+
+linea :158 , primera columna: 0 ultima columna: 7 , COLLATE: Es un@Reservadas
+
+linea :158 , primera columna: 8 ultima columna: 20 , French_CI_AI: Es un@Identificador
+
+linea :158 , primera columna: 20 ultima columna: 21 , ;: Es un@punto_coma
+
+Token: DELETE DELETE
+
+Token: TOP TOP
+
+linea :160 , primera columna: 11 ultima columna: 12 , (: Es un@parentesis_izquierdo
+
+linea :160 , primera columna: 12 ultima columna: 13 , 1: Es un@Int
+
+linea :160 , primera columna: 13 ultima columna: 14 , ): Es un@parentesis_derecho
+
+Token: FROM FROM
+
+linea :160 , primera columna: 20 ultima columna: 38 , AdventureWorks2017: Es un@Identificador
+
+linea :160 , primera columna: 38 ultima columna: 39 , .: Es un@punto
+
+linea :160 , primera columna: 39 ultima columna: 53 , HumanResources: Es un@Identificador
+
+linea :160 , primera columna: 53 ultima columna: 54 , .: Es un@punto
+
+linea :160 , primera columna: 54 ultima columna: 62 , Employee: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :161 , primera columna: 6 ultima columna: 14 , Employee: Es un@Identificador
+
+linea :161 , primera columna: 14 ultima columna: 15 , .: Es un@punto
+
+linea :161 , primera columna: 15 ultima columna: 31 , BusinessEntityID: Es un@Identificador
+
+Token: IN IN
+
+linea :161 , primera columna: 35 ultima columna: 36 , (: Es un@parentesis_izquierdo
+
+linea :161 , primera columna: 36 ultima columna: 37 , 1: Es un@Int
+
+linea :161 , primera columna: 37 ultima columna: 38 , ,: Es un@coma
+
+linea :161 , primera columna: 39 ultima columna: 40 , 5: Es un@Int
+
+linea :161 , primera columna: 40 ultima columna: 41 , ,: Es un@coma
+
+linea :161 , primera columna: 42 ultima columna: 43 , 8: Es un@Int
+
+linea :161 , primera columna: 43 ultima columna: 44 , ,: Es un@coma
+
+linea :161 , primera columna: 45 ultima columna: 46 , 0: Es un@Int
+
+linea :161 , primera columna: 46 ultima columna: 47 , ): Es un@parentesis_derecho
+
+linea :161 , primera columna: 47 ultima columna: 48 , ;: Es un@punto_coma
+
+Token: INSERT INSERT
+
+Token: INTO INTO
+
+linea :164 , primera columna: 12 ultima columna: 21 , UBICACION: Es un@Identificador
+
+linea :164 , primera columna: 22 ultima columna: 23 , (: Es un@parentesis_izquierdo
+
+linea :164 , primera columna: 23 ultima columna: 29 , ciudad: Es un@Identificador
+
+linea :164 , primera columna: 29 ultima columna: 30 , ,: Es un@coma
+
+linea :164 , primera columna: 31 ultima columna: 35 , zona: Es un@Identificador
+
+linea :164 , primera columna: 35 ultima columna: 36 , ,: Es un@coma
+
+linea :164 , primera columna: 37 ultima columna: 48 , descripcion: Es un@Identificador
+
+linea :164 , primera columna: 48 ultima columna: 49 , ): Es un@parentesis_derecho
+
+Token: VALUES VALUES
+
+linea :164 , primera columna: 57 ultima columna: 58 , (: Es un@parentesis_izquierdo
+
+linea :164 , primera columna: 58 ultima columna: 69 , 'Guatemala': Es un@String
+
+linea :164 , primera columna: 69 ultima columna: 70 , ,: Es un@coma
+
+linea :164 , primera columna: 71 ultima columna: 72 , 4: Es un@Int
+
+linea :164 , primera columna: 72 ultima columna: 73 , ,: Es un@coma
+
+linea :164 , primera columna: 74 ultima columna: 85 , 'El trebol': Es un@String
+
+linea :164 , primera columna: 85 ultima columna: 86 , ): Es un@parentesis_derecho
+
+linea :164 , primera columna: 86 ultima columna: 87 , ,: Es un@coma
+
+linea :164 , primera columna: 88 ultima columna: 89 , (: Es un@parentesis_izquierdo
+
+linea :164 , primera columna: 89 ultima columna: 100 , 'Guatemala': Es un@String
+
+linea :164 , primera columna: 100 ultima columna: 101 , ,: Es un@coma
+
+linea :164 , primera columna: 102 ultima columna: 103 , 3: Es un@Int
+
+linea :164 , primera columna: 103 ultima columna: 104 , ,: Es un@coma
+
+linea :164 , primera columna: 105 ultima columna: 118 , 'El Basurero': Es un@String
+
+linea :164 , primera columna: 118 ultima columna: 119 , ): Es un@parentesis_derecho
+
+linea :164 , primera columna: 119 ultima columna: 120 , ,: Es un@coma
+
+linea :164 , primera columna: 121 ultima columna: 122 , (: Es un@parentesis_izquierdo
+
+linea :164 , primera columna: 122 ultima columna: 133 , 'Guatemala': Es un@String
+
+linea :164 , primera columna: 133 ultima columna: 134 , ,: Es un@coma
+
+linea :164 , primera columna: 135 ultima columna: 136 , 8: Es un@Int
+
+linea :164 , primera columna: 136 ultima columna: 137 , ,: Es un@coma
+
+linea :164 , primera columna: 138 ultima columna: 148 , 'Atlntico': Es un@String
+
+linea :164 , primera columna: 148 ultima columna: 149 , ): Es un@parentesis_derecho
+
+linea :165 , primera columna: 14 ultima columna: 15 , ,: Es un@coma
+
+linea :165 , primera columna: 15 ultima columna: 16 , (: Es un@parentesis_izquierdo
+
+linea :165 , primera columna: 16 ultima columna: 27 , 'Guatemala': Es un@String
+
+linea :165 , primera columna: 27 ultima columna: 28 , ,: Es un@coma
+
+linea :165 , primera columna: 29 ultima columna: 30 , 1: Es un@Int
+
+linea :165 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :165 , primera columna: 32 ultima columna: 41 , 'Palacio': Es un@String
+
+linea :165 , primera columna: 41 ultima columna: 42 , ): Es un@parentesis_derecho
+
+linea :165 , primera columna: 42 ultima columna: 43 , ,: Es un@coma
+
+linea :165 , primera columna: 44 ultima columna: 45 , (: Es un@parentesis_izquierdo
+
+linea :165 , primera columna: 45 ultima columna: 56 , 'Guatemala': Es un@String
+
+linea :165 , primera columna: 56 ultima columna: 57 , ,: Es un@coma
+
+linea :165 , primera columna: 58 ultima columna: 60 , 11: Es un@Int
+
+linea :165 , primera columna: 60 ultima columna: 61 , ,: Es un@coma
+
+linea :165 , primera columna: 62 ultima columna: 68 , 'Peri': Es un@String
+
+linea :165 , primera columna: 68 ultima columna: 69 , ): Es un@parentesis_derecho
+
+linea :165 , primera columna: 69 ultima columna: 70 , ,: Es un@coma
+
+linea :165 , primera columna: 71 ultima columna: 72 , (: Es un@parentesis_izquierdo
+
+linea :165 , primera columna: 72 ultima columna: 83 , 'Guatemala': Es un@String
+
+linea :165 , primera columna: 83 ultima columna: 84 , ,: Es un@coma
+
+linea :165 , primera columna: 85 ultima columna: 87 , 11: Es un@Int
+
+linea :165 , primera columna: 87 ultima columna: 88 , ,: Es un@coma
+
+linea :165 , primera columna: 89 ultima columna: 102 , 'MiraFlowers': Es un@String
+
+linea :165 , primera columna: 102 ultima columna: 103 , ): Es un@parentesis_derecho
+
+linea :166 , primera columna: 14 ultima columna: 15 , ,: Es un@coma
+
+linea :166 , primera columna: 15 ultima columna: 16 , (: Es un@parentesis_izquierdo
+
+linea :166 , primera columna: 16 ultima columna: 27 , 'Guatemala': Es un@String
+
+linea :166 , primera columna: 27 ultima columna: 28 , ,: Es un@coma
+
+linea :166 , primera columna: 29 ultima columna: 30 , 5: Es un@Int
+
+linea :166 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :166 , primera columna: 32 ultima columna: 45 , 'La Asuncion': Es un@String
+
+linea :166 , primera columna: 45 ultima columna: 46 , ): Es un@parentesis_derecho
+
+linea :166 , primera columna: 46 ultima columna: 47 , ,: Es un@coma
+
+linea :166 , primera columna: 48 ultima columna: 49 , (: Es un@parentesis_izquierdo
+
+linea :166 , primera columna: 49 ultima columna: 60 , 'Guatemala': Es un@String
+
+linea :166 , primera columna: 60 ultima columna: 61 , ,: Es un@coma
+
+linea :166 , primera columna: 62 ultima columna: 63 , 7: Es un@Int
+
+linea :166 , primera columna: 63 ultima columna: 64 , ,: Es un@coma
+
+linea :166 , primera columna: 65 ultima columna: 78 , 'El Naranjal': Es un@String
+
+linea :166 , primera columna: 78 ultima columna: 79 , ): Es un@parentesis_derecho
+
+linea :166 , primera columna: 79 ultima columna: 80 , ,: Es un@coma
+
+linea :166 , primera columna: 81 ultima columna: 82 , (: Es un@parentesis_izquierdo
+
+linea :166 , primera columna: 82 ultima columna: 93 , 'Guatemala': Es un@String
+
+linea :166 , primera columna: 93 ultima columna: 94 , ,: Es un@coma
+
+linea :166 , primera columna: 95 ultima columna: 96 , 6: Es un@Int
+
+linea :166 , primera columna: 96 ultima columna: 97 , ,: Es un@coma
+
+linea :166 , primera columna: 98 ultima columna: 112 , 'El Mercadito': Es un@String
+
+linea :166 , primera columna: 112 ultima columna: 113 , ): Es un@parentesis_derecho
+
+linea :166 , primera columna: 113 ultima columna: 114 , ,: Es un@coma
+
+linea :167 , primera columna: 14 ultima columna: 15 , (: Es un@parentesis_izquierdo
+
+linea :167 , primera columna: 15 ultima columna: 26 , 'Guatemala': Es un@String
+
+linea :167 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+linea :167 , primera columna: 28 ultima columna: 30 , 17: Es un@Int
+
+linea :167 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :167 , primera columna: 32 ultima columna: 39 , 'km 10': Es un@String
+
+linea :167 , primera columna: 39 ultima columna: 40 , ): Es un@parentesis_derecho
+
+linea :167 , primera columna: 40 ultima columna: 41 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: INDEX INDEX
+
+linea :169 , primera columna: 13 ultima columna: 18 , IX_FF: Es un@Identificador
+
+Token: ON ON
+
+linea :169 , primera columna: 22 ultima columna: 25 , dbo: Es un@Identificador
+
+linea :169 , primera columna: 25 ultima columna: 26 , .: Es un@punto
+
+linea :169 , primera columna: 26 ultima columna: 37 , FactFinance: Es un@Identificador
+
+linea :169 , primera columna: 38 ultima columna: 39 , (: Es un@parentesis_izquierdo
+
+linea :169 , primera columna: 40 ultima columna: 50 , FinanceKey: Es un@Identificador
+
+linea :169 , primera columna: 50 ultima columna: 51 , ,: Es un@coma
+
+linea :169 , primera columna: 52 ultima columna: 59 , DateKey: Es un@Identificador
+
+linea :169 , primera columna: 59 ultima columna: 60 , ,: Es un@coma
+
+linea :169 , primera columna: 61 ultima columna: 76 , OrganizationKey: Es un@Identificador
+
+Token: DESC DESC
+
+linea :169 , primera columna: 81 ultima columna: 82 , ): Es un@parentesis_derecho
+
+linea :169 , primera columna: 82 ultima columna: 83 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: NONCLUSTERED NONCLUSTERED
+
+Token: INDEX INDEX
+
+Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: 172 primera columna: 26 ultima columna: 63, token malo IX_TransactionHistory_ReferenceOrderI
+el Identificador correcto seria asi: IX_TransactionHistory_Reference
+
+linea :172 , primera columna: 63 ultima columna: 64 , D: Es un@Identificador
+
+Token: ON ON
+
+linea :173 , primera columna: 3 ultima columna: 18 , TransactionsPS1: Es un@Identificador
+
+linea :173 , primera columna: 19 ultima columna: 20 , (: Es un@parentesis_izquierdo
+
+linea :173 , primera columna: 20 ultima columna: 35 , TransactionDate: Es un@Identificador
+
+linea :173 , primera columna: 35 ultima columna: 36 , ): Es un@parentesis_derecho
+
+linea :173 , primera columna: 36 ultima columna: 37 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: UNIQUE UNIQUE
+
+Token: INDEX INDEX
+
+linea :175 , primera columna: 20 ultima columna: 39 , AK_UnitMeasure_Name: Es un@Identificador
+
+Token: ON ON
+
+linea :176 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :176 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :176 , primera columna: 16 ultima columna: 27 , UnitMeasure: Es un@Identificador
+
+linea :176 , primera columna: 27 ultima columna: 28 , (: Es un@parentesis_izquierdo
+
+linea :176 , primera columna: 28 ultima columna: 32 , Name: Es un@Identificador
+
+linea :176 , primera columna: 32 ultima columna: 33 , ): Es un@parentesis_derecho
+
+linea :176 , primera columna: 33 ultima columna: 34 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :180 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
+
+linea :180 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+
+linea :180 , primera columna: 9 ultima columna: 13 , Name: Es un@Identificador
+
+Token: AS AS
+
+linea :180 , primera columna: 17 ultima columna: 28 , ProductName: Es un@Identificador
+
+Token: FROM FROM
+
+linea :181 , primera columna: 5 ultima columna: 15 , Production: Es un@Identificador
+
+linea :181 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :181 , primera columna: 16 ultima columna: 23 , Product: Es un@Identificador
+
+Token: AS AS
+
+linea :181 , primera columna: 27 ultima columna: 28 , p: Es un@Identificador
+
+Token: INNER INNER
+
+Token: JOIN JOIN
+
+linea :182 , primera columna: 11 ultima columna: 16 , Sales: Es un@Identificador
+
+linea :182 , primera columna: 16 ultima columna: 17 , .: Es un@punto
+
+linea :182 , primera columna: 17 ultima columna: 33 , SalesOrderDetail: Es un@Identificador
+
+Token: AS AS
+
+linea :182 , primera columna: 37 ultima columna: 40 , sod: Es un@Identificador
+
+Token: ON ON
+
+linea :183 , primera columna: 3 ultima columna: 4 , p: Es un@Identificador
+
+linea :183 , primera columna: 4 ultima columna: 5 , .: Es un@punto
+
+linea :183 , primera columna: 5 ultima columna: 14 , ProductID: Es un@Identificador
+
+linea :183 , primera columna: 15 ultima columna: 16 , =: Es un@igual
+
+linea :183 , primera columna: 17 ultima columna: 20 , sod: Es un@Identificador
+
+linea :183 , primera columna: 20 ultima columna: 21 , .: Es un@punto
+
+linea :183 , primera columna: 21 ultima columna: 30 , ProductID: Es un@Identificador
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :184 , primera columna: 9 ultima columna: 20 , ProductName: Es un@Identificador
+
+Token: DESC DESC
+
+linea :184 , primera columna: 25 ultima columna: 26 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: TABLE TABLE
+
+linea :187 , primera columna: 13 ultima columna: 21 , LICENCIA: Es un@Identificador
+
+linea :188 , primera columna: 0 ultima columna: 1 , (: Es un@parentesis_izquierdo
+
+linea :189 , primera columna: 1 ultima columna: 12 , id_licencia: Es un@Identificador
+
+Token: INT INT
+
+Token: IDENTITY IDENTITY
+
+linea :189 , primera columna: 25 ultima columna: 26 , (: Es un@parentesis_izquierdo
+
+linea :189 , primera columna: 26 ultima columna: 27 , 1: Es un@Int
+
+linea :189 , primera columna: 27 ultima columna: 28 , ,: Es un@coma
+
+linea :189 , primera columna: 28 ultima columna: 29 , 1: Es un@Int
+
+linea :189 , primera columna: 29 ultima columna: 30 , ): Es un@parentesis_derecho
+
+linea :189 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :190 , primera columna: 1 ultima columna: 5 , tipo: Es un@Identificador
+
+Token: INT INT
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :190 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
+
+linea :191 , primera columna: 1 ultima columna: 7 , nombre: Es un@Identificador
+
+Token: VARCHAR VARCHAR
+
+linea :191 , primera columna: 15 ultima columna: 16 , (: Es un@parentesis_izquierdo
+
+linea :191 , primera columna: 16 ultima columna: 18 , 30: Es un@Int
+
+linea :191 , primera columna: 18 ultima columna: 19 , ): Es un@parentesis_derecho
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :191 , primera columna: 28 ultima columna: 29 , ,: Es un@coma
+
+linea :192 , primera columna: 1 ultima columna: 9 , apellido: Es un@Identificador
+
+Token: VARCHAR VARCHAR
+
+linea :192 , primera columna: 17 ultima columna: 18 , (: Es un@parentesis_izquierdo
+
+linea :192 , primera columna: 18 ultima columna: 20 , 30: Es un@Int
+
+linea :192 , primera columna: 20 ultima columna: 21 , ): Es un@parentesis_derecho
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :192 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :193 , primera columna: 1 ultima columna: 12 , no_licencia: Es un@Identificador
+
+Token: VARCHAR VARCHAR
+
+linea :193 , primera columna: 20 ultima columna: 21 , (: Es un@parentesis_izquierdo
+
+linea :193 , primera columna: 21 ultima columna: 23 , 13: Es un@Int
+
+linea :193 , primera columna: 23 ultima columna: 24 , ): Es un@parentesis_derecho
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :193 , primera columna: 33 ultima columna: 34 , ,: Es un@coma
+
+linea :194 , primera columna: 1 ultima columna: 10 , fecha_nac: Es un@Identificador
+
+Token: DATE DATE
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :194 , primera columna: 24 ultima columna: 25 , ,: Es un@coma
+
+linea :195 , primera columna: 1 ultima columna: 11 , fecha_venc: Es un@Identificador
+
+Token: DATE DATE
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :195 , primera columna: 25 ultima columna: 26 , ,: Es un@coma
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :196 , primera columna: 12 ultima columna: 25 , pk_idLicencia: Es un@Identificador
+
+Token: PRIMARY PRIMARY
+
+Token: KEY KEY
+
+linea :196 , primera columna: 38 ultima columna: 39 , (: Es un@parentesis_izquierdo
+
+linea :196 , primera columna: 39 ultima columna: 50 , id_licencia: Es un@Identificador
+
+linea :196 , primera columna: 50 ultima columna: 51 , ): Es un@parentesis_derecho
+
+linea :196 , primera columna: 51 ultima columna: 52 , ,: Es un@coma
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :197 , primera columna: 12 ultima columna: 21 , fk_idTipo: Es un@Identificador
+
+Token: FOREIGN FOREIGN
+
+Token: KEY KEY
+
+linea :197 , primera columna: 34 ultima columna: 35 , (: Es un@parentesis_izquierdo
+
+linea :197 , primera columna: 35 ultima columna: 39 , tipo: Es un@Identificador
+
+linea :197 , primera columna: 39 ultima columna: 40 , ): Es un@parentesis_derecho
+
+Token: REFERENCES REFERENCES
+
+linea :197 , primera columna: 52 ultima columna: 65 , TIPO_LICENCIA: Es un@Identificador
+
+linea :197 , primera columna: 65 ultima columna: 66 , (: Es un@parentesis_izquierdo
+
+linea :197 , primera columna: 66 ultima columna: 73 , id_tipo: Es un@Identificador
+
+linea :197 , primera columna: 73 ultima columna: 74 , ): Es un@parentesis_derecho
+
+linea :197 , primera columna: 74 ultima columna: 75 , ,: Es un@coma
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :198 , primera columna: 12 ultima columna: 25 , ck_NoLicencia: Es un@Identificador
+
+Token: CHECK CHECK
+
+linea :198 , primera columna: 31 ultima columna: 32 , (: Es un@parentesis_izquierdo
+
+linea :198 , primera columna: 33 ultima columna: 44 , no_licencia: Es un@Identificador
+
+linea :198 , primera columna: 45 ultima columna: 46 , =: Es un@igual
+
+linea :198 , primera columna: 47 ultima columna: 49 , 13: Es un@Int
+
+Token: AND AND
+
+linea :198 , primera columna: 54 ultima columna: 58 , tipo: Es un@Identificador
+
+linea :198 , primera columna: 59 ultima columna: 60 , =: Es un@igual
+
+linea :198 , primera columna: 61 ultima columna: 62 , 1: Es un@Int
+
+linea :198 , primera columna: 62 ultima columna: 63 , ): Es un@parentesis_derecho
+
+linea :198 , primera columna: 63 ultima columna: 64 , ,: Es un@coma
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :199 , primera columna: 12 ultima columna: 25 , uk_NoLicencia: Es un@Identificador
+
+Token: UNIQUE UNIQUE
+
+linea :199 , primera columna: 32 ultima columna: 33 , (: Es un@parentesis_izquierdo
+
+linea :199 , primera columna: 33 ultima columna: 44 , no_licencia: Es un@Identificador
+
+linea :199 , primera columna: 44 ultima columna: 45 , ): Es un@parentesis_derecho
+
+linea :200 , primera columna: 0 ultima columna: 1 , ): Es un@parentesis_derecho
+
+linea :200 , primera columna: 1 ultima columna: 2 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: TABLE TABLE
+
+linea :203 , primera columna: 13 ultima columna: 16 , dbo: Es un@Identificador
+
+linea :203 , primera columna: 16 ultima columna: 17 , .: Es un@punto
+
+linea :203 , primera columna: 17 ultima columna: 25 , Employee: Es un@Identificador
+
+linea :203 , primera columna: 26 ultima columna: 27 , (: Es un@parentesis_izquierdo
+
+linea :203 , primera columna: 27 ultima columna: 37 , EmployeeID: Es un@Identificador
+
+Token: INT INT
+
+Token: PRIMARY PRIMARY
+
+Token: KEY KEY
+
+Token: CLUSTERED CLUSTERED
+
+linea :204 , primera columna: 21 ultima columna: 22 , ): Es un@parentesis_derecho
+
+linea :204 , primera columna: 22 ultima columna: 23 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: VIEW VIEW
+
+linea :206 , primera columna: 12 ultima columna: 26 , HumanResources: Es un@Identificador
+
+linea :206 , primera columna: 26 ultima columna: 27 , .: Es un@punto
+
+linea :206 , primera columna: 27 ultima columna: 43 , EmployeeHireDate: Es un@Identificador
+
+Token: AS AS
+
+Token: SELECT SELECT
+
+linea :208 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
+
+linea :208 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+
+linea :208 , primera columna: 9 ultima columna: 18 , FirstName: Es un@Identificador
+
+linea :208 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
+
+linea :208 , primera columna: 20 ultima columna: 21 , p: Es un@Identificador
+
+linea :208 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+
+linea :208 , primera columna: 22 ultima columna: 30 , LastName: Es un@Identificador
+
+linea :208 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :208 , primera columna: 32 ultima columna: 33 , e: Es un@Identificador
+
+linea :208 , primera columna: 33 ultima columna: 34 , .: Es un@punto
+
+linea :208 , primera columna: 34 ultima columna: 42 , HireDate: Es un@Identificador
+
+Token: FROM FROM
+
+linea :209 , primera columna: 5 ultima columna: 19 , HumanResources: Es un@Identificador
+
+linea :209 , primera columna: 19 ultima columna: 20 , .: Es un@punto
+
+linea :209 , primera columna: 20 ultima columna: 28 , Employee: Es un@Identificador
+
+Token: AS AS
+
+linea :209 , primera columna: 32 ultima columna: 33 , e: Es un@Identificador
+
+Token: JOIN JOIN
+
+linea :209 , primera columna: 39 ultima columna: 45 , Person: Es un@Identificador
+
+linea :209 , primera columna: 45 ultima columna: 46 , .: Es un@punto
+
+linea :209 , primera columna: 46 ultima columna: 52 , Person: Es un@Identificador
+
+Token: AS AS
+
+linea :209 , primera columna: 57 ultima columna: 58 , p: Es un@Identificador
+
+Token: ON ON
+
+linea :210 , primera columna: 3 ultima columna: 4 , e: Es un@Identificador
+
+linea :210 , primera columna: 4 ultima columna: 5 , .: Es un@punto
+
+linea :210 , primera columna: 5 ultima columna: 21 , BusinessEntityID: Es un@Identificador
+
+linea :210 , primera columna: 22 ultima columna: 23 , =: Es un@igual
+
+linea :210 , primera columna: 24 ultima columna: 25 , p: Es un@Identificador
+
+linea :210 , primera columna: 25 ultima columna: 26 , .: Es un@punto
+
+linea :210 , primera columna: 26 ultima columna: 42 , BusinessEntityID: Es un@Identificador
+
+linea :210 , primera columna: 43 ultima columna: 44 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: NONCLUSTERED NONCLUSTERED
+
+Token: INDEX INDEX
+
+Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: 213 primera columna: 26 ultima columna: 63, token malo IX_TransactionHistory_ReferenceOrderI
+el Identificador correcto seria asi: IX_TransactionHistory_Reference
+
+linea :213 , primera columna: 63 ultima columna: 64 , D: Es un@Identificador
+
+Token: ON ON
+
+linea :214 , primera columna: 3 ultima columna: 13 , Production: Es un@Identificador
+
+linea :214 , primera columna: 13 ultima columna: 14 , .: Es un@punto
+
+linea :214 , primera columna: 14 ultima columna: 32 , TransactionHistory: Es un@Identificador
+
+linea :214 , primera columna: 33 ultima columna: 34 , (: Es un@parentesis_izquierdo
+
+linea :214 , primera columna: 34 ultima columna: 50 , ReferenceOrderID: Es un@Identificador
+
+linea :214 , primera columna: 50 ultima columna: 51 , ): Es un@parentesis_derecho
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :217 , primera columna: 12 ultima columna: 15 , dbo: Es un@Identificador
+
+linea :217 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :217 , primera columna: 16 ultima columna: 23 , doc_exc: Es un@Identificador
+
+Token: ADD ADD
+
+linea :217 , primera columna: 28 ultima columna: 36 , column_b: Es un@Identificador
+
+Token: VARCHAR VARCHAR
+
+linea :217 , primera columna: 44 ultima columna: 45 , (: Es un@parentesis_izquierdo
+
+linea :217 , primera columna: 45 ultima columna: 47 , 20: Es un@Int
+
+linea :217 , primera columna: 47 ultima columna: 48 , ): Es un@parentesis_derecho
+
+Token: NULL NULL
+
+linea :217 , primera columna: 53 ultima columna: 54 , ,: Es un@coma
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :218 , primera columna: 11 ultima columna: 21 , exb_unique: Es un@Identificador
+
+Token: UNIQUE UNIQUE
+
+linea :218 , primera columna: 28 ultima columna: 29 , ;: Es un@punto_coma
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :221 , primera columna: 12 ultima columna: 22 , Production: Es un@Identificador
+
+linea :221 , primera columna: 22 ultima columna: 23 , .: Es un@punto
+
+linea :221 , primera columna: 23 ultima columna: 48 , TransactionHistoryArchive: Es un@Identificador
+
+Token: ADD ADD
+
+Token: CONSTRAINT CONSTRAINT
+
+Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: 222 primera columna: 15 ultima columna: 56, token malo PK_TransactionHistoryArchive_TransactionI
+el Identificador correcto seria asi: PK_TransactionHistoryArchive_Tr
+
+linea :222 , primera columna: 56 ultima columna: 57 , D: Es un@Identificador
+
+Token: PRIMARY PRIMARY
+
+Token: KEY KEY
+
+Token: CLUSTERED CLUSTERED
+
+linea :223 , primera columna: 23 ultima columna: 24 , (: Es un@parentesis_izquierdo
+
+linea :223 , primera columna: 24 ultima columna: 37 , TransactionID: Es un@Identificador
+
+linea :223 , primera columna: 37 ultima columna: 38 , ): Es un@parentesis_derecho
+
+linea :223 , primera columna: 38 ultima columna: 39 , ;: Es un@punto_coma
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :228 , primera columna: 12 ultima columna: 15 , dbo: Es un@Identificador
+
+linea :228 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :228 , primera columna: 16 ultima columna: 23 , doc_exb: Es un@Identificador
+
+Token: DROP DROP
+
+Token: COLUMN COLUMN
+
+linea :228 , primera columna: 36 ultima columna: 44 , column_b: Es un@Identificador
+
+linea :228 , primera columna: 44 ultima columna: 45 , ;: Es un@punto_coma
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :230 , primera columna: 12 ultima columna: 15 , dbo: Es un@Identificador
+
+linea :230 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :230 , primera columna: 16 ultima columna: 23 , doc_exc: Es un@Identificador
+
+Token: DROP DROP
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :231 , primera columna: 16 ultima columna: 29 , my_constraint: Es un@Identificador
+
+linea :231 , primera columna: 29 ultima columna: 30 , ,: Es un@coma
+
+linea :231 , primera columna: 31 ultima columna: 47 , my_pk_constraint: Es un@Identificador
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :234 , primera columna: 12 ultima columna: 15 , dbo: Es un@Identificador
+
+linea :234 , primera columna: 15 ultima columna: 16 , .: Es un@punto
+
+linea :234 , primera columna: 16 ultima columna: 23 , doc_exa: Es un@Identificador
+
+Token: ADD ADD
+
+linea :234 , primera columna: 28 ultima columna: 36 , column_b: Es un@Identificador
+
+Token: VARCHAR VARCHAR
+
+linea :234 , primera columna: 44 ultima columna: 45 , (: Es un@parentesis_izquierdo
+
+linea :234 , primera columna: 45 ultima columna: 47 , 20: Es un@Int
+
+linea :234 , primera columna: 47 ultima columna: 48 , ): Es un@parentesis_derecho
+
+Token: NULL NULL
+
+Token: GO GO
+
+Token: UPDATE UPDATE
+
+linea :238 , primera columna: 7 ultima columna: 12 , Sales: Es un@Identificador
+
+linea :238 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+
+linea :238 , primera columna: 13 ultima columna: 24 , SalesPerson: Es un@Identificador
+
+Token: SET SET
+
+linea :239 , primera columna: 4 ultima columna: 9 , Bonus: Es un@Identificador
+
+linea :239 , primera columna: 10 ultima columna: 11 , =: Es un@igual
+
+linea :239 , primera columna: 12 ultima columna: 13 , 6: Es un@Int
+
+linea :239 , primera columna: 13 ultima columna: 14 , ,: Es un@coma
+
+linea :239 , primera columna: 15 ultima columna: 28 , CommissionPct: Es un@Identificador
+
+linea :239 , primera columna: 29 ultima columna: 30 , =: Es un@igual
+
+linea :239 , primera columna: 31 ultima columna: 35 , 0.10: Es un@Float
+
+Token: WHERE WHERE
+
+linea :240 , primera columna: 6 ultima columna: 16 , SalesQuota: Es un@Identificador
+
+linea :240 , primera columna: 17 ultima columna: 18 , =: Es un@igual
+
+Token: NULL NULL
+
+linea :240 , primera columna: 23 ultima columna: 24 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+Token: DATABASE DATABASE
+
+linea :242 , primera columna: 14 ultima columna: 29 , [LineaDiamante]: Es un@Identificador
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :245 , primera columna: 13 ultima columna: 18 , [dbo]: Es un@Identificador
+
+linea :245 , primera columna: 18 ultima columna: 19 , .: Es un@punto
+
+linea :245 , primera columna: 19 ultima columna: 34 , [InformeViajes]: Es un@Identificador
+
+Token: DROP DROP
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :245 , primera columna: 51 ultima columna: 83 , [CK__InformeVi__Pasaj__6D0D32F4]: Es un@Identificador
+
+Token: GO GO
+
+Token: DROP DROP
+
+Token: USER USER
+
+Token: IF IF
+
+Token: EXISTS EXISTS
+
+linea :247 , primera columna: 20 ultima columna: 29 , user_name: Es un@Identificador
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: DATABASE DATABASE
+
+linea :251 , primera columna: 15 ultima columna: 21 , testDB: Es un@Identificador
+
+linea :252 , primera columna: 0 ultima columna: 7 , COLLATE: Es un@Reservadas
+
+linea :252 , primera columna: 8 ultima columna: 20 , French_CI_AI: Es un@Identificador
+
+linea :252 , primera columna: 20 ultima columna: 21 , ;: Es un@punto_coma
+
+Token: DELETE DELETE
+
+Token: TOP TOP
+
+linea :254 , primera columna: 11 ultima columna: 12 , (: Es un@parentesis_izquierdo
+
+linea :254 , primera columna: 12 ultima columna: 13 , 1: Es un@Int
+
+linea :254 , primera columna: 13 ultima columna: 14 , ): Es un@parentesis_derecho
+
+Token: FROM FROM
+
+linea :254 , primera columna: 20 ultima columna: 38 , AdventureWorks2017: Es un@Identificador
+
+linea :254 , primera columna: 38 ultima columna: 39 , .: Es un@punto
+
+linea :254 , primera columna: 39 ultima columna: 53 , HumanResources: Es un@Identificador
+
+linea :254 , primera columna: 53 ultima columna: 54 , .: Es un@punto
+
+linea :254 , primera columna: 54 ultima columna: 62 , Employee: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :255 , primera columna: 6 ultima columna: 14 , Employee: Es un@Identificador
+
+linea :255 , primera columna: 14 ultima columna: 15 , .: Es un@punto
+
+linea :255 , primera columna: 15 ultima columna: 31 , BusinessEntityID: Es un@Identificador
+
+Token: IN IN
+
+linea :255 , primera columna: 35 ultima columna: 36 , (: Es un@parentesis_izquierdo
+
+linea :255 , primera columna: 36 ultima columna: 37 , 1: Es un@Int
+
+linea :255 , primera columna: 37 ultima columna: 38 , ,: Es un@coma
+
+linea :255 , primera columna: 39 ultima columna: 40 , 5: Es un@Int
+
+linea :255 , primera columna: 40 ultima columna: 41 , ,: Es un@coma
+
+linea :255 , primera columna: 42 ultima columna: 43 , 8: Es un@Int
+
+linea :255 , primera columna: 43 ultima columna: 44 , ,: Es un@coma
+
+linea :255 , primera columna: 45 ultima columna: 46 , 0: Es un@Int
+
+linea :255 , primera columna: 46 ultima columna: 47 , ): Es un@parentesis_derecho
+
+linea :255 , primera columna: 47 ultima columna: 48 , ;: Es un@punto_coma
+
+Token: INSERT INSERT
+
+Token: INTO INTO
+
+linea :259 , primera columna: 12 ultima columna: 21 , UBICACION: Es un@Identificador
+
+linea :259 , primera columna: 22 ultima columna: 23 , (: Es un@parentesis_izquierdo
+
+linea :259 , primera columna: 23 ultima columna: 29 , ciudad: Es un@Identificador
+
+linea :259 , primera columna: 29 ultima columna: 30 , ,: Es un@coma
+
+linea :259 , primera columna: 31 ultima columna: 35 , zona: Es un@Identificador
+
+linea :259 , primera columna: 35 ultima columna: 36 , ,: Es un@coma
+
+linea :259 , primera columna: 37 ultima columna: 48 , descripcion: Es un@Identificador
+
+linea :259 , primera columna: 48 ultima columna: 49 , ): Es un@parentesis_derecho
+
+Token: VALUES VALUES
+
+linea :259 , primera columna: 57 ultima columna: 58 , (: Es un@parentesis_izquierdo
+
+linea :259 , primera columna: 58 ultima columna: 69 , 'Guatemala': Es un@String
+
+linea :259 , primera columna: 69 ultima columna: 70 , ,: Es un@coma
+
+linea :259 , primera columna: 71 ultima columna: 72 , 4: Es un@Int
+
+linea :259 , primera columna: 72 ultima columna: 73 , ,: Es un@coma
+
+linea :259 , primera columna: 74 ultima columna: 85 , 'El trebol': Es un@String
+
+linea :259 , primera columna: 85 ultima columna: 86 , ): Es un@parentesis_derecho
+
+linea :259 , primera columna: 86 ultima columna: 87 , ,: Es un@coma
+
+linea :259 , primera columna: 88 ultima columna: 89 , (: Es un@parentesis_izquierdo
+
+linea :259 , primera columna: 89 ultima columna: 100 , 'Guatemala': Es un@String
+
+linea :259 , primera columna: 100 ultima columna: 101 , ,: Es un@coma
+
+linea :259 , primera columna: 102 ultima columna: 103 , 3: Es un@Int
+
+linea :259 , primera columna: 103 ultima columna: 104 , ,: Es un@coma
+
+linea :259 , primera columna: 105 ultima columna: 118 , 'El Basurero': Es un@String
+
+linea :259 , primera columna: 118 ultima columna: 119 , ): Es un@parentesis_derecho
+
+linea :259 , primera columna: 119 ultima columna: 120 , ,: Es un@coma
+
+linea :259 , primera columna: 121 ultima columna: 122 , (: Es un@parentesis_izquierdo
+
+linea :259 , primera columna: 122 ultima columna: 133 , 'Guatemala': Es un@String
+
+linea :259 , primera columna: 133 ultima columna: 134 , ,: Es un@coma
+
+linea :259 , primera columna: 135 ultima columna: 136 , 8: Es un@Int
+
+linea :259 , primera columna: 136 ultima columna: 137 , ,: Es un@coma
+
+linea :259 , primera columna: 138 ultima columna: 148 , 'Atlntico': Es un@String
+
+linea :259 , primera columna: 148 ultima columna: 149 , ): Es un@parentesis_derecho
+
+linea :260 , primera columna: 14 ultima columna: 15 , ,: Es un@coma
+
+linea :260 , primera columna: 15 ultima columna: 16 , (: Es un@parentesis_izquierdo
+
+linea :260 , primera columna: 16 ultima columna: 27 , 'Guatemala': Es un@String
+
+linea :260 , primera columna: 27 ultima columna: 28 , ,: Es un@coma
+
+linea :260 , primera columna: 29 ultima columna: 30 , 1: Es un@Int
+
+linea :260 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :260 , primera columna: 32 ultima columna: 41 , 'Palacio': Es un@String
+
+linea :260 , primera columna: 41 ultima columna: 42 , ): Es un@parentesis_derecho
+
+linea :260 , primera columna: 42 ultima columna: 43 , ,: Es un@coma
+
+linea :260 , primera columna: 44 ultima columna: 45 , (: Es un@parentesis_izquierdo
+
+linea :260 , primera columna: 45 ultima columna: 56 , 'Guatemala': Es un@String
+
+linea :260 , primera columna: 56 ultima columna: 57 , ,: Es un@coma
+
+linea :260 , primera columna: 58 ultima columna: 60 , 11: Es un@Int
+
+linea :260 , primera columna: 60 ultima columna: 61 , ,: Es un@coma
+
+linea :260 , primera columna: 62 ultima columna: 68 , 'Peri': Es un@String
+
+linea :260 , primera columna: 68 ultima columna: 69 , ): Es un@parentesis_derecho
+
+linea :260 , primera columna: 69 ultima columna: 70 , ,: Es un@coma
+
+linea :260 , primera columna: 71 ultima columna: 72 , (: Es un@parentesis_izquierdo
+
+linea :260 , primera columna: 72 ultima columna: 83 , 'Guatemala': Es un@String
+
+linea :260 , primera columna: 83 ultima columna: 84 , ,: Es un@coma
+
+linea :260 , primera columna: 85 ultima columna: 87 , 11: Es un@Int
+
+linea :260 , primera columna: 87 ultima columna: 88 , ,: Es un@coma
+
+linea :260 , primera columna: 89 ultima columna: 102 , 'MiraFlowers': Es un@String
+
+linea :260 , primera columna: 102 ultima columna: 103 , ): Es un@parentesis_derecho
+
+linea :261 , primera columna: 14 ultima columna: 15 , ,: Es un@coma
+
+linea :261 , primera columna: 15 ultima columna: 16 , (: Es un@parentesis_izquierdo
+
+linea :261 , primera columna: 16 ultima columna: 27 , 'Guatemala': Es un@String
+
+linea :261 , primera columna: 27 ultima columna: 28 , ,: Es un@coma
+
+linea :261 , primera columna: 29 ultima columna: 30 , 5: Es un@Int
+
+linea :261 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :261 , primera columna: 32 ultima columna: 45 , 'La Asuncion': Es un@String
+
+linea :261 , primera columna: 45 ultima columna: 46 , ): Es un@parentesis_derecho
+
+linea :261 , primera columna: 46 ultima columna: 47 , ,: Es un@coma
+
+linea :261 , primera columna: 48 ultima columna: 49 , (: Es un@parentesis_izquierdo
+
+linea :261 , primera columna: 49 ultima columna: 60 , 'Guatemala': Es un@String
+
+linea :261 , primera columna: 60 ultima columna: 61 , ,: Es un@coma
+
+linea :261 , primera columna: 62 ultima columna: 63 , 7: Es un@Int
+
+linea :261 , primera columna: 63 ultima columna: 64 , ,: Es un@coma
+
+linea :261 , primera columna: 65 ultima columna: 78 , 'El Naranjal': Es un@String
+
+linea :261 , primera columna: 78 ultima columna: 79 , ): Es un@parentesis_derecho
+
+linea :261 , primera columna: 79 ultima columna: 80 , ,: Es un@coma
+
+linea :261 , primera columna: 81 ultima columna: 82 , (: Es un@parentesis_izquierdo
+
+linea :261 , primera columna: 82 ultima columna: 93 , 'Guatemala': Es un@String
+
+linea :261 , primera columna: 93 ultima columna: 94 , ,: Es un@coma
+
+linea :261 , primera columna: 95 ultima columna: 96 , 6: Es un@Int
+
+linea :261 , primera columna: 96 ultima columna: 97 , ,: Es un@coma
+
+linea :261 , primera columna: 98 ultima columna: 112 , 'El Mercadito': Es un@String
+
+linea :261 , primera columna: 112 ultima columna: 113 , ): Es un@parentesis_derecho
+
+linea :261 , primera columna: 113 ultima columna: 114 , ,: Es un@coma
+
+linea :262 , primera columna: 14 ultima columna: 15 , (: Es un@parentesis_izquierdo
+
+linea :262 , primera columna: 15 ultima columna: 26 , 'Guatemala': Es un@String
+
+linea :262 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+linea :262 , primera columna: 28 ultima columna: 30 , 17: Es un@Int
+
+linea :262 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :262 , primera columna: 32 ultima columna: 39 , 'km 10': Es un@String
+
+linea :262 , primera columna: 39 ultima columna: 40 , ): Es un@parentesis_derecho
+
+linea :262 , primera columna: 40 ultima columna: 41 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: INDEX INDEX
+
+linea :264 , primera columna: 13 ultima columna: 18 , IX_FF: Es un@Identificador
+
+Token: ON ON
+
+linea :264 , primera columna: 22 ultima columna: 25 , dbo: Es un@Identificador
+
+linea :264 , primera columna: 25 ultima columna: 26 , .: Es un@punto
+
+linea :264 , primera columna: 26 ultima columna: 37 , FactFinance: Es un@Identificador
+
+linea :264 , primera columna: 38 ultima columna: 39 , (: Es un@parentesis_izquierdo
+
+linea :264 , primera columna: 40 ultima columna: 50 , FinanceKey: Es un@Identificador
+
+linea :264 , primera columna: 50 ultima columna: 51 , ,: Es un@coma
+
+linea :264 , primera columna: 52 ultima columna: 59 , DateKey: Es un@Identificador
+
+linea :264 , primera columna: 59 ultima columna: 60 , ,: Es un@coma
+
+linea :264 , primera columna: 61 ultima columna: 76 , OrganizationKey: Es un@Identificador
+
+Token: DESC DESC
+
+linea :264 , primera columna: 81 ultima columna: 82 , ): Es un@parentesis_derecho
+
+linea :264 , primera columna: 82 ultima columna: 83 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: UNIQUE UNIQUE
+
+Token: INDEX INDEX
+
+linea :268 , primera columna: 20 ultima columna: 39 , AK_UnitMeasure_Name: Es un@Identificador
+
+Token: ON ON
+
+linea :269 , primera columna: 3 ultima columna: 13 , Production: Es un@Identificador
+
+linea :269 , primera columna: 13 ultima columna: 14 , .: Es un@punto
+
+linea :269 , primera columna: 14 ultima columna: 25 , UnitMeasure: Es un@Identificador
+
+linea :269 , primera columna: 25 ultima columna: 26 , (: Es un@parentesis_izquierdo
+
+linea :269 , primera columna: 26 ultima columna: 30 , Name: Es un@Identificador
+
+linea :269 , primera columna: 30 ultima columna: 31 , ): Es un@parentesis_derecho
+
+linea :269 , primera columna: 31 ultima columna: 32 , ;: Es un@punto_coma
+
+Token: CREATE CREATE
+
+Token: TABLE TABLE
+
+linea :272 , primera columna: 13 ultima columna: 26 , TIPO_LICENCIA: Es un@Identificador
+
+linea :273 , primera columna: 0 ultima columna: 1 , (: Es un@parentesis_izquierdo
+
+linea :274 , primera columna: 1 ultima columna: 8 , id_tipo: Es un@Identificador
+
+Token: INT INT
+
+Token: IDENTITY IDENTITY
+
+linea :274 , primera columna: 21 ultima columna: 22 , (: Es un@parentesis_izquierdo
+
+linea :274 , primera columna: 22 ultima columna: 23 , 1: Es un@Int
+
+linea :274 , primera columna: 23 ultima columna: 24 , ,: Es un@coma
+
+linea :274 , primera columna: 24 ultima columna: 25 , 1: Es un@Int
+
+linea :274 , primera columna: 25 ultima columna: 26 , ): Es un@parentesis_derecho
+
+linea :274 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+linea :275 , primera columna: 1 ultima columna: 5 , tipo: Es un@Identificador
+
+Token: VARCHAR VARCHAR
+
+linea :275 , primera columna: 13 ultima columna: 14 , (: Es un@parentesis_izquierdo
+
+linea :275 , primera columna: 14 ultima columna: 15 , 1: Es un@Int
+
+linea :275 , primera columna: 15 ultima columna: 16 , ): Es un@parentesis_derecho
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :275 , primera columna: 25 ultima columna: 26 , ,: Es un@coma
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :276 , primera columna: 12 ultima columna: 21 , pk_idTipo: Es un@Identificador
+
+Token: PRIMARY PRIMARY
+
+Token: KEY KEY
+
+linea :276 , primera columna: 34 ultima columna: 35 , (: Es un@parentesis_izquierdo
+
+linea :276 , primera columna: 35 ultima columna: 42 , id_tipo: Es un@Identificador
+
+linea :276 , primera columna: 42 ultima columna: 43 , ): Es un@parentesis_derecho
+
+linea :276 , primera columna: 43 ultima columna: 44 , ,: Es un@coma
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :277 , primera columna: 12 ultima columna: 27 , uk_tipoLicencia: Es un@Identificador
+
+Token: UNIQUE UNIQUE
+
+linea :277 , primera columna: 34 ultima columna: 35 , (: Es un@parentesis_izquierdo
+
+linea :277 , primera columna: 35 ultima columna: 39 , tipo: Es un@Identificador
+
+linea :277 , primera columna: 39 ultima columna: 40 , ): Es un@parentesis_derecho
+
+linea :277 , primera columna: 40 ultima columna: 41 , ,: Es un@coma
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :278 , primera columna: 12 ultima columna: 27 , ck_tipoLicencia: Es un@Identificador
+
+Token: CHECK CHECK
+
+linea :278 , primera columna: 33 ultima columna: 34 , (: Es un@parentesis_izquierdo
+
+linea :278 , primera columna: 34 ultima columna: 38 , tipo: Es un@Identificador
+
+Token: IN IN
+
+linea :278 , primera columna: 42 ultima columna: 43 , (: Es un@parentesis_izquierdo
+
+linea :278 , primera columna: 43 ultima columna: 46 , 'A': Es un@String
+
+linea :278 , primera columna: 46 ultima columna: 47 , ,: Es un@coma
+
+linea :278 , primera columna: 47 ultima columna: 50 , 'B': Es un@String
+
+linea :278 , primera columna: 50 ultima columna: 51 , ,: Es un@coma
+
+linea :278 , primera columna: 51 ultima columna: 54 , 'C': Es un@String
+
+linea :278 , primera columna: 54 ultima columna: 55 , ,: Es un@coma
+
+linea :278 , primera columna: 55 ultima columna: 58 , 'M': Es un@String
+
+linea :278 , primera columna: 58 ultima columna: 59 , ): Es un@parentesis_derecho
+
+linea :278 , primera columna: 59 ultima columna: 60 , ): Es un@parentesis_derecho
+
+linea :279 , primera columna: 0 ultima columna: 1 , ): Es un@parentesis_derecho
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :283 , primera columna: 12 ultima columna: 22 , Production: Es un@Identificador
+
+linea :283 , primera columna: 22 ultima columna: 23 , .: Es un@punto
+
+linea :283 , primera columna: 23 ultima columna: 48 , TransactionHistoryArchive: Es un@Identificador
+
+Token: ADD ADD
+
+Token: CONSTRAINT CONSTRAINT
+
+Identificador malo , el identificador debe tener 31 caractres o menos, error encontrado en linea: 284 primera columna: 15 ultima columna: 56, token malo PK_TransactionHistoryArchive_TransactionI
+el Identificador correcto seria asi: PK_TransactionHistoryArchive_Tr
+
+linea :284 , primera columna: 56 ultima columna: 57 , D: Es un@Identificador
+
+Token: PRIMARY PRIMARY
+
+Token: KEY KEY
+
+Token: CLUSTERED CLUSTERED
+
+linea :284 , primera columna: 81 ultima columna: 82 , (: Es un@parentesis_izquierdo
+
+linea :284 , primera columna: 82 ultima columna: 95 , TransactionID: Es un@Identificador
+
+linea :284 , primera columna: 95 ultima columna: 96 , ): Es un@parentesis_derecho
+
+linea :284 , primera columna: 96 ultima columna: 97 , ;: Es un@punto_coma
+
+Token: SELECT SELECT
+
+linea :287 , primera columna: 7 ultima columna: 16 , ProductID: Es un@Identificador
+
+linea :287 , primera columna: 16 ultima columna: 17 , ,: Es un@coma
+
+linea :287 , primera columna: 18 ultima columna: 32 , SpecialOfferID: Es un@Identificador
+
+linea :287 , primera columna: 32 ultima columna: 33 , ,: Es un@coma
+
+Token: AVG AVG
+
+linea :287 , primera columna: 37 ultima columna: 38 , (: Es un@parentesis_izquierdo
+
+linea :287 , primera columna: 38 ultima columna: 47 , UnitPrice: Es un@Identificador
+
+linea :287 , primera columna: 47 ultima columna: 48 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :287 , primera columna: 52 ultima columna: 53 , [: Es un@corchete_derecho
+
+linea :287 , primera columna: 53 ultima columna: 60 , Average: Es un@Identificador
+
+linea :287 , primera columna: 61 ultima columna: 66 , Price: Es un@Identificador
+
+linea :287 , primera columna: 66 ultima columna: 67 , ]: Es un@corchete_izquierdo
+
+linea :287 , primera columna: 67 ultima columna: 68 , ,: Es un@coma
+
+Token: SUM SUM
+
+linea :288 , primera columna: 3 ultima columna: 4 , (: Es un@parentesis_izquierdo
+
+linea :288 , primera columna: 4 ultima columna: 13 , LineTotal: Es un@Identificador
+
+linea :288 , primera columna: 13 ultima columna: 14 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :288 , primera columna: 18 ultima columna: 26 , SubTotal: Es un@Identificador
+
+Token: FROM FROM
+
+linea :289 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :289 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :289 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :290 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+linea :290 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
+
+linea :290 , primera columna: 20 ultima columna: 34 , SpecialOfferID: Es un@Identificador
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :291 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+
+Token: GO GO
+
+Token: SELECT SELECT
+
+Token: AVG AVG
+
+linea :294 , primera columna: 10 ultima columna: 11 , (: Es un@parentesis_izquierdo
+
+linea :294 , primera columna: 11 ultima columna: 19 , OrderQty: Es un@Identificador
+
+linea :294 , primera columna: 19 ultima columna: 20 , ): Es un@parentesis_derecho
+
+Token: AS AS
+
+linea :294 , primera columna: 24 ultima columna: 41 , [AverageQuantity]: Es un@Identificador
+
+linea :294 , primera columna: 41 ultima columna: 42 , ,: Es un@coma
+
+Token: FROM FROM
+
+linea :295 , primera columna: 5 ultima columna: 10 , Sales: Es un@Identificador
+
+linea :295 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :295 , primera columna: 11 ultima columna: 27 , SalesOrderDetail: Es un@Identificador
+
+Token: GROUP GROUP
+
+Token: BY BY
+
+linea :296 , primera columna: 9 ultima columna: 10 , (: Es un@parentesis_izquierdo
+
+linea :296 , primera columna: 10 ultima columna: 18 , OrderQty: Es un@Identificador
+
+linea :296 , primera columna: 19 ultima columna: 20 , *: Es un@multiplicacion
+
+linea :296 , primera columna: 21 ultima columna: 30 , UnitPrice: Es un@Identificador
+
+linea :296 , primera columna: 30 ultima columna: 31 , ): Es un@parentesis_derecho
+
+Token: ORDER ORDER
+
+Token: BY BY
+
+linea :297 , primera columna: 9 ultima columna: 10 , (: Es un@parentesis_izquierdo
+
+linea :297 , primera columna: 10 ultima columna: 18 , OrderQty: Es un@Identificador
+
+linea :297 , primera columna: 19 ultima columna: 20 , *: Es un@multiplicacion
+
+linea :297 , primera columna: 21 ultima columna: 30 , UnitPrice: Es un@Identificador
+
+linea :297 , primera columna: 30 ultima columna: 31 , ): Es un@parentesis_derecho
+
+Token: DESC DESC
+
+linea :297 , primera columna: 36 ultima columna: 37 , ;: Es un@punto_coma
+
+Token: UPDATE UPDATE
+
+linea :300 , primera columna: 7 ultima columna: 12 , Sales: Es un@Identificador
+
+linea :300 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+
+linea :300 , primera columna: 13 ultima columna: 24 , SalesPerson: Es un@Identificador
+
+Token: SET SET
+
+linea :301 , primera columna: 4 ultima columna: 9 , Bonus: Es un@Identificador
+
+linea :301 , primera columna: 10 ultima columna: 11 , =: Es un@igual
+
+linea :301 , primera columna: 12 ultima columna: 13 , ,: Es un@coma
+
+linea :301 , primera columna: 14 ultima columna: 27 , CommissionPct: Es un@Identificador
+
+linea :301 , primera columna: 28 ultima columna: 29 , =: Es un@igual
+
+linea :301 , primera columna: 30 ultima columna: 34 , 0.10: Es un@Float
+
+Token: WHERE WHERE
+
+linea :302 , primera columna: 6 ultima columna: 16 , SalesQuota: Es un@Identificador
+
+linea :302 , primera columna: 17 ultima columna: 18 , =: Es un@igual
+
+Token: NULL NULL
+
+linea :302 , primera columna: 23 ultima columna: 24 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+Token: DATABASE DATABASE
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :307 , primera columna: 12 ultima columna: 26 , HumanResources: Es un@Identificador
+
+linea :307 , primera columna: 26 ultima columna: 27 , .: Es un@punto
+
+linea :307 , primera columna: 27 ultima columna: 35 , Employee: Es un@Identificador
+
+Token: DROP DROP
+
+Token: CONSTRAINT CONSTRAINT
+
+Token: EXISTS EXISTS
+
+linea :307 , primera columna: 60 ultima columna: 64 , GOLA: Es un@Identificador
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+Token: DROP DROP
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :310 , primera columna: 30 ultima columna: 62 , [CK__InformeVi__Pasaj__6D0D32F4]: Es un@Identificador
+
+Token: GO GO
+
+Token: CREATE CREATE
+
+Token: NONCLUSTERED NONCLUSTERED
+
+Token: INDEX INDEX
+
+linea :313 , primera columna: 26 ultima columna: 47 , IX_Address_PostalCode: Es un@Identificador
+
+linea :314 , primera columna: 0 ultima columna: 6 , Person: Es un@Identificador
+
+linea :314 , primera columna: 6 ultima columna: 7 , .: Es un@punto
+
+linea :314 , primera columna: 7 ultima columna: 14 , Address: Es un@Identificador
+
+linea :314 , primera columna: 15 ultima columna: 16 , (: Es un@parentesis_izquierdo
+
+linea :314 , primera columna: 16 ultima columna: 26 , PostalCode: Es un@Identificador
+
+linea :314 , primera columna: 26 ultima columna: 27 , ): Es un@parentesis_derecho
+
+Token: INCLUDE INCLUDE
+
+linea :315 , primera columna: 8 ultima columna: 9 , (: Es un@parentesis_izquierdo
+
+linea :315 , primera columna: 9 ultima columna: 21 , AddressLine1: Es un@Identificador
+
+linea :315 , primera columna: 21 ultima columna: 22 , ,: Es un@coma
+
+linea :315 , primera columna: 23 ultima columna: 35 , AddressLine2: Es un@Identificador
+
+linea :315 , primera columna: 35 ultima columna: 36 , ,: Es un@coma
+
+linea :315 , primera columna: 37 ultima columna: 41 , City: Es un@Identificador
+
+linea :315 , primera columna: 41 ultima columna: 42 , ,: Es un@coma
+
+linea :315 , primera columna: 43 ultima columna: 58 , StateProvinceID: Es un@Identificador
+
+linea :315 , primera columna: 58 ultima columna: 59 , ): Es un@parentesis_derecho
+
+linea :315 , primera columna: 59 ultima columna: 60 , ;: Es un@punto_coma
+
+Token: ALTER ALTER
+
+Token: VIEW VIEW
+
+linea :319 , primera columna: 11 ultima columna: 25 , HumanResources: Es un@Identificador
+
+linea :319 , primera columna: 25 ultima columna: 26 , .: Es un@punto
+
+linea :319 , primera columna: 26 ultima columna: 42 , EmployeeHireDate: Es un@Identificador
+
+Token: AS AS
+
+Token: SELECT SELECT
+
+linea :321 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
+
+linea :321 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+
+linea :321 , primera columna: 9 ultima columna: 18 , FirstName: Es un@Identificador
+
+linea :321 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
+
+linea :321 , primera columna: 20 ultima columna: 21 , p: Es un@Identificador
+
+linea :321 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+
+linea :321 , primera columna: 22 ultima columna: 30 , LastName: Es un@Identificador
+
+linea :321 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :321 , primera columna: 32 ultima columna: 33 , e: Es un@Identificador
+
+linea :321 , primera columna: 33 ultima columna: 34 , .: Es un@punto
+
+linea :321 , primera columna: 34 ultima columna: 42 , HireDate: Es un@Identificador
+
+Token: FROM FROM
+
+linea :322 , primera columna: 5 ultima columna: 19 , HumanResources: Es un@Identificador
+
+linea :322 , primera columna: 19 ultima columna: 20 , .: Es un@punto
+
+linea :322 , primera columna: 20 ultima columna: 28 , Employee: Es un@Identificador
+
+Token: AS AS
+
+linea :322 , primera columna: 32 ultima columna: 33 , e: Es un@Identificador
+
+Token: JOIN JOIN
+
+linea :322 , primera columna: 39 ultima columna: 45 , Person: Es un@Identificador
+
+linea :322 , primera columna: 45 ultima columna: 46 , .: Es un@punto
+
+linea :322 , primera columna: 46 ultima columna: 52 , Person: Es un@Identificador
+
+Token: AS AS
+
+linea :322 , primera columna: 56 ultima columna: 57 , p: Es un@Identificador
+
+Token: ON ON
+
+linea :323 , primera columna: 3 ultima columna: 4 , e: Es un@Identificador
+
+linea :323 , primera columna: 4 ultima columna: 5 , .: Es un@punto
+
+linea :323 , primera columna: 5 ultima columna: 21 , BusinessEntityID: Es un@Identificador
+
+linea :323 , primera columna: 23 ultima columna: 24 , p: Es un@Identificador
+
+linea :323 , primera columna: 24 ultima columna: 25 , .: Es un@punto
+
+linea :323 , primera columna: 25 ultima columna: 41 , BusinessEntityID: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :324 , primera columna: 6 ultima columna: 14 , HireDate: Es un@Identificador
+
+linea :324 , primera columna: 15 ultima columna: 16 , <: Es un@menor
+
+linea :324 , primera columna: 17 ultima columna: 21 , 2019: Es un@Int
+
+Token: GO GO
+
+Token: UPDATE UPDATE
+
+linea :327 , primera columna: 7 ultima columna: 12 , Sales: Es un@Identificador
+
+linea :327 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+
+linea :327 , primera columna: 13 ultima columna: 24 , SalesPerson: Es un@Identificador
+
+Token: SET SET
+
+linea :328 , primera columna: 4 ultima columna: 9 , Bonus: Es un@Identificador
+
+linea :328 , primera columna: 10 ultima columna: 11 , =: Es un@igual
+
+linea :328 , primera columna: 12 ultima columna: 13 , ,: Es un@coma
+
+linea :328 , primera columna: 14 ultima columna: 27 , CommissionPct: Es un@Identificador
+
+linea :328 , primera columna: 28 ultima columna: 29 , =: Es un@igual
+
+linea :328 , primera columna: 30 ultima columna: 34 , 0.10: Es un@Float
+
+Token: WHERE WHERE
+
+linea :329 , primera columna: 6 ultima columna: 16 , SalesQuota: Es un@Identificador
+
+linea :329 , primera columna: 17 ultima columna: 18 , =: Es un@igual
+
+Token: NULL NULL
+
+linea :329 , primera columna: 23 ultima columna: 24 , ;: Es un@punto_coma
+
+Token: DROP DROP
+
+Token: DATABASE DATABASE
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+linea :337 , primera columna: 12 ultima columna: 26 , HumanResources: Es un@Identificador
+
+linea :337 , primera columna: 26 ultima columna: 27 , .: Es un@punto
+
+linea :337 , primera columna: 27 ultima columna: 35 , Employee: Es un@Identificador
+
+Token: DROP DROP
+
+Token: CONSTRAINT CONSTRAINT
+
+Token: EXISTS EXISTS
+
+linea :337 , primera columna: 60 ultima columna: 64 , GOLA: Es un@Identificador
+
+Token: GO GO
+
+Token: ALTER ALTER
+
+Token: TABLE TABLE
+
+Token: DROP DROP
+
+Token: CONSTRAINT CONSTRAINT
+
+linea :342 , primera columna: 30 ultima columna: 62 , [CK__InformeVi__Pasaj__6D0D32F4]: Es un@Identificador
+
+Token: GO GO
+
+Token: CREATE CREATE
+
+Token: NONCLUSTERED NONCLUSTERED
+
+Token: INDEX INDEX
+
+Simbolo no definido en linea: 346 primera columna: 26 ultima columna: 27 para el token: "
+
+linea :346 , primera columna: 27 ultima columna: 55 , FIBillOfMaterialsWithEndDate: Es un@Identificador
+
+Simbolo no definido en linea: 346 primera columna: 55 ultima columna: 56 para el token: "
+
+Token: ON ON
+
+linea :347 , primera columna: 3 ultima columna: 13 , Production: Es un@Identificador
+
+linea :347 , primera columna: 13 ultima columna: 14 , .: Es un@punto
+
+linea :347 , primera columna: 14 ultima columna: 29 , BillOfMaterials: Es un@Identificador
+
+linea :347 , primera columna: 30 ultima columna: 31 , (: Es un@parentesis_izquierdo
+
+linea :347 , primera columna: 31 ultima columna: 42 , ComponentID: Es un@Identificador
+
+linea :347 , primera columna: 42 ultima columna: 43 , ,: Es un@coma
+
+linea :347 , primera columna: 44 ultima columna: 53 , StartDate: Es un@Identificador
+
+linea :347 , primera columna: 53 ultima columna: 54 , ): Es un@parentesis_derecho
+
+Token: WHERE WHERE
+
+linea :348 , primera columna: 6 ultima columna: 13 , EndDate: Es un@Identificador
+
+Token: IS IS
+
+Token: NOT NOT
+
+Token: NULL NULL
+
+linea :348 , primera columna: 25 ultima columna: 26 , ;: Es un@punto_coma
+
+Token: DELETE DELETE
+
+Token: TOP TOP
+
+linea :351 , primera columna: 11 ultima columna: 12 , (: Es un@parentesis_izquierdo
+
+linea :351 , primera columna: 12 ultima columna: 13 , 1: Es un@Int
+
+linea :351 , primera columna: 13 ultima columna: 14 , ): Es un@parentesis_derecho
+
+Token: FROM FROM
+
+linea :351 , primera columna: 20 ultima columna: 38 , AdventureWorks2017: Es un@Identificador
+
+linea :351 , primera columna: 38 ultima columna: 39 , .: Es un@punto
+
+linea :351 , primera columna: 39 ultima columna: 53 , HumanResources: Es un@Identificador
+
+linea :351 , primera columna: 53 ultima columna: 54 , .: Es un@punto
+
+linea :351 , primera columna: 54 ultima columna: 62 , Employee: Es un@Identificador
+
+Token: FROM FROM
+
+linea :351 , primera columna: 68 ultima columna: 86 , AdventureWorks2017: Es un@Identificador
+
+linea :351 , primera columna: 86 ultima columna: 87 , .: Es un@punto
+
+linea :351 , primera columna: 87 ultima columna: 101 , HumanResources: Es un@Identificador
+
+linea :351 , primera columna: 101 ultima columna: 102 , .: Es un@punto
+
+linea :351 , primera columna: 102 ultima columna: 110 , Employee: Es un@Identificador
+
+linea :351 , primera columna: 110 ultima columna: 111 , ,: Es un@coma
+
+linea :351 , primera columna: 112 ultima columna: 122 , Production: Es un@Identificador
+
+linea :351 , primera columna: 122 ultima columna: 123 , .: Es un@punto
+
+linea :351 , primera columna: 123 ultima columna: 130 , Product: Es un@Identificador
+
+Token: WHERE WHERE
+
+linea :352 , primera columna: 6 ultima columna: 14 , Employee: Es un@Identificador
+
+linea :352 , primera columna: 14 ultima columna: 15 , .: Es un@punto
+
+linea :352 , primera columna: 15 ultima columna: 31 , BusinessEntityID: Es un@Identificador
+
+Token: LIKE LIKE
+
+linea :352 , primera columna: 37 ultima columna: 41 , 'S%': Es un@String
+
+Token: GO GO
+
+FIN

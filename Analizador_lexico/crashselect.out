@@ -1,954 +1,946 @@
 linea :3 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
 
-linea :3 , primera columna: 7 ultima columna: 8 , c: Es un@Identificador
+linea :3 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
 
-linea :3 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+linea :3 , primera columna: 9 ultima columna: 13 , from: Es un@Identificador
 
-linea :3 , primera columna: 9 ultima columna: 19 , CustomerID: Es un@Identificador
+linea :3 , primera columna: 14 ultima columna: 24 , Production: Es un@Identificador
 
-linea :3 , primera columna: 19 ultima columna: 20 , ,: Es un@coma
+linea :3 , primera columna: 24 ultima columna: 25 , .: Es un@punto
 
-Token: COUNT COUNT
+linea :3 , primera columna: 25 ultima columna: 32 , Product: Es un@Identificador
 
-linea :3 , primera columna: 25 ultima columna: 26 , (: Es un@parentesis_izquierdo
+linea :3 , primera columna: 33 ultima columna: 34 , p: Es un@Identificador
 
-linea :3 , primera columna: 26 ultima columna: 27 , c: Es un@Identificador
+linea :3 , primera columna: 35 ultima columna: 39 , left: Es un@Identificador
 
-linea :3 , primera columna: 27 ultima columna: 28 , .: Es un@punto
+linea :3 , primera columna: 40 ultima columna: 44 , join: Es un@Identificador
 
-linea :3 , primera columna: 28 ultima columna: 36 , PersonID: Es un@Identificador
+linea :3 , primera columna: 45 ultima columna: 50 , Sales: Es un@Identificador
 
-linea :3 , primera columna: 36 ultima columna: 37 , ): Es un@parentesis_derecho
+linea :3 , primera columna: 50 ultima columna: 51 , .: Es un@punto
 
-linea :3 , primera columna: 38 ultima columna: 39 , l: Es un@Identificador
+linea :3 , primera columna: 51 ultima columna: 67 , SalesOrderDetail: Es un@Identificador
 
-linea :3 , primera columna: 39 ultima columna: 40 , ,: Es un@coma
+linea :3 , primera columna: 68 ultima columna: 71 , sod: Es un@Identificador
 
-Token: SUM SUM
-
-linea :3 , primera columna: 43 ultima columna: 44 , (: Es un@parentesis_izquierdo
-
-linea :3 , primera columna: 44 ultima columna: 45 , p: Es un@Identificador
-
-linea :3 , primera columna: 45 ultima columna: 46 , .: Es un@punto
-
-linea :3 , primera columna: 46 ultima columna: 55 , FirstName: Es un@Identificador
-
-linea :3 , primera columna: 55 ultima columna: 56 , ): Es un@parentesis_derecho
-
-linea :3 , primera columna: 58 ultima columna: 69 , 'hsdhgasjh': Es un@String
-
-linea :3 , primera columna: 70 ultima columna: 71 , ,: Es un@coma
-
-Token: MAX MAX
-
-linea :3 , primera columna: 74 ultima columna: 75 , (: Es un@parentesis_izquierdo
+linea :3 , primera columna: 72 ultima columna: 74 , on: Es un@Identificador
 
 linea :3 , primera columna: 75 ultima columna: 76 , p: Es un@Identificador
 
 linea :3 , primera columna: 76 ultima columna: 77 , .: Es un@punto
 
-linea :3 , primera columna: 77 ultima columna: 85 , LastName: Es un@Identificador
+linea :3 , primera columna: 77 ultima columna: 86 , ProductID: Es un@Identificador
 
-linea :3 , primera columna: 85 ultima columna: 86 , ): Es un@parentesis_derecho
+linea :3 , primera columna: 86 ultima columna: 87 , =: Es un@igual
 
-linea :3 , primera columna: 87 ultima columna: 89 , as: Es un@Identificador
+linea :3 , primera columna: 87 ultima columna: 90 , sod: Es un@Identificador
 
-linea :3 , primera columna: 90 ultima columna: 91 , p: Es un@Identificador
+linea :3 , primera columna: 90 ultima columna: 91 , .: Es un@punto
 
-linea :4 , primera columna: 1 ultima columna: 5 , from: Es un@Identificador
+linea :3 , primera columna: 91 ultima columna: 100 , ProductID: Es un@Identificador
 
-linea :4 , primera columna: 6 ultima columna: 11 , Sales: Es un@Identificador
+linea :4 , primera columna: 0 ultima columna: 5 , where: Es un@Identificador
 
-linea :4 , primera columna: 11 ultima columna: 12 , .: Es un@punto
+linea :4 , primera columna: 6 ultima columna: 9 , sod: Es un@Identificador
 
-linea :4 , primera columna: 12 ultima columna: 20 , Customer: Es un@Identificador
+linea :4 , primera columna: 9 ultima columna: 10 , .: Es un@punto
 
-linea :4 , primera columna: 21 ultima columna: 23 , as: Es un@Identificador
+linea :4 , primera columna: 10 ultima columna: 19 , ProductID: Es un@Identificador
 
-linea :4 , primera columna: 24 ultima columna: 25 , c: Es un@Identificador
+linea :4 , primera columna: 20 ultima columna: 22 , is: Es un@Identificador
 
-linea :6 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
+linea :4 , primera columna: 23 ultima columna: 27 , null: Es un@Identificador
 
-linea :6 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
+linea :5 , primera columna: 0 ultima columna: 1 , ;: Es un@punto_coma
 
-linea :6 , primera columna: 11 ultima columna: 17 , Person: Es un@Identificador
+linea :8 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
 
-linea :6 , primera columna: 17 ultima columna: 18 , .: Es un@punto
+linea :8 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
 
-linea :6 , primera columna: 18 ultima columna: 24 , Person: Es un@Identificador
+linea :8 , primera columna: 9 ultima columna: 13 , from: Es un@Identificador
 
-linea :6 , primera columna: 25 ultima columna: 26 , p: Es un@Identificador
+linea :8 , primera columna: 14 ultima columna: 24 , Production: Es un@Identificador
 
-linea :6 , primera columna: 27 ultima columna: 29 , on: Es un@Identificador
+linea :8 , primera columna: 24 ultima columna: 25 , .: Es un@punto
 
-linea :6 , primera columna: 30 ultima columna: 31 , c: Es un@Identificador
+linea :8 , primera columna: 25 ultima columna: 32 , Product: Es un@Identificador
 
-linea :6 , primera columna: 31 ultima columna: 32 , .: Es un@punto
+linea :8 , primera columna: 33 ultima columna: 34 , p: Es un@Identificador
 
-linea :6 , primera columna: 32 ultima columna: 40 , PersonID: Es un@Identificador
+linea :9 , primera columna: 0 ultima columna: 6 , having: Es un@Identificador
 
-linea :6 , primera columna: 40 ultima columna: 41 , =: Es un@igual
+linea :9 , primera columna: 7 ultima columna: 12 , count: Es un@Identificador
 
-linea :6 , primera columna: 41 ultima columna: 42 , p: Es un@Identificador
+linea :9 , primera columna: 12 ultima columna: 13 , (: Es un@parentesis_izquierdo
 
-linea :6 , primera columna: 42 ultima columna: 43 , .: Es un@punto
+linea :9 , primera columna: 13 ultima columna: 15 , pp: Es un@Identificador
 
-linea :6 , primera columna: 43 ultima columna: 59 , BusinessEntityID: Es un@Identificador
+linea :9 , primera columna: 15 ultima columna: 16 , ): Es un@parentesis_derecho
 
-linea :7 , primera columna: 0 ultima columna: 4 , left: Es un@Identificador
+linea :9 , primera columna: 16 ultima columna: 17 , >: Es un@mayor
 
-linea :7 , primera columna: 5 ultima columna: 10 , outer: Es un@Identificador
+linea :9 , primera columna: 17 ultima columna: 18 , 3: Es un@Int
 
-linea :7 , primera columna: 11 ultima columna: 15 , join: Es un@Identificador
+linea :10 , primera columna: 0 ultima columna: 5 , order: Es un@Identificador
 
-linea :7 , primera columna: 16 ultima columna: 22 , Person: Es un@Identificador
+linea :10 , primera columna: 6 ultima columna: 8 , by: Es un@Identificador
 
-linea :7 , primera columna: 22 ultima columna: 23 , .: Es un@punto
+linea :10 , primera columna: 9 ultima columna: 13 , pepe: Es un@Identificador
 
-linea :7 , primera columna: 23 ultima columna: 44 , BusinessEntityAddress: Es un@Identificador
+linea :12 , primera columna: 0 ultima columna: 2 , go: Es un@Identificador
 
-linea :7 , primera columna: 45 ultima columna: 48 , bea: Es un@Identificador
+linea :17 , primera columna: 1 ultima columna: 7 , select: Es un@Identificador
 
-linea :7 , primera columna: 49 ultima columna: 51 , on: Es un@Identificador
-
-linea :7 , primera columna: 52 ultima columna: 55 , bea: Es un@Identificador
-
-linea :7 , primera columna: 55 ultima columna: 56 , .: Es un@punto
-
-linea :7 , primera columna: 56 ultima columna: 72 , BusinessEntityID: Es un@Identificador
-
-linea :7 , primera columna: 72 ultima columna: 73 , =: Es un@igual
-
-linea :7 , primera columna: 73 ultima columna: 74 , p: Es un@Identificador
-
-linea :7 , primera columna: 74 ultima columna: 75 , .: Es un@punto
-
-linea :7 , primera columna: 75 ultima columna: 91 , BusinessEntityID: Es un@Identificador
-
-linea :9 , primera columna: 0 ultima columna: 5 , where: Es un@Identificador
-
-linea :9 , primera columna: 6 ultima columna: 9 , bea: Es un@Identificador
-
-linea :9 , primera columna: 9 ultima columna: 10 , .: Es un@punto
-
-linea :9 , primera columna: 10 ultima columna: 19 , AddressID: Es un@Identificador
-
-linea :9 , primera columna: 20 ultima columna: 22 , is: Es un@Identificador
-
-linea :9 , primera columna: 23 ultima columna: 27 , null: Es un@Identificador
-
-linea :11 , primera columna: 0 ultima columna: 1 , ;: Es un@punto_coma
-
-linea :16 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
-
-linea :16 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
-
-linea :16 , primera columna: 9 ultima columna: 13 , from: Es un@Identificador
-
-linea :16 , primera columna: 14 ultima columna: 24 , Production: Es un@Identificador
-
-linea :16 , primera columna: 24 ultima columna: 25 , .: Es un@punto
-
-linea :16 , primera columna: 25 ultima columna: 32 , Product: Es un@Identificador
-
-linea :16 , primera columna: 33 ultima columna: 34 , p: Es un@Identificador
-
-linea :16 , primera columna: 35 ultima columna: 39 , left: Es un@Identificador
-
-linea :16 , primera columna: 40 ultima columna: 44 , join: Es un@Identificador
-
-linea :16 , primera columna: 45 ultima columna: 50 , Sales: Es un@Identificador
-
-linea :16 , primera columna: 50 ultima columna: 51 , .: Es un@punto
-
-linea :16 , primera columna: 51 ultima columna: 67 , SalesOrderDetail: Es un@Identificador
-
-linea :16 , primera columna: 68 ultima columna: 71 , sod: Es un@Identificador
-
-linea :16 , primera columna: 72 ultima columna: 74 , on: Es un@Identificador
-
-linea :16 , primera columna: 75 ultima columna: 76 , p: Es un@Identificador
-
-linea :16 , primera columna: 76 ultima columna: 77 , .: Es un@punto
-
-linea :16 , primera columna: 77 ultima columna: 86 , ProductID: Es un@Identificador
-
-linea :16 , primera columna: 86 ultima columna: 87 , =: Es un@igual
-
-linea :16 , primera columna: 87 ultima columna: 90 , sod: Es un@Identificador
-
-linea :16 , primera columna: 90 ultima columna: 91 , .: Es un@punto
-
-linea :16 , primera columna: 91 ultima columna: 100 , ProductID: Es un@Identificador
-
-linea :17 , primera columna: 0 ultima columna: 5 , where: Es un@Identificador
-
-linea :17 , primera columna: 6 ultima columna: 9 , sod: Es un@Identificador
+linea :17 , primera columna: 8 ultima columna: 9 , v: Es un@Identificador
 
 linea :17 , primera columna: 9 ultima columna: 10 , .: Es un@punto
 
-linea :17 , primera columna: 10 ultima columna: 19 , ProductID: Es un@Identificador
+linea :17 , primera columna: 10 ultima columna: 26 , BusinessEntityID: Es un@Identificador
 
-linea :17 , primera columna: 20 ultima columna: 22 , is: Es un@Identificador
+linea :17 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
 
-linea :17 , primera columna: 23 ultima columna: 27 , null: Es un@Identificador
+linea :17 , primera columna: 27 ultima columna: 28 , v: Es un@Identificador
 
-linea :18 , primera columna: 0 ultima columna: 1 , ;: Es un@punto_coma
+linea :17 , primera columna: 28 ultima columna: 29 , .: Es un@punto
 
-linea :21 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
+linea :17 , primera columna: 29 ultima columna: 33 , shit: Es un@Identificador
 
-linea :21 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
-
-linea :21 , primera columna: 9 ultima columna: 13 , from: Es un@Identificador
-
-linea :21 , primera columna: 14 ultima columna: 24 , Production: Es un@Identificador
-
-linea :21 , primera columna: 24 ultima columna: 25 , .: Es un@punto
-
-linea :21 , primera columna: 25 ultima columna: 32 , Product: Es un@Identificador
-
-linea :21 , primera columna: 33 ultima columna: 34 , p: Es un@Identificador
-
-linea :22 , primera columna: 0 ultima columna: 6 , having: Es un@Identificador
-
-linea :22 , primera columna: 7 ultima columna: 12 , count: Es un@Identificador
-
-linea :22 , primera columna: 12 ultima columna: 13 , (: Es un@parentesis_izquierdo
-
-linea :22 , primera columna: 13 ultima columna: 15 , pp: Es un@Identificador
-
-linea :22 , primera columna: 15 ultima columna: 16 , ): Es un@parentesis_derecho
-
-linea :22 , primera columna: 16 ultima columna: 17 , >: Es un@mayor
-
-linea :22 , primera columna: 17 ultima columna: 18 , 3: Es un@Int
-
-linea :23 , primera columna: 0 ultima columna: 5 , order: Es un@Identificador
-
-linea :23 , primera columna: 6 ultima columna: 8 , by: Es un@Identificador
-
-linea :23 , primera columna: 9 ultima columna: 13 , pepe: Es un@Identificador
-
-linea :25 , primera columna: 0 ultima columna: 2 , go: Es un@Identificador
-
-linea :30 , primera columna: 1 ultima columna: 7 , select: Es un@Identificador
-
-linea :30 , primera columna: 8 ultima columna: 9 , v: Es un@Identificador
-
-linea :30 , primera columna: 9 ultima columna: 10 , .: Es un@punto
-
-linea :30 , primera columna: 10 ultima columna: 26 , BusinessEntityID: Es un@Identificador
-
-linea :30 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
-
-linea :30 , primera columna: 27 ultima columna: 28 , v: Es un@Identificador
-
-linea :30 , primera columna: 28 ultima columna: 29 , .: Es un@punto
-
-linea :30 , primera columna: 29 ultima columna: 33 , shit: Es un@Identificador
-
-linea :30 , primera columna: 33 ultima columna: 34 , ,: Es un@coma
+linea :17 , primera columna: 33 ultima columna: 34 , ,: Es un@coma
 
 Token: COUNT COUNT
 
-linea :30 , primera columna: 40 ultima columna: 41 , (: Es un@parentesis_izquierdo
+linea :17 , primera columna: 40 ultima columna: 41 , (: Es un@parentesis_izquierdo
 
-linea :30 , primera columna: 41 ultima columna: 42 , v: Es un@Identificador
+linea :17 , primera columna: 41 ultima columna: 42 , v: Es un@Identificador
 
-linea :30 , primera columna: 42 ultima columna: 43 , .: Es un@punto
+linea :17 , primera columna: 42 ultima columna: 43 , .: Es un@punto
 
-linea :30 , primera columna: 43 ultima columna: 59 , BusinessEntityID: Es un@Identificador
+linea :17 , primera columna: 43 ultima columna: 59 , BusinessEntityID: Es un@Identificador
 
-linea :30 , primera columna: 59 ultima columna: 60 , ): Es un@parentesis_derecho
+linea :17 , primera columna: 59 ultima columna: 60 , ): Es un@parentesis_derecho
 
-linea :30 , primera columna: 61 ultima columna: 63 , as: Es un@Identificador
+linea :17 , primera columna: 61 ultima columna: 63 , as: Es un@Identificador
 
-linea :30 , primera columna: 64 ultima columna: 74 , no_compras: Es un@Identificador
+linea :17 , primera columna: 64 ultima columna: 74 , no_compras: Es un@Identificador
 
-linea :30 , primera columna: 74 ultima columna: 75 , ,: Es un@coma
+linea :17 , primera columna: 74 ultima columna: 75 , ,: Es un@coma
 
-linea :30 , primera columna: 75 ultima columna: 78 , max: Es un@Identificador
+linea :17 , primera columna: 75 ultima columna: 78 , max: Es un@Identificador
 
-linea :30 , primera columna: 78 ultima columna: 79 , (: Es un@parentesis_izquierdo
+linea :17 , primera columna: 78 ultima columna: 79 , (: Es un@parentesis_izquierdo
 
-linea :30 , primera columna: 79 ultima columna: 80 , a: Es un@Identificador
+linea :17 , primera columna: 79 ultima columna: 80 , a: Es un@Identificador
 
-linea :30 , primera columna: 80 ultima columna: 81 , .: Es un@punto
+linea :17 , primera columna: 80 ultima columna: 81 , .: Es un@punto
 
-linea :30 , primera columna: 81 ultima columna: 89 , TotalDue: Es un@Identificador
+linea :17 , primera columna: 81 ultima columna: 89 , TotalDue: Es un@Identificador
 
-linea :30 , primera columna: 89 ultima columna: 90 , ): Es un@parentesis_derecho
+linea :17 , primera columna: 89 ultima columna: 90 , ): Es un@parentesis_derecho
 
-linea :30 , primera columna: 91 ultima columna: 93 , as: Es un@Identificador
+linea :17 , primera columna: 91 ultima columna: 93 , as: Es un@Identificador
 
-linea :30 , primera columna: 94 ultima columna: 104 , compra_max: Es un@Identificador
+linea :17 , primera columna: 94 ultima columna: 104 , compra_max: Es un@Identificador
 
-linea :30 , primera columna: 104 ultima columna: 105 , ,: Es un@coma
+linea :17 , primera columna: 104 ultima columna: 105 , ,: Es un@coma
 
-linea :30 , primera columna: 106 ultima columna: 109 , min: Es un@Identificador
+linea :17 , primera columna: 106 ultima columna: 109 , min: Es un@Identificador
 
-linea :30 , primera columna: 109 ultima columna: 110 , (: Es un@parentesis_izquierdo
+linea :17 , primera columna: 109 ultima columna: 110 , (: Es un@parentesis_izquierdo
 
-linea :30 , primera columna: 110 ultima columna: 111 , a: Es un@Identificador
+linea :17 , primera columna: 110 ultima columna: 111 , a: Es un@Identificador
 
-linea :30 , primera columna: 111 ultima columna: 112 , .: Es un@punto
+linea :17 , primera columna: 111 ultima columna: 112 , .: Es un@punto
 
-linea :30 , primera columna: 112 ultima columna: 120 , TotalDue: Es un@Identificador
+linea :17 , primera columna: 112 ultima columna: 120 , TotalDue: Es un@Identificador
 
-linea :30 , primera columna: 120 ultima columna: 121 , ): Es un@parentesis_derecho
+linea :17 , primera columna: 120 ultima columna: 121 , ): Es un@parentesis_derecho
 
-linea :30 , primera columna: 122 ultima columna: 124 , as: Es un@Identificador
+linea :17 , primera columna: 122 ultima columna: 124 , as: Es un@Identificador
 
-linea :30 , primera columna: 125 ultima columna: 138 , minimo_compra: Es un@Identificador
+linea :17 , primera columna: 125 ultima columna: 138 , minimo_compra: Es un@Identificador
 
-linea :30 , primera columna: 138 ultima columna: 139 , ,: Es un@coma
+linea :17 , primera columna: 138 ultima columna: 139 , ,: Es un@coma
 
 Token: SUM SUM
 
-linea :30 , primera columna: 142 ultima columna: 143 , (: Es un@parentesis_izquierdo
+linea :17 , primera columna: 142 ultima columna: 143 , (: Es un@parentesis_izquierdo
 
-linea :30 , primera columna: 143 ultima columna: 144 , a: Es un@Identificador
+linea :17 , primera columna: 143 ultima columna: 144 , a: Es un@Identificador
 
-linea :30 , primera columna: 144 ultima columna: 145 , .: Es un@punto
+linea :17 , primera columna: 144 ultima columna: 145 , .: Es un@punto
 
-linea :30 , primera columna: 145 ultima columna: 153 , TotalDue: Es un@Identificador
+linea :17 , primera columna: 145 ultima columna: 153 , TotalDue: Es un@Identificador
 
-linea :30 , primera columna: 153 ultima columna: 154 , ): Es un@parentesis_derecho
+linea :17 , primera columna: 153 ultima columna: 154 , ): Es un@parentesis_derecho
 
-linea :30 , primera columna: 155 ultima columna: 157 , as: Es un@Identificador
+linea :17 , primera columna: 155 ultima columna: 157 , as: Es un@Identificador
 
-linea :30 , primera columna: 158 ultima columna: 170 , suma_compras: Es un@Identificador
+linea :17 , primera columna: 158 ultima columna: 170 , suma_compras: Es un@Identificador
 
-linea :30 , primera columna: 170 ultima columna: 171 , ,: Es un@coma
+linea :17 , primera columna: 170 ultima columna: 171 , ,: Es un@coma
 
-linea :30 , primera columna: 171 ultima columna: 174 , max: Es un@Identificador
+linea :17 , primera columna: 171 ultima columna: 174 , max: Es un@Identificador
 
-linea :30 , primera columna: 174 ultima columna: 175 , (: Es un@parentesis_izquierdo
+linea :17 , primera columna: 174 ultima columna: 175 , (: Es un@parentesis_izquierdo
 
-linea :30 , primera columna: 175 ultima columna: 176 , a: Es un@Identificador
+linea :17 , primera columna: 175 ultima columna: 176 , a: Es un@Identificador
 
-linea :30 , primera columna: 176 ultima columna: 177 , .: Es un@punto
+linea :17 , primera columna: 176 ultima columna: 177 , .: Es un@punto
 
-linea :30 , primera columna: 177 ultima columna: 186 , OrderDate: Es un@Identificador
+linea :17 , primera columna: 177 ultima columna: 186 , OrderDate: Es un@Identificador
 
-linea :30 , primera columna: 186 ultima columna: 187 , ): Es un@parentesis_derecho
+linea :17 , primera columna: 186 ultima columna: 187 , ): Es un@parentesis_derecho
 
-linea :30 , primera columna: 188 ultima columna: 190 , as: Es un@Identificador
+linea :17 , primera columna: 188 ultima columna: 190 , as: Es un@Identificador
 
-linea :30 , primera columna: 191 ultima columna: 214 , fecha_mas_actual_compra: Es un@Identificador
+linea :17 , primera columna: 191 ultima columna: 214 , fecha_mas_actual_compra: Es un@Identificador
 
-linea :30 , primera columna: 214 ultima columna: 215 , ,: Es un@coma
+linea :17 , primera columna: 214 ultima columna: 215 , ,: Es un@coma
 
-linea :30 , primera columna: 216 ultima columna: 219 , min: Es un@Identificador
+linea :17 , primera columna: 216 ultima columna: 219 , min: Es un@Identificador
 
-linea :30 , primera columna: 219 ultima columna: 220 , (: Es un@parentesis_izquierdo
+linea :17 , primera columna: 219 ultima columna: 220 , (: Es un@parentesis_izquierdo
 
-linea :30 , primera columna: 220 ultima columna: 221 , a: Es un@Identificador
+linea :17 , primera columna: 220 ultima columna: 221 , a: Es un@Identificador
 
-linea :30 , primera columna: 221 ultima columna: 222 , .: Es un@punto
+linea :17 , primera columna: 221 ultima columna: 222 , .: Es un@punto
 
-linea :30 , primera columna: 222 ultima columna: 231 , OrderDate: Es un@Identificador
+linea :17 , primera columna: 222 ultima columna: 231 , OrderDate: Es un@Identificador
 
-linea :30 , primera columna: 231 ultima columna: 232 , ): Es un@parentesis_derecho
+linea :17 , primera columna: 231 ultima columna: 232 , ): Es un@parentesis_derecho
 
-linea :30 , primera columna: 233 ultima columna: 235 , as: Es un@Identificador
+linea :17 , primera columna: 233 ultima columna: 235 , as: Es un@Identificador
 
-linea :30 , primera columna: 236 ultima columna: 255 , fecha_minima_compra: Es un@Identificador
+linea :17 , primera columna: 236 ultima columna: 255 , fecha_minima_compra: Es un@Identificador
 
-linea :30 , primera columna: 257 ultima columna: 261 , from: Es un@Identificador
+linea :17 , primera columna: 257 ultima columna: 261 , from: Es un@Identificador
 
-linea :30 , primera columna: 263 ultima columna: 273 , purchasing: Es un@Identificador
+linea :17 , primera columna: 263 ultima columna: 273 , purchasing: Es un@Identificador
 
-linea :30 , primera columna: 273 ultima columna: 274 , .: Es un@punto
+linea :17 , primera columna: 273 ultima columna: 274 , .: Es un@punto
 
-linea :30 , primera columna: 274 ultima columna: 293 , PurchaseOrderHeader: Es un@Identificador
+linea :17 , primera columna: 274 ultima columna: 293 , PurchaseOrderHeader: Es un@Identificador
 
-linea :30 , primera columna: 294 ultima columna: 295 , a: Es un@Identificador
+linea :17 , primera columna: 294 ultima columna: 295 , a: Es un@Identificador
 
-linea :31 , primera columna: 1 ultima columna: 6 , inner: Es un@Identificador
+linea :18 , primera columna: 1 ultima columna: 6 , inner: Es un@Identificador
 
-linea :31 , primera columna: 7 ultima columna: 11 , join: Es un@Identificador
+linea :18 , primera columna: 7 ultima columna: 11 , join: Es un@Identificador
 
-linea :31 , primera columna: 12 ultima columna: 22 , Purchasing: Es un@Identificador
+linea :18 , primera columna: 12 ultima columna: 22 , Purchasing: Es un@Identificador
 
-linea :31 , primera columna: 22 ultima columna: 23 , .: Es un@punto
+linea :18 , primera columna: 22 ultima columna: 23 , .: Es un@punto
 
-linea :31 , primera columna: 23 ultima columna: 29 , Vendor: Es un@Identificador
+linea :18 , primera columna: 23 ultima columna: 29 , Vendor: Es un@Identificador
 
-linea :31 , primera columna: 30 ultima columna: 31 , v: Es un@Identificador
+linea :18 , primera columna: 30 ultima columna: 31 , v: Es un@Identificador
 
-linea :31 , primera columna: 32 ultima columna: 34 , on: Es un@Identificador
+linea :18 , primera columna: 32 ultima columna: 34 , on: Es un@Identificador
 
-linea :31 , primera columna: 35 ultima columna: 36 , a: Es un@Identificador
+linea :18 , primera columna: 35 ultima columna: 36 , a: Es un@Identificador
 
-linea :31 , primera columna: 36 ultima columna: 37 , .: Es un@punto
+linea :18 , primera columna: 36 ultima columna: 37 , .: Es un@punto
 
-linea :31 , primera columna: 37 ultima columna: 45 , VendorID: Es un@Identificador
+linea :18 , primera columna: 37 ultima columna: 45 , VendorID: Es un@Identificador
 
-linea :31 , primera columna: 46 ultima columna: 47 , =: Es un@igual
+linea :18 , primera columna: 46 ultima columna: 47 , =: Es un@igual
 
-linea :31 , primera columna: 48 ultima columna: 49 , v: Es un@Identificador
+linea :18 , primera columna: 48 ultima columna: 49 , v: Es un@Identificador
 
-linea :31 , primera columna: 49 ultima columna: 50 , .: Es un@punto
+linea :18 , primera columna: 49 ultima columna: 50 , .: Es un@punto
 
-linea :31 , primera columna: 50 ultima columna: 66 , BusinessEntityID: Es un@Identificador
+linea :18 , primera columna: 50 ultima columna: 66 , BusinessEntityID: Es un@Identificador
 
-linea :32 , primera columna: 1 ultima columna: 6 , group: Es un@Identificador
+linea :19 , primera columna: 1 ultima columna: 6 , group: Es un@Identificador
 
-linea :32 , primera columna: 7 ultima columna: 9 , by: Es un@Identificador
+linea :19 , primera columna: 7 ultima columna: 9 , by: Es un@Identificador
 
-linea :32 , primera columna: 10 ultima columna: 11 , v: Es un@Identificador
+linea :19 , primera columna: 10 ultima columna: 11 , v: Es un@Identificador
 
-linea :32 , primera columna: 11 ultima columna: 12 , .: Es un@punto
+linea :19 , primera columna: 11 ultima columna: 12 , .: Es un@punto
 
-linea :32 , primera columna: 12 ultima columna: 28 , BusinessEntityID: Es un@Identificador
+linea :19 , primera columna: 12 ultima columna: 28 , BusinessEntityID: Es un@Identificador
 
-linea :32 , primera columna: 28 ultima columna: 29 , ,: Es un@coma
+linea :19 , primera columna: 28 ultima columna: 29 , ,: Es un@coma
 
-linea :32 , primera columna: 29 ultima columna: 30 , v: Es un@Identificador
+linea :19 , primera columna: 29 ultima columna: 30 , v: Es un@Identificador
 
-linea :32 , primera columna: 30 ultima columna: 31 , .: Es un@punto
+linea :19 , primera columna: 30 ultima columna: 31 , .: Es un@punto
 
-linea :32 , primera columna: 31 ultima columna: 34 , shi: Es un@Identificador
+linea :19 , primera columna: 31 ultima columna: 34 , shi: Es un@Identificador
 
-linea :33 , primera columna: 1 ultima columna: 6 , order: Es un@Identificador
+linea :20 , primera columna: 1 ultima columna: 6 , order: Es un@Identificador
 
-linea :33 , primera columna: 7 ultima columna: 9 , by: Es un@Identificador
+linea :20 , primera columna: 7 ultima columna: 9 , by: Es un@Identificador
 
-linea :33 , primera columna: 10 ultima columna: 11 , v: Es un@Identificador
+linea :20 , primera columna: 10 ultima columna: 11 , v: Es un@Identificador
 
-linea :33 , primera columna: 11 ultima columna: 12 , .: Es un@punto
+linea :20 , primera columna: 11 ultima columna: 12 , .: Es un@punto
 
-linea :33 , primera columna: 12 ultima columna: 28 , BusinessEntityID: Es un@Identificador
+linea :20 , primera columna: 12 ultima columna: 28 , BusinessEntityID: Es un@Identificador
 
-linea :34 , primera columna: 0 ultima columna: 1 , ;: Es un@punto_coma
+linea :21 , primera columna: 0 ultima columna: 1 , ;: Es un@punto_coma
 
-linea :37 , primera columna: 2 ultima columna: 8 , select: Es un@Identificador
+linea :44 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
 
-linea :37 , primera columna: 9 ultima columna: 10 , v: Es un@Identificador
+linea :44 , primera columna: 7 ultima columna: 8 , t: Es un@Identificador
 
-linea :37 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+linea :44 , primera columna: 8 ultima columna: 9 , .: Es un@punto
 
-linea :37 , primera columna: 11 ultima columna: 14 , shi: Es un@Identificador
+linea :44 , primera columna: 9 ultima columna: 14 , range: Es un@Identificador
 
-linea :37 , primera columna: 14 ultima columna: 15 , ,: Es un@coma
+linea :44 , primera columna: 15 ultima columna: 17 , as: Es un@Identificador
 
-linea :37 , primera columna: 15 ultima columna: 23 , DATEPART: Es un@Identificador
+linea :44 , primera columna: 18 ultima columna: 25 , 'rango': Es un@String
 
-linea :37 , primera columna: 23 ultima columna: 24 , (: Es un@parentesis_izquierdo
+linea :44 , primera columna: 25 ultima columna: 26 , ,: Es un@coma
 
-linea :37 , primera columna: 24 ultima columna: 28 , YEAR: Es un@Reservadas
+linea :44 , primera columna: 27 ultima columna: 32 , count: Es un@Identificador
 
-linea :37 , primera columna: 28 ultima columna: 29 , ,: Es un@coma
+linea :44 , primera columna: 32 ultima columna: 33 , (: Es un@parentesis_izquierdo
 
-linea :37 , primera columna: 29 ultima columna: 38 , OrderDate: Es un@Identificador
+linea :44 , primera columna: 33 ultima columna: 34 , *: Es un@multiplicacion
 
-linea :37 , primera columna: 38 ultima columna: 39 , ): Es un@parentesis_derecho
+linea :44 , primera columna: 34 ultima columna: 35 , ): Es un@parentesis_derecho
 
-linea :37 , primera columna: 39 ultima columna: 40 , ,: Es un@coma
+linea :44 , primera columna: 36 ultima columna: 38 , as: Es un@Identificador
 
-linea :37 , primera columna: 40 ultima columna: 45 , round: Es un@Identificador
+linea :44 , primera columna: 39 ultima columna: 49 , 'cantidad': Es un@String
 
-linea :37 , primera columna: 45 ultima columna: 46 , (: Es un@parentesis_izquierdo
+linea :44 , primera columna: 49 ultima columna: 50 , ,: Es un@coma
 
-linea :37 , primera columna: 46 ultima columna: 49 , avg: Es un@Identificador
+linea :44 , primera columna: 50 ultima columna: 55 , round: Es un@Identificador
 
-linea :37 , primera columna: 49 ultima columna: 50 , (: Es un@parentesis_izquierdo
+linea :44 , primera columna: 55 ultima columna: 56 , (: Es un@parentesis_izquierdo
 
-linea :37 , primera columna: 50 ultima columna: 51 , a: Es un@Identificador
+linea :44 , primera columna: 56 ultima columna: 59 , sum: Es un@Identificador
 
-linea :37 , primera columna: 51 ultima columna: 52 , .: Es un@punto
+linea :44 , primera columna: 59 ultima columna: 60 , (: Es un@parentesis_izquierdo
 
-linea :37 , primera columna: 52 ultima columna: 60 , TotalDue: Es un@Identificador
+linea :44 , primera columna: 60 ultima columna: 61 , t: Es un@Identificador
 
-linea :37 , primera columna: 60 ultima columna: 61 , ): Es un@parentesis_derecho
+linea :44 , primera columna: 61 ultima columna: 62 , .: Es un@punto
 
-linea :37 , primera columna: 61 ultima columna: 62 , ,: Es un@coma
+linea :44 , primera columna: 62 ultima columna: 70 , TotalDue: Es un@Identificador
 
-linea :37 , primera columna: 62 ultima columna: 63 , 2: Es un@Int
+linea :44 , primera columna: 70 ultima columna: 71 , ): Es un@parentesis_derecho
 
-linea :37 , primera columna: 63 ultima columna: 64 , ,: Es un@coma
+linea :44 , primera columna: 71 ultima columna: 72 , ,: Es un@coma
 
-linea :37 , primera columna: 64 ultima columna: 65 , 0: Es un@Int
+linea :44 , primera columna: 72 ultima columna: 73 , 2: Es un@Int
 
-linea :37 , primera columna: 65 ultima columna: 66 , ): Es un@parentesis_derecho
+linea :44 , primera columna: 73 ultima columna: 74 , ,: Es un@coma
 
-linea :37 , primera columna: 67 ultima columna: 69 , as: Es un@Identificador
+linea :44 , primera columna: 74 ultima columna: 75 , 0: Es un@Int
 
-linea :37 , primera columna: 70 ultima columna: 85 , compra_promedio: Es un@Identificador
+linea :44 , primera columna: 75 ultima columna: 76 , ): Es un@parentesis_derecho
 
-linea :37 , primera columna: 85 ultima columna: 86 , ,: Es un@coma
+linea :44 , primera columna: 77 ultima columna: 79 , as: Es un@Identificador
+
+linea :44 , primera columna: 80 ultima columna: 87 , 'total': Es un@String
+
+linea :45 , primera columna: 0 ultima columna: 4 , from: Es un@Identificador
+
+linea :45 , primera columna: 5 ultima columna: 6 , (: Es un@parentesis_izquierdo
+
+linea :46 , primera columna: 2 ultima columna: 8 , select: Es un@Identificador
+
+linea :46 , primera columna: 9 ultima columna: 13 , case: Es un@Identificador
+
+linea :47 , primera columna: 4 ultima columna: 8 , when: Es un@Identificador
+
+linea :47 , primera columna: 9 ultima columna: 12 , poh: Es un@Identificador
+
+linea :47 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+
+linea :47 , primera columna: 13 ultima columna: 21 , TotalDue: Es un@Identificador
+
+linea :47 , primera columna: 22 ultima columna: 29 , between: Es un@Identificador
+
+linea :47 , primera columna: 31 ultima columna: 32 , 0: Es un@Int
+
+linea :47 , primera columna: 33 ultima columna: 36 , and: Es un@Identificador
+
+linea :47 , primera columna: 38 ultima columna: 40 , 99: Es un@Int
+
+linea :47 , primera columna: 41 ultima columna: 45 , then: Es un@Identificador
+
+linea :47 , primera columna: 46 ultima columna: 54 , ' 0-99 ': Es un@String
+
+linea :48 , primera columna: 4 ultima columna: 8 , when: Es un@Identificador
+
+linea :48 , primera columna: 9 ultima columna: 12 , poh: Es un@Identificador
+
+linea :48 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+
+linea :48 , primera columna: 13 ultima columna: 21 , TotalDue: Es un@Identificador
+
+linea :48 , primera columna: 22 ultima columna: 29 , between: Es un@Identificador
+
+linea :48 , primera columna: 30 ultima columna: 33 , 100: Es un@Int
+
+linea :48 , primera columna: 34 ultima columna: 37 , and: Es un@Identificador
+
+linea :48 , primera columna: 38 ultima columna: 41 , 999: Es un@Int
+
+linea :48 , primera columna: 42 ultima columna: 46 , then: Es un@Identificador
+
+linea :48 , primera columna: 47 ultima columna: 56 , '100-999': Es un@String
+
+linea :49 , primera columna: 4 ultima columna: 8 , when: Es un@Identificador
+
+linea :49 , primera columna: 10 ultima columna: 13 , poh: Es un@Identificador
+
+linea :49 , primera columna: 13 ultima columna: 14 , .: Es un@punto
+
+linea :49 , primera columna: 14 ultima columna: 22 , TotalDue: Es un@Identificador
+
+linea :49 , primera columna: 23 ultima columna: 30 , between: Es un@Identificador
+
+linea :49 , primera columna: 31 ultima columna: 35 , 1000: Es un@Int
+
+linea :49 , primera columna: 36 ultima columna: 39 , and: Es un@Identificador
+
+linea :49 , primera columna: 40 ultima columna: 44 , 9999: Es un@Int
+
+linea :49 , primera columna: 45 ultima columna: 49 , then: Es un@Identificador
+
+linea :49 , primera columna: 50 ultima columna: 61 , '1000-9999': Es un@String
+
+linea :50 , primera columna: 4 ultima columna: 8 , else: Es un@Identificador
+
+linea :50 , primera columna: 9 ultima columna: 17 , '>10000': Es un@String
+
+linea :50 , primera columna: 18 ultima columna: 21 , end: Es un@Identificador
+
+linea :50 , primera columna: 22 ultima columna: 24 , as: Es un@Identificador
+
+linea :50 , primera columna: 25 ultima columna: 30 , range: Es un@Identificador
+
+linea :50 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+
+linea :50 , primera columna: 32 ultima columna: 33 , (: Es un@parentesis_izquierdo
+
+linea :50 , primera columna: 33 ultima columna: 36 , poh: Es un@Identificador
+
+linea :50 , primera columna: 36 ultima columna: 37 , .: Es un@punto
+
+linea :50 , primera columna: 37 ultima columna: 45 , TotalDue: Es un@Identificador
+
+linea :50 , primera columna: 45 ultima columna: 46 , ): Es un@parentesis_derecho
+
+linea :50 , primera columna: 47 ultima columna: 49 , as: Es un@Identificador
+
+linea :50 , primera columna: 50 ultima columna: 58 , TotalDue: Es un@Identificador
+
+linea :51 , primera columna: 2 ultima columna: 6 , from: Es un@Identificador
+
+linea :51 , primera columna: 8 ultima columna: 18 , Purchasing: Es un@Identificador
+
+linea :51 , primera columna: 18 ultima columna: 19 , .: Es un@punto
+
+linea :51 , primera columna: 19 ultima columna: 38 , PurchaseOrderHeader: Es un@Identificador
+
+linea :51 , primera columna: 39 ultima columna: 42 , poh: Es un@Identificador
+
+linea :51 , primera columna: 42 ultima columna: 43 , ): Es un@parentesis_derecho
+
+linea :51 , primera columna: 44 ultima columna: 45 , t: Es un@Identificador
+
+linea :52 , primera columna: 0 ultima columna: 5 , group: Es un@Identificador
+
+linea :52 , primera columna: 6 ultima columna: 8 , by: Es un@Identificador
+
+linea :52 , primera columna: 9 ultima columna: 10 , t: Es un@Identificador
+
+linea :52 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :52 , primera columna: 11 ultima columna: 16 , range: Es un@Identificador
+
+linea :52 , primera columna: 16 ultima columna: 17 , ;: Es un@punto_coma
+
+linea :55 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
+
+linea :55 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
+
+linea :55 , primera columna: 9 ultima columna: 13 , from: Es un@Identificador
+
+linea :55 , primera columna: 14 ultima columna: 28 , HumanResources: Es un@Identificador
+
+linea :55 , primera columna: 28 ultima columna: 29 , .: Es un@punto
+
+linea :55 , primera columna: 29 ultima columna: 47 , EmployeePayHistory: Es un@Identificador
+
+linea :55 , primera columna: 47 ultima columna: 48 , ;: Es un@punto_coma
+
+linea :57 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
+
+linea :57 , primera columna: 7 ultima columna: 23 , BusinessEntityID: Es un@Identificador
+
+linea :57 , primera columna: 23 ultima columna: 24 , ,: Es un@coma
 
 Token: COUNT COUNT
 
-linea :37 , primera columna: 91 ultima columna: 92 , (: Es un@parentesis_izquierdo
+linea :57 , primera columna: 31 ultima columna: 32 , (: Es un@parentesis_izquierdo
 
-linea :37 , primera columna: 92 ultima columna: 93 , v: Es un@Identificador
+linea :57 , primera columna: 32 ultima columna: 48 , BusinessEntityID: Es un@Identificador
 
-linea :37 , primera columna: 93 ultima columna: 94 , .: Es un@punto
+linea :57 , primera columna: 48 ultima columna: 49 , ): Es un@parentesis_derecho
 
-linea :37 , primera columna: 94 ultima columna: 110 , BusinessEntityID: Es un@Identificador
+linea :57 , primera columna: 50 ultima columna: 54 , from: Es un@Identificador
 
-linea :37 , primera columna: 110 ultima columna: 111 , ): Es un@parentesis_derecho
+linea :57 , primera columna: 55 ultima columna: 69 , HumanResources: Es un@Identificador
 
-linea :37 , primera columna: 112 ultima columna: 114 , as: Es un@Identificador
+linea :57 , primera columna: 69 ultima columna: 70 , .: Es un@punto
 
-linea :37 , primera columna: 115 ultima columna: 125 , no_compras: Es un@Identificador
+linea :57 , primera columna: 70 ultima columna: 88 , EmployeePayHistory: Es un@Identificador
 
-linea :37 , primera columna: 127 ultima columna: 131 , from: Es un@Identificador
+linea :58 , primera columna: 0 ultima columna: 5 , group: Es un@Identificador
 
-linea :37 , primera columna: 133 ultima columna: 143 , purchasing: Es un@Identificador
+linea :58 , primera columna: 6 ultima columna: 8 , by: Es un@Identificador
 
-linea :37 , primera columna: 143 ultima columna: 144 , .: Es un@punto
+linea :58 , primera columna: 9 ultima columna: 25 , BusinessEntityID: Es un@Identificador
 
-linea :37 , primera columna: 144 ultima columna: 163 , PurchaseOrderHeader: Es un@Identificador
+linea :58 , primera columna: 25 ultima columna: 26 , ;: Es un@punto_coma
 
-linea :37 , primera columna: 164 ultima columna: 165 , a: Es un@Identificador
+linea :58 , primera columna: 27 ultima columna: 29 , go: Es un@Identificador
 
-linea :38 , primera columna: 1 ultima columna: 6 , inner: Es un@Identificador
+linea :67 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
 
-linea :38 , primera columna: 7 ultima columna: 11 , join: Es un@Identificador
+linea :67 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
 
-linea :38 , primera columna: 12 ultima columna: 22 , Purchasing: Es un@Identificador
+linea :67 , primera columna: 8 ultima columna: 9 , .: Es un@punto
 
-linea :38 , primera columna: 22 ultima columna: 23 , .: Es un@punto
+linea :67 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
 
-linea :38 , primera columna: 23 ultima columna: 29 , Vendor: Es un@Identificador
+linea :67 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
 
-linea :38 , primera columna: 30 ultima columna: 31 , v: Es un@Identificador
+linea :67 , primera columna: 19 ultima columna: 21 , um: Es un@Identificador
 
-linea :38 , primera columna: 32 ultima columna: 34 , on: Es un@Identificador
+linea :67 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :38 , primera columna: 35 ultima columna: 36 , a: Es un@Identificador
+linea :67 , primera columna: 22 ultima columna: 25 , shi: Es un@Identificador
 
-linea :38 , primera columna: 36 ultima columna: 37 , .: Es un@punto
+linea :67 , primera columna: 25 ultima columna: 26 , ,: Es un@coma
 
-linea :38 , primera columna: 37 ultima columna: 45 , VendorID: Es un@Identificador
+linea :67 , primera columna: 26 ultima columna: 28 , bm: Es un@Identificador
 
-linea :38 , primera columna: 46 ultima columna: 47 , =: Es un@igual
+linea :67 , primera columna: 28 ultima columna: 29 , .: Es un@punto
 
-linea :38 , primera columna: 48 ultima columna: 49 , v: Es un@Identificador
+linea :67 , primera columna: 29 ultima columna: 40 , ComponentID: Es un@Identificador
 
-linea :38 , primera columna: 49 ultima columna: 50 , .: Es un@punto
+linea :67 , primera columna: 41 ultima columna: 42 , ,: Es un@coma
 
-linea :38 , primera columna: 50 ultima columna: 66 , BusinessEntityID: Es un@Identificador
+linea :67 , primera columna: 42 ultima columna: 44 , p2: Es un@Identificador
 
-linea :39 , primera columna: 1 ultima columna: 6 , group: Es un@Identificador
+linea :67 , primera columna: 44 ultima columna: 45 , .: Es un@punto
 
-linea :39 , primera columna: 7 ultima columna: 9 , by: Es un@Identificador
+linea :67 , primera columna: 45 ultima columna: 48 , shi: Es un@Identificador
 
-linea :39 , primera columna: 10 ultima columna: 11 , v: Es un@Identificador
+linea :67 , primera columna: 50 ultima columna: 54 , from: Es un@Identificador
 
-linea :39 , primera columna: 11 ultima columna: 12 , .: Es un@punto
+linea :67 , primera columna: 55 ultima columna: 65 , Production: Es un@Identificador
 
-linea :39 , primera columna: 12 ultima columna: 15 , shi: Es un@Identificador
+linea :67 , primera columna: 65 ultima columna: 66 , .: Es un@punto
 
-linea :39 , primera columna: 15 ultima columna: 16 , ,: Es un@coma
+linea :67 , primera columna: 66 ultima columna: 81 , BillOfMaterials: Es un@Identificador
 
-linea :39 , primera columna: 17 ultima columna: 25 , DATEPART: Es un@Identificador
+linea :67 , primera columna: 82 ultima columna: 84 , bm: Es un@Identificador
 
-linea :39 , primera columna: 25 ultima columna: 26 , (: Es un@parentesis_izquierdo
+linea :68 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
 
-linea :39 , primera columna: 26 ultima columna: 30 , YEAR: Es un@Reservadas
+linea :68 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
 
-linea :39 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+linea :68 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
 
-linea :39 , primera columna: 31 ultima columna: 40 , OrderDate: Es un@Identificador
+linea :68 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :39 , primera columna: 40 ultima columna: 41 , ): Es un@parentesis_derecho
+linea :68 , primera columna: 22 ultima columna: 33 , UnitMeasure: Es un@Identificador
 
-linea :40 , primera columna: 1 ultima columna: 6 , order: Es un@Identificador
+linea :68 , primera columna: 34 ultima columna: 36 , um: Es un@Identificador
 
-linea :40 , primera columna: 7 ultima columna: 9 , by: Es un@Identificador
+linea :68 , primera columna: 37 ultima columna: 39 , on: Es un@Identificador
 
-linea :40 , primera columna: 10 ultima columna: 11 , v: Es un@Identificador
+linea :69 , primera columna: 0 ultima columna: 2 , bm: Es un@Identificador
 
-linea :40 , primera columna: 11 ultima columna: 12 , .: Es un@punto
+linea :69 , primera columna: 2 ultima columna: 3 , .: Es un@punto
 
-linea :40 , primera columna: 12 ultima columna: 15 , shi: Es un@Identificador
+linea :69 , primera columna: 3 ultima columna: 18 , UnitMeasureCode: Es un@Identificador
 
-linea :40 , primera columna: 15 ultima columna: 16 , ,: Es un@coma
+linea :69 , primera columna: 18 ultima columna: 19 , =: Es un@igual
 
-linea :40 , primera columna: 17 ultima columna: 25 , DATEPART: Es un@Identificador
+linea :69 , primera columna: 19 ultima columna: 21 , um: Es un@Identificador
 
-linea :40 , primera columna: 25 ultima columna: 26 , (: Es un@parentesis_izquierdo
+linea :69 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :40 , primera columna: 26 ultima columna: 30 , YEAR: Es un@Reservadas
+linea :69 , primera columna: 22 ultima columna: 37 , UnitMeasureCode: Es un@Identificador
 
-linea :40 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+linea :70 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
 
-linea :40 , primera columna: 31 ultima columna: 40 , OrderDate: Es un@Identificador
+linea :70 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
 
-linea :40 , primera columna: 40 ultima columna: 41 , ): Es un@parentesis_derecho
+linea :70 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
 
-linea :40 , primera columna: 41 ultima columna: 42 , ;: Es un@punto_coma
+linea :70 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :63 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
+linea :70 , primera columna: 22 ultima columna: 29 , Product: Es un@Identificador
 
-linea :63 , primera columna: 7 ultima columna: 8 , t: Es un@Identificador
+linea :70 , primera columna: 30 ultima columna: 31 , p: Es un@Identificador
 
-linea :63 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+linea :70 , primera columna: 32 ultima columna: 34 , on: Es un@Identificador
 
-linea :63 , primera columna: 9 ultima columna: 14 , range: Es un@Identificador
+linea :70 , primera columna: 35 ultima columna: 37 , bm: Es un@Identificador
 
-linea :63 , primera columna: 15 ultima columna: 17 , as: Es un@Identificador
+linea :70 , primera columna: 37 ultima columna: 38 , .: Es un@punto
 
-linea :63 , primera columna: 18 ultima columna: 25 , 'rango': Es un@String
+linea :70 , primera columna: 38 ultima columna: 55 , ProductAssemblyID: Es un@Identificador
 
-linea :63 , primera columna: 25 ultima columna: 26 , ,: Es un@coma
+linea :70 , primera columna: 55 ultima columna: 56 , =: Es un@igual
 
-linea :63 , primera columna: 27 ultima columna: 32 , count: Es un@Identificador
+linea :70 , primera columna: 56 ultima columna: 57 , p: Es un@Identificador
 
-linea :63 , primera columna: 32 ultima columna: 33 , (: Es un@parentesis_izquierdo
+linea :70 , primera columna: 57 ultima columna: 58 , .: Es un@punto
 
-linea :63 , primera columna: 33 ultima columna: 34 , *: Es un@multiplicacion
+linea :70 , primera columna: 58 ultima columna: 67 , ProductID: Es un@Identificador
 
-linea :63 , primera columna: 34 ultima columna: 35 , ): Es un@parentesis_derecho
+linea :71 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
 
-linea :63 , primera columna: 36 ultima columna: 38 , as: Es un@Identificador
+linea :71 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
 
-linea :63 , primera columna: 39 ultima columna: 49 , 'cantidad': Es un@String
+linea :71 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
 
-linea :63 , primera columna: 49 ultima columna: 50 , ,: Es un@coma
+linea :71 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :63 , primera columna: 50 ultima columna: 55 , round: Es un@Identificador
+linea :71 , primera columna: 22 ultima columna: 29 , Product: Es un@Identificador
 
-linea :63 , primera columna: 55 ultima columna: 56 , (: Es un@parentesis_izquierdo
+linea :71 , primera columna: 30 ultima columna: 32 , p2: Es un@Identificador
 
-linea :63 , primera columna: 56 ultima columna: 59 , sum: Es un@Identificador
+linea :71 , primera columna: 33 ultima columna: 35 , on: Es un@Identificador
 
-linea :63 , primera columna: 59 ultima columna: 60 , (: Es un@parentesis_izquierdo
+linea :71 , primera columna: 36 ultima columna: 38 , bm: Es un@Identificador
 
-linea :63 , primera columna: 60 ultima columna: 61 , t: Es un@Identificador
+linea :71 , primera columna: 38 ultima columna: 39 , .: Es un@punto
 
-linea :63 , primera columna: 61 ultima columna: 62 , .: Es un@punto
+linea :71 , primera columna: 39 ultima columna: 50 , ComponentID: Es un@Identificador
 
-linea :63 , primera columna: 62 ultima columna: 70 , TotalDue: Es un@Identificador
+linea :71 , primera columna: 50 ultima columna: 51 , =: Es un@igual
 
-linea :63 , primera columna: 70 ultima columna: 71 , ): Es un@parentesis_derecho
+linea :71 , primera columna: 51 ultima columna: 53 , p2: Es un@Identificador
 
-linea :63 , primera columna: 71 ultima columna: 72 , ,: Es un@coma
+linea :71 , primera columna: 53 ultima columna: 54 , .: Es un@punto
 
-linea :63 , primera columna: 72 ultima columna: 73 , 2: Es un@Int
+linea :71 , primera columna: 54 ultima columna: 63 , ProductID: Es un@Identificador
 
-linea :63 , primera columna: 73 ultima columna: 74 , ,: Es un@coma
+linea :72 , primera columna: 0 ultima columna: 5 , where: Es un@Identificador
 
-linea :63 , primera columna: 74 ultima columna: 75 , 0: Es un@Int
+linea :72 , primera columna: 6 ultima columna: 7 , p: Es un@Identificador
 
-linea :63 , primera columna: 75 ultima columna: 76 , ): Es un@parentesis_derecho
+linea :72 , primera columna: 7 ultima columna: 8 , .: Es un@punto
 
-linea :63 , primera columna: 77 ultima columna: 79 , as: Es un@Identificador
+linea :72 , primera columna: 8 ultima columna: 17 , ProductID: Es un@Identificador
 
-linea :63 , primera columna: 80 ultima columna: 87 , 'total': Es un@String
+linea :72 , primera columna: 17 ultima columna: 18 , =: Es un@igual
 
-linea :64 , primera columna: 0 ultima columna: 4 , from: Es un@Identificador
+linea :72 , primera columna: 18 ultima columna: 21 , 893: Es un@Int
 
-linea :64 , primera columna: 5 ultima columna: 6 , (: Es un@parentesis_izquierdo
+linea :73 , primera columna: 0 ultima columna: 2 , go: Es un@Identificador
 
-linea :65 , primera columna: 2 ultima columna: 8 , select: Es un@Identificador
+FIN ultima columna: 49 , ): Es un@parentesis_derecho
 
-linea :65 , primera columna: 9 ultima columna: 13 , case: Es un@Identificador
+linea :63 , primera columna: 50 ultima columna: 54 , from: Es un@Identificador
 
-linea :66 , primera columna: 4 ultima columna: 8 , when: Es un@Identificador
+linea :63 , primera columna: 55 ultima columna: 69 , HumanResources: Es un@Identificador
 
-linea :66 , primera columna: 9 ultima columna: 12 , poh: Es un@Identificador
+linea :63 , primera columna: 69 ultima columna: 70 , .: Es un@punto
 
-linea :66 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+linea :63 , primera columna: 70 ultima columna: 88 , EmployeePayHistory: Es un@Identificador
 
-linea :66 , primera columna: 13 ultima columna: 21 , TotalDue: Es un@Identificador
+linea :64 , primera columna: 0 ultima columna: 5 , group: Es un@Identificador
 
-linea :66 , primera columna: 22 ultima columna: 29 , between: Es un@Identificador
+linea :64 , primera columna: 6 ultima columna: 8 , by: Es un@Identificador
 
-linea :66 , primera columna: 31 ultima columna: 32 , 0: Es un@Int
+linea :64 , primera columna: 9 ultima columna: 25 , BusinessEntityID: Es un@Identificador
 
-linea :66 , primera columna: 33 ultima columna: 36 , and: Es un@Identificador
+linea :64 , primera columna: 25 ultima columna: 26 , ;: Es un@punto_coma
 
-linea :66 , primera columna: 38 ultima columna: 40 , 99: Es un@Int
+linea :64 , primera columna: 27 ultima columna: 29 , go: Es un@Identificador
 
-linea :66 , primera columna: 41 ultima columna: 45 , then: Es un@Identificador
+linea :73 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
 
-linea :66 , primera columna: 46 ultima columna: 54 , ' 0-99 ': Es un@String
+linea :73 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
 
-linea :67 , primera columna: 4 ultima columna: 8 , when: Es un@Identificador
+linea :73 , primera columna: 8 ultima columna: 9 , .: Es un@punto
 
-linea :67 , primera columna: 9 ultima columna: 12 , poh: Es un@Identificador
+linea :73 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
 
-linea :67 , primera columna: 12 ultima columna: 13 , .: Es un@punto
+linea :73 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
 
-linea :67 , primera columna: 13 ultima columna: 21 , TotalDue: Es un@Identificador
+linea :73 , primera columna: 19 ultima columna: 21 , um: Es un@Identificador
 
-linea :67 , primera columna: 22 ultima columna: 29 , between: Es un@Identificador
+linea :73 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :67 , primera columna: 30 ultima columna: 33 , 100: Es un@Int
+linea :73 , primera columna: 22 ultima columna: 25 , shi: Es un@Identificador
 
-linea :67 , primera columna: 34 ultima columna: 37 , and: Es un@Identificador
+linea :73 , primera columna: 25 ultima columna: 26 , ,: Es un@coma
 
-linea :67 , primera columna: 38 ultima columna: 41 , 999: Es un@Int
+linea :73 , primera columna: 26 ultima columna: 28 , bm: Es un@Identificador
 
-linea :67 , primera columna: 42 ultima columna: 46 , then: Es un@Identificador
+linea :73 , primera columna: 28 ultima columna: 29 , .: Es un@punto
 
-linea :67 , primera columna: 47 ultima columna: 56 , '100-999': Es un@String
+linea :73 , primera columna: 29 ultima columna: 40 , ComponentID: Es un@Identificador
 
-linea :68 , primera columna: 4 ultima columna: 8 , when: Es un@Identificador
+linea :73 , primera columna: 41 ultima columna: 42 , ,: Es un@coma
 
-linea :68 , primera columna: 10 ultima columna: 13 , poh: Es un@Identificador
+linea :73 , primera columna: 42 ultima columna: 44 , p2: Es un@Identificador
 
-linea :68 , primera columna: 13 ultima columna: 14 , .: Es un@punto
+linea :73 , primera columna: 44 ultima columna: 45 , .: Es un@punto
 
-linea :68 , primera columna: 14 ultima columna: 22 , TotalDue: Es un@Identificador
+linea :73 , primera columna: 45 ultima columna: 48 , shi: Es un@Identificador
 
-linea :68 , primera columna: 23 ultima columna: 30 , between: Es un@Identificador
+linea :73 , primera columna: 50 ultima columna: 54 , from: Es un@Identificador
 
-linea :68 , primera columna: 31 ultima columna: 35 , 1000: Es un@Int
+linea :73 , primera columna: 55 ultima columna: 65 , Production: Es un@Identificador
 
-linea :68 , primera columna: 36 ultima columna: 39 , and: Es un@Identificador
+linea :73 , primera columna: 65 ultima columna: 66 , .: Es un@punto
 
-linea :68 , primera columna: 40 ultima columna: 44 , 9999: Es un@Int
+linea :73 , primera columna: 66 ultima columna: 81 , BillOfMaterials: Es un@Identificador
 
-linea :68 , primera columna: 45 ultima columna: 49 , then: Es un@Identificador
+linea :73 , primera columna: 82 ultima columna: 84 , bm: Es un@Identificador
 
-linea :68 , primera columna: 50 ultima columna: 61 , '1000-9999': Es un@String
+linea :74 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
 
-linea :69 , primera columna: 4 ultima columna: 8 , else: Es un@Identificador
+linea :74 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
 
-linea :69 , primera columna: 9 ultima columna: 17 , '>10000': Es un@String
+linea :74 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
 
-linea :69 , primera columna: 18 ultima columna: 21 , end: Es un@Identificador
+linea :74 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :69 , primera columna: 22 ultima columna: 24 , as: Es un@Identificador
+linea :74 , primera columna: 22 ultima columna: 33 , UnitMeasure: Es un@Identificador
 
-linea :69 , primera columna: 25 ultima columna: 30 , range: Es un@Identificador
+linea :74 , primera columna: 34 ultima columna: 36 , um: Es un@Identificador
 
-linea :69 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
+linea :74 , primera columna: 37 ultima columna: 39 , on: Es un@Identificador
 
-linea :69 , primera columna: 32 ultima columna: 33 , (: Es un@parentesis_izquierdo
+linea :75 , primera columna: 0 ultima columna: 2 , bm: Es un@Identificador
 
-linea :69 , primera columna: 33 ultima columna: 36 , poh: Es un@Identificador
+linea :75 , primera columna: 2 ultima columna: 3 , .: Es un@punto
 
-linea :69 , primera columna: 36 ultima columna: 37 , .: Es un@punto
+linea :75 , primera columna: 3 ultima columna: 18 , UnitMeasureCode: Es un@Identificador
 
-linea :69 , primera columna: 37 ultima columna: 45 , TotalDue: Es un@Identificador
+linea :75 , primera columna: 18 ultima columna: 19 , =: Es un@igual
 
-linea :69 , primera columna: 45 ultima columna: 46 , ): Es un@parentesis_derecho
+linea :75 , primera columna: 19 ultima columna: 21 , um: Es un@Identificador
 
-linea :69 , primera columna: 47 ultima columna: 49 , as: Es un@Identificador
+linea :75 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :69 , primera columna: 50 ultima columna: 58 , TotalDue: Es un@Identificador
+linea :75 , primera columna: 22 ultima columna: 37 , UnitMeasureCode: Es un@Identificador
 
-linea :70 , primera columna: 2 ultima columna: 6 , from: Es un@Identificador
+linea :76 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
 
-linea :70 , primera columna: 8 ultima columna: 18 , Purchasing: Es un@Identificador
+linea :76 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
 
-linea :70 , primera columna: 18 ultima columna: 19 , .: Es un@punto
+linea :76 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
 
-linea :70 , primera columna: 19 ultima columna: 38 , PurchaseOrderHeader: Es un@Identificador
+linea :76 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :70 , primera columna: 39 ultima columna: 42 , poh: Es un@Identificador
+linea :76 , primera columna: 22 ultima columna: 29 , Product: Es un@Identificador
 
-linea :70 , primera columna: 42 ultima columna: 43 , ): Es un@parentesis_derecho
+linea :76 , primera columna: 30 ultima columna: 31 , p: Es un@Identificador
 
-linea :70 , primera columna: 44 ultima columna: 45 , t: Es un@Identificador
+linea :76 , primera columna: 32 ultima columna: 34 , on: Es un@Identificador
 
-linea :71 , primera columna: 0 ultima columna: 5 , group: Es un@Identificador
+linea :76 , primera columna: 35 ultima columna: 37 , bm: Es un@Identificador
 
-linea :71 , primera columna: 6 ultima columna: 8 , by: Es un@Identificador
+linea :76 , primera columna: 37 ultima columna: 38 , .: Es un@punto
 
-linea :71 , primera columna: 9 ultima columna: 10 , t: Es un@Identificador
+linea :76 , primera columna: 38 ultima columna: 55 , ProductAssemblyID: Es un@Identificador
 
-linea :71 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+linea :76 , primera columna: 55 ultima columna: 56 , =: Es un@igual
 
-linea :71 , primera columna: 11 ultima columna: 16 , range: Es un@Identificador
+linea :76 , primera columna: 56 ultima columna: 57 , p: Es un@Identificador
 
-linea :71 , primera columna: 16 ultima columna: 17 , ;: Es un@punto_coma
+linea :76 , primera columna: 57 ultima columna: 58 , .: Es un@punto
 
-linea :74 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
+linea :76 , primera columna: 58 ultima columna: 67 , ProductID: Es un@Identificador
 
-linea :74 , primera columna: 7 ultima columna: 8 , *: Es un@multiplicacion
+linea :77 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
 
-linea :74 , primera columna: 9 ultima columna: 13 , from: Es un@Identificador
+linea :77 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
 
-linea :74 , primera columna: 14 ultima columna: 28 , HumanResources: Es un@Identificador
+linea :77 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
 
-linea :74 , primera columna: 28 ultima columna: 29 , .: Es un@punto
+linea :77 , primera columna: 21 ultima columna: 22 , .: Es un@punto
 
-linea :74 , primera columna: 29 ultima columna: 47 , EmployeePayHistory: Es un@Identificador
+linea :77 , primera columna: 22 ultima columna: 29 , Product: Es un@Identificador
 
-linea :74 , primera columna: 47 ultima columna: 48 , ;: Es un@punto_coma
+linea :77 , primera columna: 30 ultima columna: 32 , p2: Es un@Identificador
 
-linea :76 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
+linea :77 , primera columna: 33 ultima columna: 35 , on: Es un@Identificador
 
-linea :76 , primera columna: 7 ultima columna: 23 , BusinessEntityID: Es un@Identificador
+linea :77 , primera columna: 36 ultima columna: 38 , bm: Es un@Identificador
 
-linea :76 , primera columna: 23 ultima columna: 24 , ,: Es un@coma
+linea :77 , primera columna: 38 ultima columna: 39 , .: Es un@punto
 
-Token: COUNT COUNT
+linea :77 , primera columna: 39 ultima columna: 50 , ComponentID: Es un@Identificador
 
-linea :76 , primera columna: 31 ultima columna: 32 , (: Es un@parentesis_izquierdo
+linea :77 , primera columna: 50 ultima columna: 51 , =: Es un@igual
 
-linea :76 , primera columna: 32 ultima columna: 48 , BusinessEntityID: Es un@Identificador
+linea :77 , primera columna: 51 ultima columna: 53 , p2: Es un@Identificador
 
-linea :76 , primera columna: 48 ultima columna: 49 , ): Es un@parentesis_derecho
+linea :77 , primera columna: 53 ultima columna: 54 , .: Es un@punto
 
-linea :76 , primera columna: 50 ultima columna: 54 , from: Es un@Identificador
+linea :77 , primera columna: 54 ultima columna: 63 , ProductID: Es un@Identificador
 
-linea :76 , primera columna: 55 ultima columna: 69 , HumanResources: Es un@Identificador
+linea :78 , primera columna: 0 ultima columna: 5 , where: Es un@Identificador
 
-linea :76 , primera columna: 69 ultima columna: 70 , .: Es un@punto
+linea :78 , primera columna: 6 ultima columna: 7 , p: Es un@Identificador
 
-linea :76 , primera columna: 70 ultima columna: 88 , EmployeePayHistory: Es un@Identificador
+linea :78 , primera columna: 7 ultima columna: 8 , .: Es un@punto
 
-linea :77 , primera columna: 0 ultima columna: 5 , group: Es un@Identificador
+linea :78 , primera columna: 8 ultima columna: 17 , ProductID: Es un@Identificador
 
-linea :77 , primera columna: 6 ultima columna: 8 , by: Es un@Identificador
+linea :78 , primera columna: 17 ultima columna: 18 , =: Es un@igual
 
-linea :77 , primera columna: 9 ultima columna: 25 , BusinessEntityID: Es un@Identificador
+linea :78 , primera columna: 18 ultima columna: 21 , 893: Es un@Int
 
-linea :77 , primera columna: 25 ultima columna: 26 , ;: Es un@punto_coma
+linea :79 , primera columna: 0 ultima columna: 2 , go: Es un@Identificador
 
-linea :77 , primera columna: 27 ultima columna: 29 , go: Es un@Identificador
+FINor
+
+FINssEntityID: Es un@Identificador
+
+linea :77 , primera columna: 48 ultima columna: 49 , ): Es un@parentesis_derecho
+
+linea :77 , primera columna: 50 ultima columna: 54 , from: Es un@Identificador
+
+linea :77 , primera columna: 55 ultima columna: 69 , HumanResources: Es un@Identificador
+
+linea :77 , primera columna: 69 ultima columna: 70 , .: Es un@punto
+
+linea :77 , primera columna: 70 ultima columna: 88 , EmployeePayHistory: Es un@Identificador
+
+linea :78 , primera columna: 0 ultima columna: 5 , group: Es un@Identificador
+
+linea :78 , primera columna: 6 ultima columna: 8 , by: Es un@Identificador
+
+linea :78 , primera columna: 9 ultima columna: 25 , BusinessEntityID: Es un@Identificador
 
 linea :86 , primera columna: 0 ultima columna: 6 , select: Es un@Identificador
 
-linea :86 , primera columna: 7 ultima columna: 8 , p: Es un@Identificador
+linea :86 , primera columna: 7 ultima columna: 13 , table2: Es un@Identificador
 
-linea :86 , primera columna: 8 ultima columna: 9 , .: Es un@punto
+linea :86 , primera columna: 13 ultima columna: 14 , .: Es un@punto
 
-linea :86 , primera columna: 9 ultima columna: 18 , ProductID: Es un@Identificador
+linea :86 , primera columna: 14 ultima columna: 30 , BusinessEntityID: Es un@Identificador
 
-linea :86 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
+linea :86 , primera columna: 30 ultima columna: 31 , ,: Es un@coma
 
-linea :86 , primera columna: 19 ultima columna: 21 , um: Es un@Identificador
+Token: SUM SUM
 
-linea :86 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+linea :86 , primera columna: 34 ultima columna: 35 , (: Es un@parentesis_izquierdo
 
-linea :86 , primera columna: 22 ultima columna: 25 , shi: Es un@Identificador
+linea :86 , primera columna: 35 ultima columna: 38 , pay: Es un@Identificador
 
-linea :86 , primera columna: 25 ultima columna: 26 , ,: Es un@coma
+linea :86 , primera columna: 38 ultima columna: 39 , ): Es un@parentesis_derecho
 
-linea :86 , primera columna: 26 ultima columna: 28 , bm: Es un@Identificador
+linea :86 , primera columna: 40 ultima columna: 44 , from: Es un@Identificador
 
-linea :86 , primera columna: 28 ultima columna: 29 , .: Es un@punto
+linea :86 , primera columna: 45 ultima columna: 46 , (: Es un@parentesis_izquierdo
 
-linea :86 , primera columna: 29 ultima columna: 40 , ComponentID: Es un@Identificador
+linea :86 , primera columna: 46 ultima columna: 52 , select: Es un@Identificador
 
-linea :86 , primera columna: 41 ultima columna: 42 , ,: Es un@coma
+linea :86 , primera columna: 53 ultima columna: 56 , eph: Es un@Identificador
 
-linea :86 , primera columna: 42 ultima columna: 44 , p2: Es un@Identificador
+linea :86 , primera columna: 56 ultima columna: 57 , .: Es un@punto
 
-linea :86 , primera columna: 44 ultima columna: 45 , .: Es un@punto
+linea :86 , primera columna: 57 ultima columna: 73 , BusinessEntityID: Es un@Identificador
 
-linea :86 , primera columna: 45 ultima columna: 48 , shi: Es un@Identificador
+linea :86 , primera columna: 74 ultima columna: 76 , as: Es un@Identificador
 
-linea :86 , primera columna: 50 ultima columna: 54 , from: Es un@Identificador
+linea :86 , primera columna: 77 ultima columna: 93 , BusinessEntityID: Es un@Identificador
 
-linea :86 , primera columna: 55 ultima columna: 65 , Production: Es un@Identificador
+linea :86 , primera columna: 93 ultima columna: 94 , ,: Es un@coma
 
-linea :86 , primera columna: 65 ultima columna: 66 , .: Es un@punto
+linea :87 , primera columna: 0 ultima columna: 1 , (: Es un@parentesis_izquierdo
 
-linea :86 , primera columna: 66 ultima columna: 81 , BillOfMaterials: Es un@Identificador
+linea :87 , primera columna: 1 ultima columna: 5 , case: Es un@Identificador
 
-linea :86 , primera columna: 82 ultima columna: 84 , bm: Es un@Identificador
+linea :87 , primera columna: 7 ultima columna: 11 , when: Es un@Identificador
 
-linea :87 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
+linea :87 , primera columna: 12 ultima columna: 16 , LEAD: Es un@Identificador
 
-linea :87 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
+linea :87 , primera columna: 16 ultima columna: 17 , (: Es un@parentesis_izquierdo
 
-linea :87 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
+linea :87 , primera columna: 17 ultima columna: 31 , RateChangeDate: Es un@Identificador
 
-linea :87 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+linea :87 , primera columna: 31 ultima columna: 32 , ): Es un@parentesis_derecho
 
-linea :87 , primera columna: 22 ultima columna: 33 , UnitMeasure: Es un@Identificador
+linea :87 , primera columna: 33 ultima columna: 37 , over: Es un@Identificador
 
-linea :87 , primera columna: 34 ultima columna: 36 , um: Es un@Identificador
+linea :87 , primera columna: 38 ultima columna: 39 , (: Es un@parentesis_izquierdo
 
-linea :87 , primera columna: 37 ultima columna: 39 , on: Es un@Identificador
+linea :87 , primera columna: 39 ultima columna: 44 , order: Es un@Identificador
 
-linea :88 , primera columna: 0 ultima columna: 2 , bm: Es un@Identificador
+linea :87 , primera columna: 45 ultima columna: 47 , by: Es un@Identificador
 
-linea :88 , primera columna: 2 ultima columna: 3 , .: Es un@punto
+linea :87 , primera columna: 48 ultima columna: 62 , RateChangeDate: Es un@Identificador
 
-linea :88 , primera columna: 3 ultima columna: 18 , UnitMeasureCode: Es un@Identificador
+linea :87 , primera columna: 62 ultima columna: 63 , ): Es un@parentesis_derecho
 
-linea :88 , primera columna: 18 ultima columna: 19 , =: Es un@igual
+linea :87 , primera columna: 64 ultima columna: 66 , is: Es un@Identificador
 
-linea :88 , primera columna: 19 ultima columna: 21 , um: Es un@Identificador
+linea :87 , primera columna: 67 ultima columna: 70 , not: Es un@Identificador
 
-linea :88 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+linea :87 , primera columna: 71 ultima columna: 75 , null: Es un@Identificador
 
-linea :88 , primera columna: 22 ultima columna: 37 , UnitMeasureCode: Es un@Identificador
+linea :87 , primera columna: 76 ultima columna: 80 , then: Es un@Identificador
 
-linea :89 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
+linea :89 , primera columna: 2 ultima columna: 5 , dbo: Es un@Identificador
 
-linea :89 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
+linea :89 , primera columna: 5 ultima columna: 6 , .: Es un@punto
 
-linea :89 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
+linea :89 , primera columna: 6 ultima columna: 26 , UFN_HORAS_TRABAJADAs: Es un@Identificador
 
-linea :89 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+linea :89 , primera columna: 26 ultima columna: 27 , (: Es un@parentesis_izquierdo
 
-linea :89 , primera columna: 22 ultima columna: 29 , Product: Es un@Identificador
+linea :89 , primera columna: 30 ultima columna: 44 , RateChangeDate: Es un@Identificador
 
-linea :89 , primera columna: 30 ultima columna: 31 , p: Es un@Identificador
+linea :89 , primera columna: 44 ultima columna: 45 , ,: Es un@coma
 
-linea :89 , primera columna: 32 ultima columna: 34 , on: Es un@Identificador
+linea :89 , primera columna: 45 ultima columna: 49 , lead: Es un@Identificador
 
-linea :89 , primera columna: 35 ultima columna: 37 , bm: Es un@Identificador
+linea :89 , primera columna: 49 ultima columna: 50 , (: Es un@parentesis_izquierdo
 
-linea :89 , primera columna: 37 ultima columna: 38 , .: Es un@punto
+linea :89 , primera columna: 50 ultima columna: 64 , RateChangeDate: Es un@Identificador
 
-linea :89 , primera columna: 38 ultima columna: 55 , ProductAssemblyID: Es un@Identificador
+linea :89 , primera columna: 64 ultima columna: 65 , ): Es un@parentesis_derecho
 
-linea :89 , primera columna: 55 ultima columna: 56 , =: Es un@igual
+linea :89 , primera columna: 66 ultima columna: 70 , over: Es un@Identificador
 
-linea :89 , primera columna: 56 ultima columna: 57 , p: Es un@Identificador
+linea :89 , primera columna: 71 ultima columna: 72 , (: Es un@parentesis_izquierdo
 
-linea :89 , primera columna: 57 ultima columna: 58 , .: Es un@punto
+linea :89 , primera columna: 72 ultima columna: 77 , order: Es un@Identificador
 
-linea :89 , primera columna: 58 ultima columna: 67 , ProductID: Es un@Identificador
+linea :89 , primera columna: 78 ultima columna: 80 , by: Es un@Identificador
 
-linea :90 , primera columna: 0 ultima columna: 5 , inner: Es un@Identificador
+linea :89 , primera columna: 81 ultima columna: 95 , RateChangeDate: Es un@Identificador
 
-linea :90 , primera columna: 6 ultima columna: 10 , join: Es un@Identificador
+linea :89 , primera columna: 95 ultima columna: 96 , ): Es un@parentesis_derecho
 
-linea :90 , primera columna: 11 ultima columna: 21 , Production: Es un@Identificador
+linea :89 , primera columna: 97 ultima columna: 98 , ): Es un@parentesis_derecho
 
-linea :90 , primera columna: 21 ultima columna: 22 , .: Es un@punto
+linea :91 , primera columna: 2 ultima columna: 6 , else: Es un@Identificador
 
-linea :90 , primera columna: 22 ultima columna: 29 , Product: Es un@Identificador
+linea :94 , primera columna: 2 ultima columna: 5 , dbo: Es un@Identificador
 
-linea :90 , primera columna: 30 ultima columna: 32 , p2: Es un@Identificador
+linea :94 , primera columna: 5 ultima columna: 6 , .: Es un@punto
 
-linea :90 , primera columna: 33 ultima columna: 35 , on: Es un@Identificador
+linea :94 , primera columna: 6 ultima columna: 26 , UFN_HORAS_TRABAJADAs: Es un@Identificador
 
-linea :90 , primera columna: 36 ultima columna: 38 , bm: Es un@Identificador
+linea :94 , primera columna: 26 ultima columna: 27 , (: Es un@parentesis_izquierdo
 
-linea :90 , primera columna: 38 ultima columna: 39 , .: Es un@punto
-
-linea :90 , primera columna: 39 ultima columna: 50 , ComponentID: Es un@Identificador
-
-linea :90 , primera columna: 50 ultima columna: 51 , =: Es un@igual
-
-linea :90 , primera columna: 51 ultima columna: 53 , p2: Es un@Identificador
-
-linea :90 , primera columna: 53 ultima columna: 54 , .: Es un@punto
-
-linea :90 , primera columna: 54 ultima columna: 63 , ProductID: Es un@Identificador
-
-linea :91 , primera columna: 0 ultima columna: 5 , where: Es un@Identificador
-
-linea :91 , primera columna: 6 ultima columna: 7 , p: Es un@Identificador
-
-linea :91 , primera columna: 7 ultima columna: 8 , .: Es un@punto
-
-linea :91 , primera columna: 8 ultima columna: 17 , ProductID: Es un@Identificador
-
-linea :91 , primera columna: 17 ultima columna: 18 , =: Es un@igual
-
-linea :91 , primera columna: 18 ultima columna: 21 , 893: Es un@Int
-
-linea :92 , primera columna: 0 ultima columna: 2 , go: Es un@Identificador
-
-FINangeDate: Es un@Identificador
+linea :94 , primera columna: 30 ultima columna: 44 , RateChangeDate: Es un@Identificador
 
 linea :94 , primera columna: 44 ultima columna: 45 , ,: Es un@coma
 

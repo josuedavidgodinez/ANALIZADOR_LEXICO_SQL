@@ -1,0 +1,217 @@
+Token: INSERT INSERT
+
+Token: INTO INTO
+
+linea :0 , primera columna: 12 ultima columna: 21 , Customers: Es un@Identificador
+
+linea :0 , primera columna: 22 ultima columna: 23 , (: Es un@parentesis_izquierdo
+
+linea :0 , primera columna: 23 ultima columna: 35 , CustomerName: Es un@Identificador
+
+linea :0 , primera columna: 35 ultima columna: 36 , ,: Es un@coma
+
+linea :0 , primera columna: 37 ultima columna: 48 , ContactName: Es un@Identificador
+
+linea :0 , primera columna: 48 ultima columna: 49 , ,: Es un@coma
+
+linea :0 , primera columna: 50 ultima columna: 57 , Address: Es un@Identificador
+
+linea :0 , primera columna: 57 ultima columna: 58 , ,: Es un@coma
+
+linea :0 , primera columna: 59 ultima columna: 63 , City: Es un@Identificador
+
+linea :0 , primera columna: 63 ultima columna: 64 , ,: Es un@coma
+
+linea :0 , primera columna: 65 ultima columna: 75 , PostalCode: Es un@Identificador
+
+linea :0 , primera columna: 75 ultima columna: 76 , ,: Es un@coma
+
+linea :0 , primera columna: 77 ultima columna: 84 , Country: Es un@Identificador
+
+linea :0 , primera columna: 84 ultima columna: 85 , ): Es un@parentesis_derecho
+
+Token: VALUES VALUES
+
+linea :1 , primera columna: 7 ultima columna: 8 , (: Es un@parentesis_izquierdo
+
+linea :1 , primera columna: 8 ultima columna: 18 , 'Cardinal': Es un@String
+
+linea :1 , primera columna: 18 ultima columna: 19 , ,: Es un@coma
+
+linea :1 , primera columna: 20 ultima columna: 37 , 'Tom B. Erichsen': Es un@String
+
+linea :1 , primera columna: 37 ultima columna: 38 , ,: Es un@coma
+
+linea :1 , primera columna: 39 ultima columna: 50 , 'Skagen 21': Es un@String
+
+linea :1 , primera columna: 50 ultima columna: 51 , ,: Es un@coma
+
+linea :1 , primera columna: 52 ultima columna: 63 , 'Stavanger': Es un@String
+
+linea :1 , primera columna: 63 ultima columna: 64 , ,: Es un@coma
+
+linea :1 , primera columna: 65 ultima columna: 71 , '4006': Es un@String
+
+linea :1 , primera columna: 71 ultima columna: 72 , ,: Es un@coma
+
+linea :1 , primera columna: 73 ultima columna: 81 , 'Norway': Es un@String
+
+linea :1 , primera columna: 81 ultima columna: 82 , ): Es un@parentesis_derecho
+
+linea :1 , primera columna: 82 ultima columna: 83 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: INSERT INSERT
+
+linea :4 , primera columna: 7 ultima columna: 10 , dbo: Es un@Identificador
+
+linea :4 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :4 , primera columna: 11 ultima columna: 19 , Products: Es un@Identificador
+
+linea :4 , primera columna: 20 ultima columna: 21 , (: Es un@parentesis_izquierdo
+
+linea :4 , primera columna: 21 ultima columna: 32 , ProductName: Es un@Identificador
+
+linea :4 , primera columna: 32 ultima columna: 33 , ,: Es un@coma
+
+linea :4 , primera columna: 34 ultima columna: 43 , ProductID: Es un@Identificador
+
+linea :4 , primera columna: 43 ultima columna: 44 , ,: Es un@coma
+
+linea :4 , primera columna: 45 ultima columna: 50 , Price: Es un@Identificador
+
+linea :4 , primera columna: 50 ultima columna: 51 , ,: Es un@coma
+
+linea :4 , primera columna: 52 ultima columna: 70 , ProductDescription: Es un@Identificador
+
+linea :4 , primera columna: 70 ultima columna: 71 , ): Es un@parentesis_derecho
+
+Token: VALUES VALUES
+
+linea :5 , primera columna: 11 ultima columna: 12 , (: Es un@parentesis_izquierdo
+
+linea :5 , primera columna: 12 ultima columna: 25 , 'Screwdriver': Es un@String
+
+linea :5 , primera columna: 25 ultima columna: 26 , ,: Es un@coma
+
+linea :5 , primera columna: 27 ultima columna: 29 , 50: Es un@Int
+
+linea :5 , primera columna: 29 ultima columna: 30 , ,: Es un@coma
+
+linea :5 , primera columna: 31 ultima columna: 35 , 3.17: Es un@Float
+
+linea :5 , primera columna: 35 ultima columna: 36 , ,: Es un@coma
+
+linea :5 , primera columna: 37 ultima columna: 48 , 'Flat head': Es un@String
+
+linea :5 , primera columna: 48 ultima columna: 49 , ): Es un@parentesis_derecho
+
+linea :5 , primera columna: 49 ultima columna: 50 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: INSERT INSERT
+
+linea :8 , primera columna: 7 ultima columna: 10 , dbo: Es un@Identificador
+
+linea :8 , primera columna: 10 ultima columna: 11 , .: Es un@punto
+
+linea :8 , primera columna: 11 ultima columna: 19 , Products: Es un@Identificador
+
+Token: VALUES VALUES
+
+linea :9 , primera columna: 11 ultima columna: 12 , (: Es un@parentesis_izquierdo
+
+linea :9 , primera columna: 12 ultima columna: 14 , 75: Es un@Int
+
+linea :9 , primera columna: 14 ultima columna: 15 , ,: Es un@coma
+
+linea :9 , primera columna: 16 ultima columna: 26 , 'Tire Bar': Es un@String
+
+linea :9 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+Token: NULL NULL
+
+linea :9 , primera columna: 32 ultima columna: 33 , ,: Es un@coma
+
+linea :9 , primera columna: 34 ultima columna: 60 , 'Tool for changing tires.': Es un@String
+
+linea :9 , primera columna: 60 ultima columna: 61 , ): Es un@parentesis_derecho
+
+linea :9 , primera columna: 61 ultima columna: 62 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: INSERT INSERT
+
+linea :12 , primera columna: 7 ultima columna: 15 , Products: Es un@Identificador
+
+linea :12 , primera columna: 16 ultima columna: 17 , (: Es un@parentesis_izquierdo
+
+linea :12 , primera columna: 17 ultima columna: 26 , ProductID: Es un@Identificador
+
+linea :12 , primera columna: 26 ultima columna: 27 , ,: Es un@coma
+
+linea :12 , primera columna: 28 ultima columna: 39 , ProductName: Es un@Identificador
+
+linea :12 , primera columna: 39 ultima columna: 40 , ,: Es un@coma
+
+linea :12 , primera columna: 41 ultima columna: 46 , Price: Es un@Identificador
+
+linea :12 , primera columna: 46 ultima columna: 47 , ): Es un@parentesis_derecho
+
+Token: VALUES VALUES
+
+linea :13 , primera columna: 11 ultima columna: 12 , (: Es un@parentesis_izquierdo
+
+linea :13 , primera columna: 12 ultima columna: 16 , 3000: Es un@Int
+
+linea :13 , primera columna: 16 ultima columna: 17 , ,: Es un@coma
+
+linea :13 , primera columna: 18 ultima columna: 31 , '3mm Bracket': Es un@String
+
+linea :13 , primera columna: 31 ultima columna: 32 , ,: Es un@coma
+
+linea :13 , primera columna: 33 ultima columna: 37 , 0.52: Es un@Float
+
+linea :13 , primera columna: 37 ultima columna: 38 , ): Es un@parentesis_derecho
+
+linea :13 , primera columna: 38 ultima columna: 39 , ;: Es un@punto_coma
+
+Token: GO GO
+
+Token: INSERT INSERT
+
+Token: INTO INTO
+
+linea :16 , primera columna: 12 ultima columna: 14 , T1: Es un@Identificador
+
+linea :16 , primera columna: 15 ultima columna: 16 , (: Es un@parentesis_izquierdo
+
+linea :16 , primera columna: 16 ultima columna: 20 , dlka: Es un@Identificador
+
+linea :16 , primera columna: 20 ultima columna: 21 , ,: Es un@coma
+
+linea :16 , primera columna: 21 ultima columna: 29 , asdkjadh: Es un@Identificador
+
+linea :16 , primera columna: 29 ultima columna: 30 , ,: Es un@coma
+
+linea :16 , primera columna: 30 ultima columna: 36 , dasjdh: Es un@Identificador
+
+linea :16 , primera columna: 36 ultima columna: 37 , ,: Es un@coma
+
+linea :16 , primera columna: 37 ultima columna: 44 , kjdasdh: Es un@Identificador
+
+linea :16 , primera columna: 44 ultima columna: 45 , ): Es un@parentesis_derecho
+
+Token: DEFAULT DEFAULT
+
+Token: VALUES VALUES
+
+linea :16 , primera columna: 60 ultima columna: 61 , ;: Es un@punto_coma
+
+Token: GO GO
+
+FIN
